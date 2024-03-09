@@ -5,20 +5,11 @@ import 'package:muslim_app/core/cache/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 
 ThemeData lightTheme = ThemeData(
-  dialogTheme: DialogTheme(
-    titleTextStyle: TextStyles.style16Bold.copyWith(
-      color: blackColor,
-      fontFamily: "cairo",
-    ),
-  ),
-  bottomSheetTheme: BottomSheetThemeData(
-    backgroundColor: whiteColor,
-  ),
   primaryColor: appColor,
+  primarySwatch: mainColor,
   colorScheme: ColorScheme.fromSeed(
     seedColor: appColor,
   ),
-  primarySwatch: mainColor,
   appBarTheme: AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
       statusBarColor: whiteColor,
@@ -46,6 +37,40 @@ ThemeData lightTheme = ThemeData(
     showSelectedLabels: true,
     showUnselectedLabels: false,
     unselectedItemColor: whiteColor,
+  ),
+  textTheme: const TextTheme(
+    titleMedium: TextStyle(
+      fontFamily: "cairo",
+      color: Colors.black,
+      fontSize: 16.0,
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: "cairo",
+      fontWeight: FontWeight.bold,
+      color: Colors.black87,
+    ),
+    bodyLarge: TextStyle(
+      fontFamily: "cairo",
+      fontWeight: FontWeight.w400,
+      color: Colors.black87,
+    ),
+    bodySmall: TextStyle(
+      fontFamily: "cairo",
+      color: Colors.black54,
+    ),
+  ),
+  listTileTheme: ListTileThemeData(
+    shape: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8),
+      borderSide: BorderSide.none,
+    ),
+    titleTextStyle: TextStyles.style13.copyWith(
+      color: appColor,
+      fontWeight: FontWeight.bold,
+      fontFamily: "cairo",
+    ),
+    tileColor: appColor.withOpacity(0.2),
+    iconColor: appColor,
   ),
   inputDecorationTheme: InputDecorationTheme(
     prefixIconColor: Colors.black,
@@ -79,34 +104,14 @@ ThemeData lightTheme = ThemeData(
     backgroundColor: appColor,
     foregroundColor: Colors.white,
   ),
-  textTheme: const TextTheme(
-    titleMedium: TextStyle(
+  dialogTheme: DialogTheme(
+    titleTextStyle: TextStyles.style16Bold.copyWith(
+      color: blackColor,
       fontFamily: "cairo",
-      color: Colors.black,
-      fontSize: 16.0,
-    ),
-    bodyMedium: TextStyle(
-      fontFamily: "cairo",
-      fontWeight: FontWeight.bold,
-      color: Colors.black87,
-    ),
-    bodyLarge: TextStyle(
-      fontFamily: "cairo",
-      fontWeight: FontWeight.w400,
-      color: Colors.black87,
-    ),
-    bodySmall: TextStyle(
-      fontFamily: "cairo",
-      color: Colors.black54,
     ),
   ),
-  listTileTheme: ListTileThemeData(
-    titleTextStyle: TextStyle(
-      color: blackColor,
-      fontWeight: FontWeight.bold,
-      fontFamily: "cairo",
-    ),
-    iconColor: blackColor,
+  bottomSheetTheme: BottomSheetThemeData(
+    backgroundColor: whiteColor,
   ),
   fontFamily: 'cairo',
   dividerColor: blackColor,
@@ -121,34 +126,71 @@ ThemeData lightTheme = ThemeData(
 );
 
 ThemeData darkTheme = ThemeData(
-  bottomSheetTheme: const BottomSheetThemeData(
-    backgroundColor: Color(0x00b976c1),
-  ),
   primaryColor: appColor,
+  primarySwatch: mainColor,
   colorScheme: ColorScheme.fromSeed(
     seedColor: appColor,
   ),
-  primarySwatch: mainColor,
   appBarTheme: AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: appColor,
+      statusBarColor: appColor.withOpacity(0.0),
       statusBarIconBrightness: Brightness.light,
+      systemNavigationBarColor: blackColor,
+      systemNavigationBarIconBrightness: Brightness.light,
     ),
-    backgroundColor: appColor,
-    elevation: 1.0,
+    backgroundColor: appColor.withOpacity(0.0),
     iconTheme: const IconThemeData(
       color: Colors.white,
     ),
     titleTextStyle: TextStyles.style20Bold.copyWith(
       color: Colors.white,
+      fontFamily: "cairo",
     ),
   ),
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    selectedLabelStyle: TextStyles.style14.copyWith(
+      fontWeight: FontWeight.bold,
+      fontFamily: 'cairo',
+    ),
     type: BottomNavigationBarType.fixed,
-    selectedItemColor: appColor,
-    elevation: 10.0,
+    selectedItemColor: secondColor,
     backgroundColor: appColor,
-    unselectedItemColor: Colors.grey,
+    showSelectedLabels: true,
+    showUnselectedLabels: false,
+    unselectedItemColor: whiteColor,
+  ),
+  textTheme: const TextTheme(
+    titleMedium: TextStyle(
+      fontFamily: "cairo",
+      color: Colors.white,
+      fontSize: 16.0,
+    ),
+    bodySmall: TextStyle(
+      fontFamily: "cairo",
+      color: Colors.white60,
+    ),
+    bodyLarge: TextStyle(
+      fontFamily: "cairo",
+      fontWeight: FontWeight.normal,
+      color: Colors.white,
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: "cairo",
+      color: Colors.white,
+    ),
+  ),
+  listTileTheme: ListTileThemeData(
+    shape: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8),
+      borderSide: BorderSide.none,
+    ),
+    titleTextStyle: TextStyles.style13.copyWith(
+      color: whiteColor,
+      fontWeight: FontWeight.bold,
+      fontFamily: "cairo",
+    ),
+    tileColor: appColor.withOpacity(0.5),
+    iconColor: whiteColor,
   ),
   inputDecorationTheme: InputDecorationTheme(
     prefixIconColor: Colors.white,
@@ -198,37 +240,10 @@ ThemeData darkTheme = ThemeData(
     shape: CircularNotchedRectangle(),
     elevation: 3.0,
   ),
-  textTheme: const TextTheme(
-    titleMedium: TextStyle(
-      fontFamily: "cairo",
-      color: Colors.white,
-      fontSize: 16.0,
-    ),
-    bodySmall: TextStyle(
-      fontFamily: "cairo",
-      color: Colors.white60,
-    ),
-    bodyLarge: TextStyle(
-      fontFamily: "cairo",
-      fontWeight: FontWeight.normal,
-      color: Colors.white,
-    ),
-    bodyMedium: TextStyle(
-      fontFamily: "cairo",
-      color: Colors.white,
-    ),
-  ),
-  listTileTheme: ListTileThemeData(
-    titleTextStyle: TextStyle(
-      color: whiteColor,
-      fontWeight: FontWeight.bold,
-      fontFamily: "cairo",
-    ),
-    iconColor: whiteColor,
-  ),
+  fontFamily: 'cairo',
   iconTheme: const IconThemeData(color: Colors.white),
   indicatorColor: Colors.white,
-  scaffoldBackgroundColor: appColor,
+  scaffoldBackgroundColor: appColor.withOpacity(0.1),
   cardColor: appColor,
   secondaryHeaderColor: appColor,
   canvasColor: appColor,

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:muslim_app/core/cache/styles/text_styles.dart';
-import 'package:muslim_app/core/contants/constants.dart';
 
 class SwitchListTileWidget extends StatefulWidget {
   const SwitchListTileWidget({
@@ -26,21 +24,11 @@ class _SwitchListTileWidgetState extends State<SwitchListTileWidget> {
         horizontal: 15,
       ),
       child: SwitchListTile(
-        tileColor: appColor.withOpacity(0.2),
-        shape: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-          borderSide: BorderSide.none,
-        ),
         secondary: Icon(
           widget.icon,
-          color: appColor,
         ),
         title: Text(
           widget.lable,
-          style: TextStyles.style15.copyWith(
-            fontWeight: FontWeight.w600,
-            color: appColor,
-          ),
         ),
         value: isActive,
         onChanged: (value) {
