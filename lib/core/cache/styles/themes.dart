@@ -8,6 +8,7 @@ ThemeData lightTheme = ThemeData(
   dialogTheme: DialogTheme(
     titleTextStyle: TextStyles.style16Bold.copyWith(
       color: blackColor,
+      fontFamily: "cairo",
     ),
   ),
   bottomSheetTheme: BottomSheetThemeData(
@@ -20,38 +21,42 @@ ThemeData lightTheme = ThemeData(
   primarySwatch: mainColor,
   appBarTheme: AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: appColor,
+      statusBarColor: whiteColor,
+      systemNavigationBarColor: whiteColor,
     ),
-    backgroundColor: appColor,
+    backgroundColor: whiteColor,
     elevation: 0.0,
     iconTheme: IconThemeData(
-      color: whiteColor,
+      color: blackColor,
     ),
     titleTextStyle: TextStyles.style20Bold.copyWith(
-      color: whiteColor,
+      color: blackColor,
+      fontFamily: 'cairo',
     ),
   ),
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    selectedLabelStyle: TextStyles.style14.copyWith(
+      fontWeight: FontWeight.bold,
+      fontFamily: 'cairo',
+    ),
     type: BottomNavigationBarType.fixed,
-    selectedItemColor: appColor,
+    selectedItemColor: secondColor,
     backgroundColor: appColor,
-    elevation: 10.0,
-    showSelectedLabels: false,
+    showSelectedLabels: true,
     showUnselectedLabels: false,
+    unselectedItemColor: whiteColor,
   ),
   inputDecorationTheme: InputDecorationTheme(
     prefixIconColor: Colors.black,
-    labelStyle: const TextStyle(
+    labelStyle: TextStyles.style14.copyWith(
       fontFamily: "cairo",
       color: Colors.black,
       fontWeight: FontWeight.bold,
-      fontSize: 14,
     ),
-    hintStyle: const TextStyle(
+    hintStyle: TextStyles.style14.copyWith(
       fontFamily: "cairo",
       color: Colors.black,
-      fontWeight: FontWeight.w600,
-      fontSize: 14,
+      fontWeight: FontWeight.bold,
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(15),

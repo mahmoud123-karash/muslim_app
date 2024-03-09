@@ -7,7 +7,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/cache/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
-import 'package:muslim_app/features/home/presentation/views/home_screen.dart';
+import 'package:muslim_app/features/navBar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             bool isDark = ManageCubit.get(context).isDark;
             String lang = ManageCubit.get(context).lang == 'ar' ? 'ar' : 'en';
             return MaterialApp(
-              locale: Locale(lang),
+              locale: const Locale('ar'),
               debugShowCheckedModeBanner: false,
               localizationsDelegates: const [
                 S.delegate,
@@ -61,7 +61,7 @@ class MyApp extends StatelessWidget {
               ],
               supportedLocales: S.delegate.supportedLocales,
               theme: isDark ? darkTheme : lightTheme,
-              home: const HomeScreen(),
+              home: const NavBarScreen(),
             );
           },
         );
