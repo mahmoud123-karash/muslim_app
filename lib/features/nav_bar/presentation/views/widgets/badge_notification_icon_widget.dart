@@ -15,7 +15,7 @@ class BadgeNotificationIconWidget extends StatelessWidget {
         horizontal: 10,
       ),
       child: InkWell(
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(10),
         onTap: () {
           navigateTo(context, const NotificationScreen());
         },

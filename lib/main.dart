@@ -7,7 +7,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/cache/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
-import 'package:muslim_app/features/navBar/presentation/views/navbar_screen.dart';
+import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';

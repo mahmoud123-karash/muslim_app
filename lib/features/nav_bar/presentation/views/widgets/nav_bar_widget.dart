@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:muslim_app/features/navBar/presentation/manager/navbar_cubit/navbar_cubit.dart';
+import 'package:muslim_app/features/nav_bar/presentation/manager/navbar_cubit/navbar_cubit.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 class NavBarWidget extends StatelessWidget {
