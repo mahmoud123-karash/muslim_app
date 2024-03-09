@@ -23,6 +23,7 @@ ThemeData lightTheme = ThemeData(
     systemOverlayStyle: SystemUiOverlayStyle(
       statusBarColor: whiteColor,
       systemNavigationBarColor: whiteColor,
+      statusBarIconBrightness: Brightness.dark,
     ),
     backgroundColor: whiteColor,
     elevation: 0.0,

@@ -41,3 +41,16 @@ void showSnackBar(context, message) =>
         content: Text(message),
       ),
     );
+
+AppBar myAppBar(
+  title, {
+  List<Widget>? actions,
+  bool centerTitle = false,
+}) =>
+    AppBar(
+      centerTitle: centerTitle,
+      title: Text(
+        title,
+      ),
+      actions: actions,
+    );

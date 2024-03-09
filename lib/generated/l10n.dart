@@ -89,6 +89,116 @@ class S {
       args: [],
     );
   }
+
+  /// `لغة التطبيق`
+  String get language {
+    return Intl.message(
+      'لغة التطبيق',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المظهر`
+  String get theme {
+    return Intl.message(
+      'المظهر',
+      name: 'theme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `شارك تؤجر`
+  String get share {
+    return Intl.message(
+      'شارك تؤجر',
+      name: 'share',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تقييم التطبيق`
+  String get rate_app {
+    return Intl.message(
+      'تقييم التطبيق',
+      name: 'rate_app',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عن التطبيق`
+  String get about_app {
+    return Intl.message(
+      'عن التطبيق',
+      name: 'about_app',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تواصل معنا`
+  String get contact_us {
+    return Intl.message(
+      'تواصل معنا',
+      name: 'contact_us',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `السياسة والخصوصية`
+  String get privacy_and_policy {
+    return Intl.message(
+      'السياسة والخصوصية',
+      name: 'privacy_and_policy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `اللغة العربية`
+  String get arabic_language {
+    return Intl.message(
+      'اللغة العربية',
+      name: 'arabic_language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `اللغة الإنجليزية`
+  String get english_language {
+    return Intl.message(
+      'اللغة الإنجليزية',
+      name: 'english_language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لغة الجهاز`
+  String get device_language {
+    return Intl.message(
+      'لغة الجهاز',
+      name: 'device_language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تطبيق`
+  String get confirm_lang {
+    return Intl.message(
+      'تطبيق',
+      name: 'confirm_lang',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

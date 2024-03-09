@@ -2,5 +2,16 @@
     "home":"الرئيسية",
     "settings":"الإعدادات",
     "notifications":"الإشعارات",
-    "welcome_back":"مرحبا بك"
+    "welcome_back":"مرحبا بك",
+    "language":"لغة التطبيق",
+    "theme":"المظهر",
+    "share":"شارك تؤجر",
+    "rate_app":"تقييم التطبيق",
+    "about_app":"عن التطبيق",
+    "contact_us":"تواصل معنا",
+    "privacy_and_policy":"السياسة والخصوصية",
+    "arabic_language":"اللغة العربية",
+    "english_language":"اللغة الإنجليزية",
+    "device_language":"لغة الجهاز",
+    "confirm_lang":"تطبيق"
 }

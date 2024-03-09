@@ -12,7 +12,7 @@ class BadgeNotificationIconWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 10,
+        horizontal: 15,
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(10),

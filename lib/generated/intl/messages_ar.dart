@@ -22,9 +22,23 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
+        "arabic_language":
+            MessageLookupByLibrary.simpleMessage("اللغة العربية"),
+        "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
+        "contact_us": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
+        "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
+        "english_language":
+            MessageLookupByLibrary.simpleMessage("اللغة الإنجليزية"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "privacy_and_policy":
+            MessageLookupByLibrary.simpleMessage("السياسة والخصوصية"),
+        "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+        "share": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
+        "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك")
       };
 }
