@@ -1,19 +1,18 @@
 {
-    "home":"الرئيسية",
-    "settings":"الإعدادات",
-    "notifications":"الإشعارات",
-    "welcome_back":"مرحبا بك",
-    "language":"لغة التطبيق",
-    "theme":"المظهر",
-    "share":"شارك تؤجر",
-    "rate_app":"تقييم التطبيق",
-    "about_app":"عن التطبيق",
-    "contact_us":"تواصل معنا",
-    "privacy_and_policy":"السياسة والخصوصية",
-    "arabic_language":"اللغة العربية",
-    "english_language":"اللغة الإنجليزية",
-    "device_language":"لغة الجهاز",
-    "confirm_lang":"تطبيق"
-
+    "home": "Home",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "welcome_back": "Welcome back",
+    "language": "App Language",
+    "theme": "Theme",
+    "share": "Share and Earn Rewards",
+    "rate_app": "Rate the App",
+    "about_app": "About the App",
+    "contact_us": "Contact Us",
+    "privacy_and_policy": "Privacy and Policy",
+    "arabic_language": "Arabic",
+    "english_language": "English",
+    "device_language": "Device Language",
+    "confirm_lang": "Apply"
 
 }

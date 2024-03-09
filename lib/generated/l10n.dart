@@ -50,150 +50,150 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `الرئيسية`
+  /// `Home`
   String get home {
     return Intl.message(
-      'الرئيسية',
+      'Home',
       name: 'home',
       desc: '',
       args: [],
     );
   }
 
-  /// `الإعدادات`
+  /// `Settings`
   String get settings {
     return Intl.message(
-      'الإعدادات',
+      'Settings',
       name: 'settings',
       desc: '',
       args: [],
     );
   }
 
-  /// `الإشعارات`
+  /// `Notifications`
   String get notifications {
     return Intl.message(
-      'الإشعارات',
+      'Notifications',
       name: 'notifications',
       desc: '',
       args: [],
     );
   }
 
-  /// `مرحبا بك`
+  /// `Welcome back`
   String get welcome_back {
     return Intl.message(
-      'مرحبا بك',
+      'Welcome back',
       name: 'welcome_back',
       desc: '',
       args: [],
     );
   }
 
-  /// `لغة التطبيق`
+  /// `App Language`
   String get language {
     return Intl.message(
-      'لغة التطبيق',
+      'App Language',
       name: 'language',
       desc: '',
       args: [],
     );
   }
 
-  /// `المظهر`
+  /// `Theme`
   String get theme {
     return Intl.message(
-      'المظهر',
+      'Theme',
       name: 'theme',
       desc: '',
       args: [],
     );
   }
 
-  /// `شارك تؤجر`
+  /// `Share and Earn Rewards`
   String get share {
     return Intl.message(
-      'شارك تؤجر',
+      'Share and Earn Rewards',
       name: 'share',
       desc: '',
       args: [],
     );
   }
 
-  /// `تقييم التطبيق`
+  /// `Rate the App`
   String get rate_app {
     return Intl.message(
-      'تقييم التطبيق',
+      'Rate the App',
       name: 'rate_app',
       desc: '',
       args: [],
     );
   }
 
-  /// `عن التطبيق`
+  /// `About the App`
   String get about_app {
     return Intl.message(
-      'عن التطبيق',
+      'About the App',
       name: 'about_app',
       desc: '',
       args: [],
     );
   }
 
-  /// `تواصل معنا`
+  /// `Contact Us`
   String get contact_us {
     return Intl.message(
-      'تواصل معنا',
+      'Contact Us',
       name: 'contact_us',
       desc: '',
       args: [],
     );
   }
 
-  /// `السياسة والخصوصية`
+  /// `Privacy and Policy`
   String get privacy_and_policy {
     return Intl.message(
-      'السياسة والخصوصية',
+      'Privacy and Policy',
       name: 'privacy_and_policy',
       desc: '',
       args: [],
     );
   }
 
-  /// `اللغة العربية`
+  /// `Arabic`
   String get arabic_language {
     return Intl.message(
-      'اللغة العربية',
+      'Arabic',
       name: 'arabic_language',
       desc: '',
       args: [],
     );
   }
 
-  /// `اللغة الإنجليزية`
+  /// `English`
   String get english_language {
     return Intl.message(
-      'اللغة الإنجليزية',
+      'English',
       name: 'english_language',
       desc: '',
       args: [],
     );
   }
 
-  /// `لغة الجهاز`
+  /// `Device Language`
   String get device_language {
     return Intl.message(
-      'لغة الجهاز',
+      'Device Language',
       name: 'device_language',
       desc: '',
       args: [],
     );
   }
 
-  /// `تطبيق`
+  /// `Apply`
   String get confirm_lang {
     return Intl.message(
-      'تطبيق',
+      'Apply',
       name: 'confirm_lang',
       desc: '',
       args: [],
