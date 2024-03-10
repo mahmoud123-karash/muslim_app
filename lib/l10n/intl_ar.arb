@@ -1,4 +1,6 @@
 {
+    "login":"تسجبل الدخول",
+    "logout":"تسجبل الخروج",
     "home":"الرئيسية",
     "settings":"الإعدادات",
     "notifications":"الإشعارات",
@@ -16,5 +18,11 @@
     "confirm_lang":"تطبيق",
     "update":"تحديث",
     "share":"مشاركة",
-    "aya_of_the_day":"آية اليوم"
+    "aya_of_the_day":"آية اليوم",
+    "quran_kareem":"القرآن الكريم",
+    "tafsser_video":"التفسير المرئي",
+    "qibla":"القبلة",
+    "prayer_times":"مواقيت الصلاة",
+    "azkar":"الأذكار",
+    "listen_to_quran":"الإستماع إلي القرآن"
 }

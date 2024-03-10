@@ -12,14 +12,14 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int randomSurah = CacheHelper.getData(key: 'randomS') ?? 8;
-    int randomAyah = CacheHelper.getData(key: 'randomA') ?? 20;
+    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 8;
+    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 20;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: secondColor.withOpacity(0.3),
+          color: secondColor.withOpacity(0.2),
         ),
         child: Padding(
           padding: const EdgeInsets.all(15.0),

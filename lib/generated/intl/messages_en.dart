@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
+        "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "device_language":
@@ -32,14 +33,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "english_language": MessageLookupByLibrary.simpleMessage("English"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
+        "listen_to_quran":
+            MessageLookupByLibrary.simpleMessage("الإستماع إلي القرآن"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
+        "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
+        "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
+        "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),
         "rate_app": MessageLookupByLibrary.simpleMessage("Rate the App"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
+        "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome back")

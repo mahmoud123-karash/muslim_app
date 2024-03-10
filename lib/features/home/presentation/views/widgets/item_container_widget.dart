@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:muslim_app/core/cache/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/assets.dart';
-import 'package:muslim_app/generated/l10n.dart';
 
 class ItemContainerWidget extends StatelessWidget {
-  const ItemContainerWidget({super.key});
+  const ItemContainerWidget(
+      {super.key, required this.title, required this.onPressed});
+  final String title;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class ItemContainerWidget extends StatelessWidget {
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(8),
-        onTap: () {},
+        onTap: onPressed,
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
@@ -30,10 +32,11 @@ class ItemContainerWidget extends StatelessWidget {
                 child: Image.asset(Assets.imagesPrayer),
               ),
               Text(
-                S.of(context).home,
+                title,
                 style: TextStyles.style14.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               )
             ],
           ),

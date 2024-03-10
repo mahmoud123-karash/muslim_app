@@ -50,6 +50,26 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `تسجبل الدخول`
+  String get login {
+    return Intl.message(
+      'تسجبل الدخول',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تسجبل الخروج`
+  String get logout {
+    return Intl.message(
+      'تسجبل الخروج',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Home`
   String get home {
     return Intl.message(
@@ -225,6 +245,66 @@ class S {
     return Intl.message(
       'آية اليوم',
       name: 'aya_of_the_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `القرآن الكريم`
+  String get quran_kareem {
+    return Intl.message(
+      'القرآن الكريم',
+      name: 'quran_kareem',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التفسير المرئي`
+  String get tafsser_video {
+    return Intl.message(
+      'التفسير المرئي',
+      name: 'tafsser_video',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `القبلة`
+  String get qibla {
+    return Intl.message(
+      'القبلة',
+      name: 'qibla',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `مواقيت الصلاة`
+  String get prayer_times {
+    return Intl.message(
+      'مواقيت الصلاة',
+      name: 'prayer_times',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الأذكار`
+  String get azkar {
+    return Intl.message(
+      'الأذكار',
+      name: 'azkar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الإستماع إلي القرآن`
+  String get listen_to_quran {
+    return Intl.message(
+      'الإستماع إلي القرآن',
+      name: 'listen_to_quran',
       desc: '',
       args: [],
     );

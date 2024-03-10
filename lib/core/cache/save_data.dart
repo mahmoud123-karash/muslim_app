@@ -1,5 +1,10 @@
 import 'package:muslim_app/core/cache/shared_preference.dart';
 
+void saveUid(value) => CacheHelper.saveData(
+      key: 'uid',
+      value: value,
+    );
+
 void saveTheme(value) => CacheHelper.saveData(
       key: 'isdark',
       value: value,
@@ -22,5 +27,14 @@ void saveLong(value) => CacheHelper.saveData(
 
 void saveAddress(value) => CacheHelper.saveData(
       key: 'address',
+      value: value,
+    );
+
+void saveSRandom(value) => CacheHelper.saveData(
+      key: 'sRandom',
+      value: value,
+    );
+void saveVRandom(value) => CacheHelper.saveData(
+      key: 'vRandom',
       value: value,
     );

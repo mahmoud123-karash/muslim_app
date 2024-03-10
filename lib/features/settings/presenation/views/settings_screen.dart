@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/shared/components.dart';
+import 'package:muslim_app/features/auth/presentation/views/login_screen.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/views/language_screen.dart';
 import 'package:muslim_app/features/settings/presenation/views/widgets/settings_list_tile_widget.dart';
@@ -83,6 +84,16 @@ class SettingsScreen extends StatelessWidget {
             title: S.of(context).privacy_and_policy,
             icon: Icons.privacy_tip_outlined,
             onTap: () {},
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          SettingsListTileWidget(
+            title: S.of(context).login,
+            icon: Ionicons.log_in_outline,
+            onTap: () {
+              navigateTo(context, const LoginScreen());
+            },
           ),
         ],
       ),

@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "arabic_language":
             MessageLookupByLibrary.simpleMessage("اللغة العربية"),
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
+        "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "contact_us": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
@@ -33,13 +34,21 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("اللغة الإنجليزية"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
+        "listen_to_quran":
+            MessageLookupByLibrary.simpleMessage("الإستماع إلي القرآن"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
+        "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("السياسة والخصوصية"),
+        "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
+        "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),
         "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
+        "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك")
