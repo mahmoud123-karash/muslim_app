@@ -1,3 +1,4 @@
+import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:intl/intl.dart';
 import 'package:muslim_app/core/contants/constants.dart';
@@ -66,11 +67,6 @@ String formatTimeDifferenceInArabic(DateTime dateTime) {
   }
 }
 
-bool isTimeAfter(DateTime givenTime) {
-  final currentDateTime = DateTime.now();
-  return givenTime.isAfter(currentDateTime);
-}
-
 DateTime nextScheduledDate(hour, minute) {
   final DateTime now = DateTime.now();
   DateTime scheduledDate = DateTime(
@@ -91,4 +87,9 @@ String formatNumber(int number) {
     locale: Intl.getCurrentLocale(),
   );
   return formatter.format(number);
+}
+
+String getArabicNumber(int number) {
+  ArabicNumbers arabicNumber = ArabicNumbers();
+  return arabicNumber.convert(number);
 }

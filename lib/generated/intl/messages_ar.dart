@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك")
       };
 }

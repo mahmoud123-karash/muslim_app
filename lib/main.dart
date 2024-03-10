@@ -7,10 +7,12 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/cache/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
+import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
+import 'core/sevices/permission_service.dart';
 import 'generated/l10n.dart';
 
 void main() async {
@@ -21,6 +23,10 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  PermissionService.requestLocationPremissions();
+  PermissionService.requestNotificationPremissions();
+
   runApp(
     MultiBlocProvider(
       providers: [
@@ -32,7 +38,10 @@ void main() async {
             ..changeLanguage(
               language: CacheHelper.getData(key: 'lang') ?? '',
             ),
-        )
+        ),
+        BlocProvider(
+          create: (context) => LocationCubit()..getLocationAddress(),
+        ),
       ],
       child: const MyApp(),
     ),

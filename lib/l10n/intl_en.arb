@@ -13,6 +13,8 @@
     "arabic_language": "Arabic",
     "english_language": "English",
     "device_language": "Device Language",
-    "confirm_lang": "Apply"
+    "confirm_lang": "Apply",
+    "update":"تحديث"
+
 
 }

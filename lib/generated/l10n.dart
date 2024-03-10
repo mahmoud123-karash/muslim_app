@@ -199,6 +199,16 @@ class S {
       args: [],
     );
   }
+
+  /// `تحديث`
+  String get update {
+    return Intl.message(
+      'تحديث',
+      name: 'update',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
