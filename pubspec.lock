@@ -949,6 +949,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.2.3"
+  quran:
+    dependency: "direct main"
+    description:
+      name: quran
+      sha256: "21d7b4efec0aa5b74d3097927c1ab210577529244693bab18b0218dc46b62ca7"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.7"
   rive:
     dependency: transitive
     description:

@@ -111,10 +111,10 @@ class S {
   }
 
   /// `Share and Earn Rewards`
-  String get share {
+  String get share_app {
     return Intl.message(
       'Share and Earn Rewards',
-      name: 'share',
+      name: 'share_app',
       desc: '',
       args: [],
     );
@@ -205,6 +205,26 @@ class S {
     return Intl.message(
       'تحديث',
       name: 'update',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `مشاركة`
+  String get share {
+    return Intl.message(
+      'مشاركة',
+      name: 'share',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `آية اليوم`
+  String get aya_of_the_day {
+    return Intl.message(
+      'آية اليوم',
+      name: 'aya_of_the_day',
       desc: '',
       args: [],
     );

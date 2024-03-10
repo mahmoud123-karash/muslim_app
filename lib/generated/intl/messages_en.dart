@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "device_language":
@@ -36,7 +37,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
         "rate_app": MessageLookupByLibrary.simpleMessage("Rate the App"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
-        "share": MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
+        "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
+        "share_app":
+            MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome back")

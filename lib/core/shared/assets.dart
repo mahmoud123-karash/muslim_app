@@ -8,5 +8,9 @@ class Assets {
   /// Assets for imagesLang
   /// assets/images/lang.png
   static const String imagesLang = "assets/images/lang.png";
+
+  /// Assets for imagesPrayer
+  /// assets/images/prayer.webp
+  static const String imagesPrayer = "assets/images/prayer.webp";
 }
 

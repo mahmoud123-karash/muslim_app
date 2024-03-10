@@ -18,7 +18,10 @@ class HomeRowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
+      padding: const EdgeInsets.symmetric(
+        vertical: 5,
+        horizontal: 15,
+      ),
       child: Row(
         children: [
           Icon(

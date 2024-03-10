@@ -26,7 +26,7 @@ abstract class TextStyles {
 
   static TextStyle style16Bold = TextStyle(
     fontSize: 16.h,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.bold,
   );
 
   static TextStyle style19 = TextStyle(

@@ -48,7 +48,7 @@ class SettingsScreen extends StatelessWidget {
             height: 12,
           ),
           SettingsListTileWidget(
-            title: S.of(context).share,
+            title: S.of(context).share_app,
             icon: Ionicons.share_social_outline,
             onTap: () {},
           ),

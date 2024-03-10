@@ -1,0 +1,59 @@
+import 'package:flutter/material.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/cache/styles/text_styles.dart';
+import 'package:muslim_app/core/contants/constants.dart';
+import 'package:muslim_app/features/home/presentation/views/widgets/share_ayat_widget.dart';
+import 'package:quran/quran.dart' as quran;
+
+import 'ayat_row_widget.dart';
+
+class VerseOfTheDayContainerWidget extends StatelessWidget {
+  const VerseOfTheDayContainerWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    int randomSurah = CacheHelper.getData(key: 'randomS') ?? 8;
+    int randomAyah = CacheHelper.getData(key: 'randomA') ?? 20;
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: secondColor.withOpacity(0.3),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Column(
+            children: [
+              AyatRowWidget(
+                randomAyah: randomAyah,
+                randomSurah: randomSurah,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                quran.getVerse(
+                  randomSurah,
+                  randomAyah,
+                  verseEndSymbol: true,
+                ),
+                style: TextStyles.style20.copyWith(
+                  fontFamily: '',
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              ShareAyatWidget(
+                text: quran.getVerse(randomSurah, randomAyah),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

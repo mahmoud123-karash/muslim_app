@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "arabic_language":
             MessageLookupByLibrary.simpleMessage("اللغة العربية"),
+        "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "contact_us": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
@@ -37,7 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("السياسة والخصوصية"),
         "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
-        "share": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
+        "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
+        "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك")
