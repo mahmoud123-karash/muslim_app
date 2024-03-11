@@ -1,10 +1,6 @@
 class Assets {
   Assets._();
   
-  /// Assets for imagesBack
-  /// assets/images/back.jpeg
-  static const String imagesBack = "assets/images/back.jpeg";
-
   /// Assets for imagesCompass
   /// assets/images/compass.svg
   static const String imagesCompass = "assets/images/compass.svg";
@@ -28,6 +24,10 @@ class Assets {
   /// Assets for imagesLang
   /// assets/images/lang.png
   static const String imagesLang = "assets/images/lang.png";
+
+  /// Assets for imagesLogin
+  /// assets/images/login.jpeg
+  static const String imagesLogin = "assets/images/login.jpeg";
 
   /// Assets for imagesMakka
   /// assets/images/makka.png
@@ -56,6 +56,10 @@ class Assets {
   /// Assets for imagesQuran
   /// assets/images/quran.png
   static const String imagesQuran = "assets/images/quran.png";
+
+  /// Assets for imagesRegister
+  /// assets/images/register.jpeg
+  static const String imagesRegister = "assets/images/register.jpeg";
 
   /// Assets for imagesSalat
   /// assets/images/salat.png

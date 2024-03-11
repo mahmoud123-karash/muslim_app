@@ -48,3 +48,13 @@ void saveIsSkip(value) => CacheHelper.saveData(
       key: 'isSkip',
       value: value,
     );
+
+void saveEmail(value) => CacheHelper.saveData(
+      key: 'email',
+      value: value,
+    );
+
+void saveGender(value) => CacheHelper.saveData(
+      key: 'gender',
+      value: value,
+    );

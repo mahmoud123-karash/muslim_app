@@ -28,16 +28,33 @@ class MessageLookup extends MessageLookupByLibrary {
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
         "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
+        "confirm_pass":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "confirm_pass_hint_error":
+            MessageLookupByLibrary.simpleMessage("من فضلك تأكد من كلمة المرور"),
         "contact_us": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
+        "create": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "create1": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "email_verify": MessageLookupByLibrary.simpleMessage(
+            "من فضلك قم بتفعيل الايميل الخاص"),
         "english_language":
             MessageLookupByLibrary.simpleMessage("اللغة الإنجليزية"),
+        "female": MessageLookupByLibrary.simpleMessage("أنثي"),
+        "follow": MessageLookupByLibrary.simpleMessage("المتابعه بدون تسجيل"),
+        "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "gender_confirm_hint_error":
+            MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
+        "have_an_account": MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
         "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
+        "male": MessageLookupByLibrary.simpleMessage("ذكر"),
+        "name": MessageLookupByLibrary.simpleMessage("الإسم"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
@@ -46,6 +63,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "استمتع بالهدوء والسلام الناتج عن التواصل مع الله من خلال موارد وميزات تطبيقنا الإسلامي."),
         "on_boarding_3": MessageLookupByLibrary.simpleMessage(
             "اعتنق تعاليم الإسلام وادمجها في حياتك اليومية بمساعدة تطبيقنا الإسلامي سهل الاستخدام."),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "pass": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
+        "phone_lenght_hint_error":
+            MessageLookupByLibrary.simpleMessage("من فضلك تأكد من رقم الهاتف"),
         "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
         "previous": MessageLookupByLibrary.simpleMessage("السابق"),
         "privacy_and_policy":
@@ -53,6 +75,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),
         "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
+        "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "reset": MessageLookupByLibrary.simpleMessage("إعادة تعيين"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
@@ -60,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
+        "validate": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك")
       };
 }

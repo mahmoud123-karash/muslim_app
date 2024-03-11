@@ -26,7 +26,7 @@ class ItemContainerWidget extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            color: appColor.withOpacity(0.4),
+            color: appColor.withOpacity(0.3),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

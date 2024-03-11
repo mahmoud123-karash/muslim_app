@@ -30,7 +30,30 @@
     "on_boarding_3":"Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app.",
     "next":"التالي",
     "previous":"السابق",
-    "start_now":"ابدأ الآن"
+    "start_now":"ابدأ الآن",
+    "name":"الإسم",
+    "email":"البريد الإلكتروني",
+    "phone":"الهاتف",
+    "pass":"كلمة المرور",
+    "confirm_pass":"تأكيد كلمة المرور",
+    "confirm_pass_hint_error":"من فضلك تأكد من كلمة المرور",
+    "phone_lenght_hint_error":"من فضلك تأكد من رقم الهاتف",
+    "gender_confirm_hint_error":"من فضلك قم بإختيار الجنس",
+    "have_an_account":"لديك حساب ؟",
+    "male":"ذكر",
+    "female":"أنثي",
+    "validate":"هذا الحقل مطلوب",
+    "or":"أو",
+    "create":"ليس لديك حساب؟",
+    "create1":"إنشاء حساب",
+    "forget":"نسيت كلمة المرور",
+    "follow":"المتابعه بدون تسجيل",
+    "email_verify":"من فضلك قم بتفعيل الايميل الخاص",
+    "register":"تسجيل",
+    "reset_email":"أدخل البريد الإلكتروني",
+    "reset":"إعادة تعيين"
+
+
 
 
 

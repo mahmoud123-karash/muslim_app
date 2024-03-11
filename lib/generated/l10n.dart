@@ -369,6 +369,216 @@ class S {
       args: [],
     );
   }
+
+  /// `الإسم`
+  String get name {
+    return Intl.message(
+      'الإسم',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `البريد الإلكتروني`
+  String get email {
+    return Intl.message(
+      'البريد الإلكتروني',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الهاتف`
+  String get phone {
+    return Intl.message(
+      'الهاتف',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `كلمة المرور`
+  String get pass {
+    return Intl.message(
+      'كلمة المرور',
+      name: 'pass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تأكيد كلمة المرور`
+  String get confirm_pass {
+    return Intl.message(
+      'تأكيد كلمة المرور',
+      name: 'confirm_pass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `من فضلك تأكد من كلمة المرور`
+  String get confirm_pass_hint_error {
+    return Intl.message(
+      'من فضلك تأكد من كلمة المرور',
+      name: 'confirm_pass_hint_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `من فضلك تأكد من رقم الهاتف`
+  String get phone_lenght_hint_error {
+    return Intl.message(
+      'من فضلك تأكد من رقم الهاتف',
+      name: 'phone_lenght_hint_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `من فضلك قم بإختيار الجنس`
+  String get gender_confirm_hint_error {
+    return Intl.message(
+      'من فضلك قم بإختيار الجنس',
+      name: 'gender_confirm_hint_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لديك حساب ؟`
+  String get have_an_account {
+    return Intl.message(
+      'لديك حساب ؟',
+      name: 'have_an_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ذكر`
+  String get male {
+    return Intl.message(
+      'ذكر',
+      name: 'male',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `أنثي`
+  String get female {
+    return Intl.message(
+      'أنثي',
+      name: 'female',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `هذا الحقل مطلوب`
+  String get validate {
+    return Intl.message(
+      'هذا الحقل مطلوب',
+      name: 'validate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `أو`
+  String get or {
+    return Intl.message(
+      'أو',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ليس لديك حساب؟`
+  String get create {
+    return Intl.message(
+      'ليس لديك حساب؟',
+      name: 'create',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إنشاء حساب`
+  String get create1 {
+    return Intl.message(
+      'إنشاء حساب',
+      name: 'create1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `نسيت كلمة المرور`
+  String get forget {
+    return Intl.message(
+      'نسيت كلمة المرور',
+      name: 'forget',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المتابعه بدون تسجيل`
+  String get follow {
+    return Intl.message(
+      'المتابعه بدون تسجيل',
+      name: 'follow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `من فضلك قم بتفعيل الايميل الخاص`
+  String get email_verify {
+    return Intl.message(
+      'من فضلك قم بتفعيل الايميل الخاص',
+      name: 'email_verify',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تسجيل`
+  String get register {
+    return Intl.message(
+      'تسجيل',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `أدخل البريد الإلكتروني`
+  String get reset_email {
+    return Intl.message(
+      'أدخل البريد الإلكتروني',
+      name: 'reset_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إعادة تعيين`
+  String get reset {
+    return Intl.message(
+      'إعادة تعيين',
+      name: 'reset',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

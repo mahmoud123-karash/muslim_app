@@ -7,6 +7,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
+import 'package:muslim_app/core/utils/get_it.dart';
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
@@ -26,6 +27,8 @@ void main() async {
   );
   PermissionService.requestLocationPremissions();
   PermissionService.requestNotificationPremissions();
+
+  setLocator();
 
   late Widget startWidget;
   bool isSkip = CacheHelper.getData(key: 'isSkip') ?? false;
