@@ -50,20 +50,20 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `تسجبل الدخول`
+  /// `Login`
   String get login {
     return Intl.message(
-      'تسجبل الدخول',
+      'Login',
       name: 'login',
       desc: '',
       args: [],
     );
   }
 
-  /// `تسجبل الخروج`
+  /// `Logout`
   String get logout {
     return Intl.message(
-      'تسجبل الخروج',
+      'Logout',
       name: 'logout',
       desc: '',
       args: [],
@@ -300,11 +300,71 @@ class S {
     );
   }
 
-  /// `الإستماع إلي القرآن`
+  /// `الإستماع للقرآن`
   String get listen_to_quran {
     return Intl.message(
-      'الإستماع إلي القرآن',
+      'الإستماع للقرآن',
       name: 'listen_to_quran',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey`
+  String get on_boarding_1 {
+    return Intl.message(
+      'Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey',
+      name: 'on_boarding_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Experience the tranquility and peace that comes from connecting with Allah (God) through our Islamic app's resources and features.`
+  String get on_boarding_2 {
+    return Intl.message(
+      'Experience the tranquility and peace that comes from connecting with Allah (God) through our Islamic app\'s resources and features.',
+      name: 'on_boarding_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app.`
+  String get on_boarding_3 {
+    return Intl.message(
+      'Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app.',
+      name: 'on_boarding_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التالي`
+  String get next {
+    return Intl.message(
+      'التالي',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `السابق`
+  String get previous {
+    return Intl.message(
+      'السابق',
+      name: 'previous',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ابدأ الآن`
+  String get start_now {
+    return Intl.message(
+      'ابدأ الآن',
+      name: 'start_now',
       desc: '',
       args: [],
     );

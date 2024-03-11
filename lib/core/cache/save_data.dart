@@ -38,3 +38,13 @@ void saveVRandom(value) => CacheHelper.saveData(
       key: 'vRandom',
       value: value,
     );
+
+void saveNotificationStatus(value) => CacheHelper.saveData(
+      key: 'isnotify',
+      value: value,
+    );
+
+void saveIsSkip(value) => CacheHelper.saveData(
+      key: 'isSkip',
+      value: value,
+    );

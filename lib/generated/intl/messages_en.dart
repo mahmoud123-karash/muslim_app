@@ -34,11 +34,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
         "listen_to_quran":
-            MessageLookupByLibrary.simpleMessage("الإستماع إلي القرآن"),
-        "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
-        "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
+            MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "on_boarding_1": MessageLookupByLibrary.simpleMessage(
+            "Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey"),
+        "on_boarding_2": MessageLookupByLibrary.simpleMessage(
+            "Experience the tranquility and peace that comes from connecting with Allah (God) through our Islamic app\'s resources and features."),
+        "on_boarding_3": MessageLookupByLibrary.simpleMessage(
+            "Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app."),
         "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
+        "previous": MessageLookupByLibrary.simpleMessage("السابق"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
         "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
@@ -48,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
+        "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),

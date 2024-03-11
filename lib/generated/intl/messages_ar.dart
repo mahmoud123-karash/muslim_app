@@ -35,11 +35,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
         "listen_to_quran":
-            MessageLookupByLibrary.simpleMessage("الإستماع إلي القرآن"),
+            MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
         "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "on_boarding_1": MessageLookupByLibrary.simpleMessage(
+            "مرحبًا بك في تطبيقنا الإسلامي، حيث يمكنك استكشاف جمال الإسلام وتعزيز رحلتك الروحية."),
+        "on_boarding_2": MessageLookupByLibrary.simpleMessage(
+            "استمتع بالهدوء والسلام الناتج عن التواصل مع الله من خلال موارد وميزات تطبيقنا الإسلامي."),
+        "on_boarding_3": MessageLookupByLibrary.simpleMessage(
+            "اعتنق تعاليم الإسلام وادمجها في حياتك اليومية بمساعدة تطبيقنا الإسلامي سهل الاستخدام."),
         "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
+        "previous": MessageLookupByLibrary.simpleMessage("السابق"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("السياسة والخصوصية"),
         "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
@@ -48,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
+        "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),

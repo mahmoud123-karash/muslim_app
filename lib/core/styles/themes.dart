@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:muslim_app/core/cache/styles/text_styles.dart';
+import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 
 ThemeData lightTheme = ThemeData(
@@ -35,7 +35,6 @@ ThemeData lightTheme = ThemeData(
     selectedItemColor: secondColor,
     backgroundColor: appColor,
     showSelectedLabels: true,
-    showUnselectedLabels: false,
     unselectedItemColor: whiteColor,
   ),
   textTheme: const TextTheme(
@@ -156,7 +155,6 @@ ThemeData darkTheme = ThemeData(
     selectedItemColor: secondColor,
     backgroundColor: appColor,
     showSelectedLabels: true,
-    showUnselectedLabels: false,
     unselectedItemColor: whiteColor,
   ),
   textTheme: const TextTheme(

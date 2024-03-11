@@ -1,6 +1,6 @@
 {
-    "login":"تسجبل الدخول",
-    "logout":"تسجبل الخروج",
+    "login":"Login",
+    "logout":"Logout",
     "home": "Home",
     "settings": "Settings",
     "notifications": "Notifications",
@@ -24,7 +24,14 @@
     "qibla":"القبلة",
     "prayer_times":"مواقيت الصلاة",
     "azkar":"الأذكار",
-    "listen_to_quran":"الإستماع إلي القرآن"
+    "listen_to_quran":"الإستماع للقرآن",
+    "on_boarding_1":"Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey",
+    "on_boarding_2":"Experience the tranquility and peace that comes from connecting with Allah (God) through our Islamic app's resources and features.",
+    "on_boarding_3":"Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app.",
+    "next":"التالي",
+    "previous":"السابق",
+    "start_now":"ابدأ الآن"
+
 
 
 }

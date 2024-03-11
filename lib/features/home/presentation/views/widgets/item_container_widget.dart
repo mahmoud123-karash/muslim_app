@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:muslim_app/core/cache/styles/text_styles.dart';
+import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/shared/assets.dart';
 
 class ItemContainerWidget extends StatelessWidget {
-  const ItemContainerWidget(
-      {super.key, required this.title, required this.onPressed});
+  const ItemContainerWidget({
+    super.key,
+    required this.title,
+    required this.onPressed,
+    required this.image,
+  });
   final String title;
   final VoidCallback onPressed;
+  final String image;
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +26,19 @@ class ItemContainerWidget extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            color: appColor.withOpacity(0.2),
+            color: appColor.withOpacity(0.4),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                height: 80,
-                child: Image.asset(Assets.imagesPrayer),
+                height: 60,
+                child: Image.asset(
+                  image,
+                ),
+              ),
+              const SizedBox(
+                height: 5,
               ),
               Text(
                 title,

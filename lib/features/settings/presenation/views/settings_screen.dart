@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/auth/presentation/views/login_screen.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
@@ -21,6 +22,7 @@ class SettingsScreen extends StatelessWidget {
       child: ListView(
         children: [
           SwitchListTileWidget(
+            isEnabled: CacheHelper.getData(key: 'isnotify') ?? false,
             icon: Ionicons.notifications_outline,
             lable: S.of(context).notifications,
             onChanged: () {},
@@ -29,6 +31,7 @@ class SettingsScreen extends StatelessWidget {
             height: 12,
           ),
           SwitchListTileWidget(
+            isEnabled: CacheHelper.getData(key: 'isdark') ?? false,
             icon: Icons.light_mode_outlined,
             lable: S.of(context).theme,
             onChanged: () {

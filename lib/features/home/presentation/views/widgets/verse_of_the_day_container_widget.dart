@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
-import 'package:muslim_app/core/cache/styles/text_styles.dart';
+import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/home/presentation/views/widgets/share_ayat_widget.dart';
 import 'package:quran/quran.dart' as quran;

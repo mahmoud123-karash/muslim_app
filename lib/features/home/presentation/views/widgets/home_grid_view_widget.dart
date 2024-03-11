@@ -19,6 +19,7 @@ class HomeGridViewWidget extends StatelessWidget {
         itemBuilder: (context, index) => ItemContainerWidget(
           title: titles(context)[index],
           onPressed: () {},
+          image: images[index],
         ),
         itemCount: 6,
       ),

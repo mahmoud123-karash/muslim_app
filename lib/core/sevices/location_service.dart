@@ -49,9 +49,8 @@ class LocationService {
     );
     if (result.isNotEmpty) {
       String country = result.first.country ?? '';
-      String city = result.first.locality ?? '';
       String subAdministrativeArea = result.first.subAdministrativeArea ?? '';
-      return '$country $city $subAdministrativeArea';
+      return '$country $subAdministrativeArea';
     } else {
       return '';
     }

@@ -6,10 +6,12 @@ class SwitchListTileWidget extends StatefulWidget {
     required this.lable,
     required this.onChanged,
     required this.icon,
+    required this.isEnabled,
   });
   final String lable;
   final Function onChanged;
   final IconData icon;
+  final bool isEnabled;
 
   @override
   State<SwitchListTileWidget> createState() => _SwitchListTileWidgetState();
@@ -17,6 +19,12 @@ class SwitchListTileWidget extends StatefulWidget {
 
 class _SwitchListTileWidgetState extends State<SwitchListTileWidget> {
   bool isActive = false;
+  @override
+  void initState() {
+    isActive = widget.isEnabled;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
