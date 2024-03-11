@@ -29,7 +29,6 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   arabic_numbers: ^1.0.0
-  auto_size_text: ^3.0.0
   awesome_dialog: ^3.2.0
   awesome_notifications: 0.8.2
   badges: ^3.1.2
@@ -43,7 +42,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.4
-  flutter_islamic_icons: ^1.0.2
   flutter_localizations:
     sdk: flutter
   flutter_qiblah: 2.2.0
@@ -51,8 +49,8 @@ dependencies:
   flutter_share: ^2.0.0
   flutter_svg: ^2.0.10+1
   fluttertoast: ^8.2.4
-  geocoding: ^2.1.1
-  geolocator: 9.0.2
+  geocoding: ^2.2.1
+  geolocator: any
   get_it: ^7.6.7
   hive: ^2.2.3
   hive_flutter: ^1.1.0

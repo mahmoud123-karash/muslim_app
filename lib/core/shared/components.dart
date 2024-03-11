@@ -38,7 +38,12 @@ void showToast(
 void showSnackBar(context, message) =>
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
+        behavior: SnackBarBehavior.floating,
+        showCloseIcon: true,
         content: Text(message),
+        shape: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
       ),
     );
 

@@ -45,7 +45,6 @@ class LocationService {
     var result = await placemarkFromCoordinates(
       location.latitude,
       location.longitude,
-      localeIdentifier: currentLang,
     );
     if (result.isNotEmpty) {
       String country = result.first.country ?? '';
