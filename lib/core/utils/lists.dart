@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:muslim_app/core/shared/assets.dart';
+import 'package:muslim_app/features/azkar/presentation/views/azkar_screen.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 List<String> titles(context) => [
@@ -17,4 +19,8 @@ List<String> images = [
   Assets.imagesSalat,
   Assets.imagesVideo,
   Assets.imagesKaaba,
+];
+
+List<Widget> screens = [
+  const AzkarScreen(),
 ];

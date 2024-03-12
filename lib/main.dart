@@ -5,9 +5,15 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/contants/constants.dart';
+import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
+import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
+import 'package:muslim_app/features/azkar/data/repo/azkar_repo_impl.dart';
+import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_cubit.dart';
+import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/favorite_cubit.dart';
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
@@ -25,10 +31,15 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
   PermissionService.requestLocationPremissions();
   PermissionService.requestNotificationPremissions();
 
   setLocator();
+  generateVerseOfDay();
+
+  Hive.registerAdapter(ZekrAdapter());
+  await Hive.openBox<Zekr>(azkarBox);
 
   late Widget startWidget;
   bool isSkip = CacheHelper.getData(key: 'isSkip') ?? false;
@@ -53,6 +64,16 @@ void main() async {
         BlocProvider(
           create: (context) => LocationCubit()..getLocationAddress(),
         ),
+        BlocProvider(
+          create: (context) => AzkarCubit(
+            getIt.get<AzkarRepoImpl>(),
+          )..getAzkar(),
+        ),
+        BlocProvider(
+          create: (context) => FavoriteCubit(
+            getIt.get<AzkarRepoImpl>(),
+          )..getFavorite(),
+        )
       ],
       child: MyApp(startWidget: startWidget),
     ),

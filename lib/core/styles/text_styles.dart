@@ -7,6 +7,10 @@ abstract class TextStyles {
     fontWeight: FontWeight.w600,
   );
 
+  static TextStyle style25 = TextStyle(
+    fontSize: 25.sp,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle style14 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w500,

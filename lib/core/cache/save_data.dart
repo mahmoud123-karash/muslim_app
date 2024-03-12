@@ -39,6 +39,21 @@ void saveVRandom(value) => CacheHelper.saveData(
       value: value,
     );
 
+void saveVDay(value) => CacheHelper.saveData(
+      key: 'vDay',
+      value: value,
+    );
+
+void saveZDay(value) => CacheHelper.saveData(
+      key: 'zDay',
+      value: value,
+    );
+
+void saveZRandom(value) => CacheHelper.saveData(
+      key: 'zRandom',
+      value: value,
+    );
+
 void saveNotificationStatus(value) => CacheHelper.saveData(
       key: 'isnotify',
       value: value,

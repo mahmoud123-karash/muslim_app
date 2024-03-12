@@ -33,6 +33,7 @@ dependencies:
   awesome_notifications: 0.8.2
   badges: ^3.1.2
   cloud_firestore: ^4.15.8
+  collection: ^1.18.0
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1
   dio: ^5.4.1
@@ -51,6 +52,7 @@ dependencies:
   fluttertoast: ^8.2.4
   geocoding: ^2.2.1
   geolocator: any
+  get: ^4.6.6
   get_it: ^7.6.7
   hive: ^2.2.3
   hive_flutter: ^1.1.0
@@ -76,6 +78,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/svg/
+    - assets/svg/surah_name/
+    - assets/json/
 
   fonts:
     - family: cairo
@@ -88,6 +93,23 @@ flutter:
         - asset: assets/fonts/cairo/Cairo-ExtraLight.ttf
         - asset: assets/fonts/cairo/Cairo-Medium.ttf
         - asset: assets/fonts/cairo/Cairo-Regular.ttf
+
+    - family: uthmanic
+      fonts:
+        - asset: assets/fonts/UthmanTN1_Ver10.otf
+
+    - family: uthmanic2
+      fonts:
+        - asset: assets/fonts/UthmanicHafs_V20.ttf
+
+    - family: kufi
+      fonts:
+        - asset: assets/fonts/Kufam-Italic-VariableFont_wght.ttf
+          style: italic
+        - asset: assets/fonts/Kufam-VariableFont_wght.ttf
+          weight: 500
+        - asset: assets/fonts/Kufam-Regular.ttf
+          weight: 100
 
 flutter_assets:
   assets_path: assets/images

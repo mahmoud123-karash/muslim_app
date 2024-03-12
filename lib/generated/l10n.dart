@@ -579,6 +579,56 @@ class S {
       args: [],
     );
   }
+
+  /// `الجزء`
+  String get juz {
+    return Intl.message(
+      'الجزء',
+      name: 'juz',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `دعاء اليوم`
+  String get zakr_of_the_day {
+    return Intl.message(
+      'دعاء اليوم',
+      name: 'zakr_of_the_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم النسخ`
+  String get copied {
+    return Intl.message(
+      'تم النسخ',
+      name: 'copied',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الأذكار المفضلة`
+  String get favorite_azkar {
+    return Intl.message(
+      'الأذكار المفضلة',
+      name: 'favorite_azkar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لا يوجد أذكار مفضلة`
+  String get no_favorite_azkar {
+    return Intl.message(
+      'لا يوجد أذكار مفضلة',
+      name: 'no_favorite_azkar',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm_pass_hint_error":
             MessageLookupByLibrary.simpleMessage("من فضلك تأكد من كلمة المرور"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
+        "copied": MessageLookupByLibrary.simpleMessage("تم النسخ"),
         "create": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "create1": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "device_language":
@@ -40,6 +41,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email_verify": MessageLookupByLibrary.simpleMessage(
             "من فضلك قم بتفعيل الايميل الخاص"),
         "english_language": MessageLookupByLibrary.simpleMessage("English"),
+        "favorite_azkar":
+            MessageLookupByLibrary.simpleMessage("الأذكار المفضلة"),
         "female": MessageLookupByLibrary.simpleMessage("أنثي"),
         "follow": MessageLookupByLibrary.simpleMessage("المتابعه بدون تسجيل"),
         "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
@@ -47,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
         "have_an_account": MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "juz": MessageLookupByLibrary.simpleMessage("الجزء"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
@@ -55,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "name": MessageLookupByLibrary.simpleMessage("الإسم"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "no_favorite_azkar":
+            MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey"),
@@ -87,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "validate": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
-        "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome back")
+        "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome back"),
+        "zakr_of_the_day": MessageLookupByLibrary.simpleMessage("دعاء اليوم")
       };
 }

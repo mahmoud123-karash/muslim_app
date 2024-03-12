@@ -15,3 +15,10 @@ String privacyUri =
 String appLink = Platform.isIOS
     ? 'https://apps.apple.com/us/app/id1571336937'
     : 'https://play.google.com/store/apps/details?id=com.tamrini1.com';
+
+String kufiFamily = 'kufi';
+String uthmanicFamily = 'uthmanic';
+String naskhFamily = 'naskh';
+String uthmanic2Family = 'uthmanic2';
+
+String azkarBox = 'azkarBox';

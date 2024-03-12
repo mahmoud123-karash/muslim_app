@@ -12,8 +12,8 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 8;
-    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 20;
+    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 1;
+    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 1;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
@@ -24,28 +24,28 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               AyatRowWidget(
                 randomAyah: randomAyah,
                 randomSurah: randomSurah,
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               Text(
                 quran.getVerse(
                   randomSurah,
                   randomAyah,
-                  verseEndSymbol: true,
                 ),
                 style: TextStyles.style20.copyWith(
-                  fontFamily: '',
+                  fontFamily: uthmanicFamily,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               ShareAyatWidget(
                 text: quran.getVerse(randomSurah, randomAyah),

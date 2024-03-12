@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/utils/lists.dart';
 import 'package:muslim_app/features/home/presentation/views/widgets/item_container_widget.dart';
 
@@ -19,7 +20,9 @@ class HomeGridViewWidget extends StatelessWidget {
         ),
         itemBuilder: (context, index) => ItemContainerWidget(
           title: titles(context)[index],
-          onPressed: () {},
+          onPressed: () {
+            navigateTo(context, screens[0]);
+          },
           image: images[index],
         ),
         itemCount: 6,
