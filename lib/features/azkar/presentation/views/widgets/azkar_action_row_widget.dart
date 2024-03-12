@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
@@ -13,6 +14,7 @@ class AzkarActionRowWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isDark = CacheHelper.getData(key: 'isdark') ?? false;
     return Row(
       children: [
         IconButton(
@@ -48,7 +50,7 @@ class AzkarActionRowWidget extends StatelessWidget {
                 Text(
                   zekr.count,
                   style: TextStyles.style15.copyWith(
-                    color: appColor,
+                    color: isDark ? whiteColor : appColor,
                   ),
                 ),
                 const SizedBox(
@@ -56,7 +58,7 @@ class AzkarActionRowWidget extends StatelessWidget {
                 ),
                 Icon(
                   Icons.repeat_rounded,
-                  color: appColor,
+                  color: isDark ? whiteColor : appColor,
                 ),
               ],
             ),

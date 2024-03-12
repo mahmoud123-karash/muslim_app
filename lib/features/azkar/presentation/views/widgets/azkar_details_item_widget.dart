@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
-
+import 'package:intl/intl.dart';
 import 'azkar_action_row_widget.dart';
 
 class AzkarDetailsItemWidget extends StatelessWidget {
@@ -19,7 +19,9 @@ class AzkarDetailsItemWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: Intl.getCurrentLocale() == 'en'
+              ? CrossAxisAlignment.end
+              : CrossAxisAlignment.start,
           children: [
             Text(
               zekr.zekr,
@@ -27,7 +29,9 @@ class AzkarDetailsItemWidget extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: uthmanic2Family,
               ),
-              textAlign: TextAlign.start,
+              textAlign: Intl.getCurrentLocale() == 'en'
+                  ? TextAlign.end
+                  : TextAlign.start,
             ),
             if (zekr.description != '') const Divider(),
             if (zekr.description != '')
@@ -39,7 +43,9 @@ class AzkarDetailsItemWidget extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: secondColor,
                   ),
-                  textAlign: TextAlign.start,
+                  textAlign: Intl.getCurrentLocale() == 'en'
+                      ? TextAlign.end
+                      : TextAlign.start,
                 ),
               ),
             const Divider(),
