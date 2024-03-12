@@ -33,7 +33,6 @@ dependencies:
   awesome_notifications: 0.8.2
   badges: ^3.1.2
   cloud_firestore: ^4.15.8
-  collection: ^1.18.0
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1
   dio: ^5.4.1
@@ -52,7 +51,6 @@ dependencies:
   fluttertoast: ^8.2.4
   geocoding: ^2.2.1
   geolocator: any
-  get: ^4.6.6
   get_it: ^7.6.7
   hive: ^2.2.3
   hive_flutter: ^1.1.0

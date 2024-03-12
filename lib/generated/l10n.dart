@@ -220,90 +220,90 @@ class S {
     );
   }
 
-  /// `تحديث`
+  /// `Update`
   String get update {
     return Intl.message(
-      'تحديث',
+      'Update',
       name: 'update',
       desc: '',
       args: [],
     );
   }
 
-  /// `مشاركة`
+  /// `Share`
   String get share {
     return Intl.message(
-      'مشاركة',
+      'Share',
       name: 'share',
       desc: '',
       args: [],
     );
   }
 
-  /// `آية اليوم`
+  /// `Verse of the Day`
   String get aya_of_the_day {
     return Intl.message(
-      'آية اليوم',
+      'Verse of the Day',
       name: 'aya_of_the_day',
       desc: '',
       args: [],
     );
   }
 
-  /// `القرآن الكريم`
+  /// `Quran Kareem`
   String get quran_kareem {
     return Intl.message(
-      'القرآن الكريم',
+      'Quran Kareem',
       name: 'quran_kareem',
       desc: '',
       args: [],
     );
   }
 
-  /// `التفسير المرئي`
+  /// `Visual Tafseer`
   String get tafsser_video {
     return Intl.message(
-      'التفسير المرئي',
+      'Visual Tafseer',
       name: 'tafsser_video',
       desc: '',
       args: [],
     );
   }
 
-  /// `القبلة`
+  /// `Qibla`
   String get qibla {
     return Intl.message(
-      'القبلة',
+      'Qibla',
       name: 'qibla',
       desc: '',
       args: [],
     );
   }
 
-  /// `مواقيت الصلاة`
+  /// `Prayer Times`
   String get prayer_times {
     return Intl.message(
-      'مواقيت الصلاة',
+      'Prayer Times',
       name: 'prayer_times',
       desc: '',
       args: [],
     );
   }
 
-  /// `الأذكار`
+  /// `Adhkar`
   String get azkar {
     return Intl.message(
-      'الأذكار',
+      'Adhkar',
       name: 'azkar',
       desc: '',
       args: [],
     );
   }
 
-  /// `الإستماع للقرآن`
+  /// `Listen to Quran`
   String get listen_to_quran {
     return Intl.message(
-      'الإستماع للقرآن',
+      'Listen to Quran',
       name: 'listen_to_quran',
       desc: '',
       args: [],
@@ -340,290 +340,290 @@ class S {
     );
   }
 
-  /// `التالي`
+  /// `Next`
   String get next {
     return Intl.message(
-      'التالي',
+      'Next',
       name: 'next',
       desc: '',
       args: [],
     );
   }
 
-  /// `السابق`
+  /// `Previous`
   String get previous {
     return Intl.message(
-      'السابق',
+      'Previous',
       name: 'previous',
       desc: '',
       args: [],
     );
   }
 
-  /// `ابدأ الآن`
+  /// `Start Now`
   String get start_now {
     return Intl.message(
-      'ابدأ الآن',
+      'Start Now',
       name: 'start_now',
       desc: '',
       args: [],
     );
   }
 
-  /// `الإسم`
+  /// `Name`
   String get name {
     return Intl.message(
-      'الإسم',
+      'Name',
       name: 'name',
       desc: '',
       args: [],
     );
   }
 
-  /// `البريد الإلكتروني`
+  /// `Email`
   String get email {
     return Intl.message(
-      'البريد الإلكتروني',
+      'Email',
       name: 'email',
       desc: '',
       args: [],
     );
   }
 
-  /// `الهاتف`
+  /// `Phone`
   String get phone {
     return Intl.message(
-      'الهاتف',
+      'Phone',
       name: 'phone',
       desc: '',
       args: [],
     );
   }
 
-  /// `كلمة المرور`
+  /// `Password`
   String get pass {
     return Intl.message(
-      'كلمة المرور',
+      'Password',
       name: 'pass',
       desc: '',
       args: [],
     );
   }
 
-  /// `تأكيد كلمة المرور`
+  /// `Confirm Password`
   String get confirm_pass {
     return Intl.message(
-      'تأكيد كلمة المرور',
+      'Confirm Password',
       name: 'confirm_pass',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك تأكد من كلمة المرور`
+  /// `Please confirm your password`
   String get confirm_pass_hint_error {
     return Intl.message(
-      'من فضلك تأكد من كلمة المرور',
+      'Please confirm your password',
       name: 'confirm_pass_hint_error',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك تأكد من رقم الهاتف`
+  /// `Please check the phone number`
   String get phone_lenght_hint_error {
     return Intl.message(
-      'من فضلك تأكد من رقم الهاتف',
+      'Please check the phone number',
       name: 'phone_lenght_hint_error',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك قم بإختيار الجنس`
+  /// `Please select the gender`
   String get gender_confirm_hint_error {
     return Intl.message(
-      'من فضلك قم بإختيار الجنس',
+      'Please select the gender',
       name: 'gender_confirm_hint_error',
       desc: '',
       args: [],
     );
   }
 
-  /// `لديك حساب ؟`
+  /// `Have an account?`
   String get have_an_account {
     return Intl.message(
-      'لديك حساب ؟',
+      'Have an account?',
       name: 'have_an_account',
       desc: '',
       args: [],
     );
   }
 
-  /// `ذكر`
+  /// `Male`
   String get male {
     return Intl.message(
-      'ذكر',
+      'Male',
       name: 'male',
       desc: '',
       args: [],
     );
   }
 
-  /// `أنثي`
+  /// `Female`
   String get female {
     return Intl.message(
-      'أنثي',
+      'Female',
       name: 'female',
       desc: '',
       args: [],
     );
   }
 
-  /// `هذا الحقل مطلوب`
+  /// `This field is required`
   String get validate {
     return Intl.message(
-      'هذا الحقل مطلوب',
+      'This field is required',
       name: 'validate',
       desc: '',
       args: [],
     );
   }
 
-  /// `أو`
+  /// `Or`
   String get or {
     return Intl.message(
-      'أو',
+      'Or',
       name: 'or',
       desc: '',
       args: [],
     );
   }
 
-  /// `ليس لديك حساب؟`
+  /// `Don't have an account?`
   String get create {
     return Intl.message(
-      'ليس لديك حساب؟',
+      'Don\'t have an account?',
       name: 'create',
       desc: '',
       args: [],
     );
   }
 
-  /// `إنشاء حساب`
+  /// `Create an Account`
   String get create1 {
     return Intl.message(
-      'إنشاء حساب',
+      'Create an Account',
       name: 'create1',
       desc: '',
       args: [],
     );
   }
 
-  /// `نسيت كلمة المرور`
+  /// `Forgot Password`
   String get forget {
     return Intl.message(
-      'نسيت كلمة المرور',
+      'Forgot Password',
       name: 'forget',
       desc: '',
       args: [],
     );
   }
 
-  /// `المتابعه بدون تسجيل`
+  /// `Follow without Registration`
   String get follow {
     return Intl.message(
-      'المتابعه بدون تسجيل',
+      'Follow without Registration',
       name: 'follow',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك قم بتفعيل الايميل الخاص`
+  /// `Please activate your email`
   String get email_verify {
     return Intl.message(
-      'من فضلك قم بتفعيل الايميل الخاص',
+      'Please activate your email',
       name: 'email_verify',
       desc: '',
       args: [],
     );
   }
 
-  /// `تسجيل`
+  /// `Register`
   String get register {
     return Intl.message(
-      'تسجيل',
+      'Register',
       name: 'register',
       desc: '',
       args: [],
     );
   }
 
-  /// `أدخل البريد الإلكتروني`
+  /// `Enter your email`
   String get reset_email {
     return Intl.message(
-      'أدخل البريد الإلكتروني',
+      'Enter your email',
       name: 'reset_email',
       desc: '',
       args: [],
     );
   }
 
-  /// `إعادة تعيين`
+  /// `Reset`
   String get reset {
     return Intl.message(
-      'إعادة تعيين',
+      'Reset',
       name: 'reset',
       desc: '',
       args: [],
     );
   }
 
-  /// `الجزء`
+  /// `Juz`
   String get juz {
     return Intl.message(
-      'الجزء',
+      'Juz',
       name: 'juz',
       desc: '',
       args: [],
     );
   }
 
-  /// `دعاء اليوم`
+  /// `Dua of the Day`
   String get zakr_of_the_day {
     return Intl.message(
-      'دعاء اليوم',
+      'Dua of the Day',
       name: 'zakr_of_the_day',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم النسخ`
+  /// `Copied`
   String get copied {
     return Intl.message(
-      'تم النسخ',
+      'Copied',
       name: 'copied',
       desc: '',
       args: [],
     );
   }
 
-  /// `الأذكار المفضلة`
+  /// `Favorite Adhkar`
   String get favorite_azkar {
     return Intl.message(
-      'الأذكار المفضلة',
+      'Favorite Adhkar',
       name: 'favorite_azkar',
       desc: '',
       args: [],
     );
   }
 
-  /// `لا يوجد أذكار مفضلة`
+  /// `No favorite Adhkar`
   String get no_favorite_azkar {
     return Intl.message(
-      'لا يوجد أذكار مفضلة',
+      'No favorite Adhkar',
       name: 'no_favorite_azkar',
       desc: '',
       args: [],
