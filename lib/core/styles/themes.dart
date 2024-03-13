@@ -125,6 +125,9 @@ ThemeData lightTheme = ThemeData(
 );
 
 ThemeData darkTheme = ThemeData(
+  drawerTheme: DrawerThemeData(
+    backgroundColor: appColor,
+  ),
   primaryColor: appColor,
   primarySwatch: mainColor,
   colorScheme: ColorScheme.fromSeed(

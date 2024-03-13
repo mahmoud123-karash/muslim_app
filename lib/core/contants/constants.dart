@@ -9,6 +9,8 @@ Color whiteColor = Colors.white;
 Color blackColor = Colors.black;
 Color greyColor = Colors.grey;
 
+var pageBuket = PageStorageBucket();
+
 String privacyUri =
     'https://www.privacypolicygenerator.info/live.php?token=MsmKdi4pne1dYTITIsaOPEXQh0zwVN1t';
 

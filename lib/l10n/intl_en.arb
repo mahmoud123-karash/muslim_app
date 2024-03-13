@@ -56,7 +56,14 @@
     "zakr_of_the_day": "Dua of the Day",
     "copied": "Copied",
     "favorite_azkar": "Favorite Adhkar",
-    "no_favorite_azkar": "No favorite Adhkar"
+    "no_favorite_azkar": "No favorite Adhkar",
+    "page":"صفحة",
+    "mark":"متابعة القراءة من حيث توقفت",
+    "follow_reading":"متابعة",
+    "al_surahs":"السور",
+    "al_juzs":"الأجزاء",
+    "save_book_mark":"تم حفظ علامة",
+    "remove_the_book_mark":"تم حذف العلامة"
 
 
 

@@ -56,7 +56,14 @@
     "zakr_of_the_day":"دعاء اليوم",
     "copied":"تم النسخ",
     "favorite_azkar":"الأذكار المفضلة",
-    "no_favorite_azkar":"لا يوجد أذكار مفضلة"
+    "no_favorite_azkar":"لا يوجد أذكار مفضلة",
+    "page":"صفحة",
+    "mark":"متابعة القراءة من حيث توقفت",
+    "follow_reading":"متابعة",
+    "al_surahs":"السور",
+    "al_juzs":"الأجزاء",
+    "save_book_mark":"تم حفظ علامة",
+    "remove_the_book_mark":"تم حذف العلامة"
 
 
     

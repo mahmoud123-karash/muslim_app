@@ -73,3 +73,18 @@ void saveGender(value) => CacheHelper.saveData(
       key: 'gender',
       value: value,
     );
+
+void savepageIndex(value) => CacheHelper.saveData(
+      key: 'pageIndex',
+      value: value,
+    );
+
+void saveSurahOrJuz(value) => CacheHelper.saveData(
+      key: 'sj',
+      value: value,
+    );
+
+void saveMark(value) => CacheHelper.saveData(
+      key: 'saveMark',
+      value: value,
+    );

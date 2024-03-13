@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:arabic_numbers/arabic_numbers.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
@@ -92,4 +93,16 @@ String formatDuration({required String duration}) {
   List<String> parts = duration.split('.');
   String timeString = parts[0];
   return timeString;
+}
+
+double ifBigScreenSize(double s, double l, BuildContext context) {
+  return MediaQuery.of(context).size.width >= 1025.0 ? s : l;
+}
+
+int navigateToFirstPage(juzNumber) {
+  if (juzNumber == 1) {
+    return ((juzNumber - 1) * 20);
+  } else {
+    return ((juzNumber - 1) * 20) + 1;
+  }
 }

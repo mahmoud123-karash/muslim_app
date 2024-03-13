@@ -3,7 +3,6 @@ import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/auth/presentation/views/login_screen.dart';
-import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/views/language_screen.dart';
 import 'package:muslim_app/features/settings/presenation/views/widgets/settings_list_tile_widget.dart';
 import 'package:muslim_app/generated/l10n.dart';
@@ -27,17 +26,17 @@ class SettingsScreen extends StatelessWidget {
             lable: S.of(context).notifications,
             onChanged: () {},
           ),
-          const SizedBox(
-            height: 12,
-          ),
-          SwitchListTileWidget(
-            isEnabled: CacheHelper.getData(key: 'isdark') ?? false,
-            icon: Icons.light_mode_outlined,
-            lable: S.of(context).theme,
-            onChanged: () {
-              ManageCubit.get(context).changeAppTheme();
-            },
-          ),
+          // const SizedBox(
+          //   height: 12,
+          // ),
+          // SwitchListTileWidget(
+          //   isEnabled: CacheHelper.getData(key: 'isdark') ?? false,
+          //   icon: Icons.light_mode_outlined,
+          //   lable: S.of(context).theme,
+          //   onChanged: () {
+          //     ManageCubit.get(context).changeAppTheme();
+          //   },
+          // ),
           const SizedBox(
             height: 12,
           ),

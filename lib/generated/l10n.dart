@@ -629,6 +629,76 @@ class S {
       args: [],
     );
   }
+
+  /// `صفحة`
+  String get page {
+    return Intl.message(
+      'صفحة',
+      name: 'page',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `متابعة القراءة من حيث توقفت`
+  String get mark {
+    return Intl.message(
+      'متابعة القراءة من حيث توقفت',
+      name: 'mark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `متابعة`
+  String get follow_reading {
+    return Intl.message(
+      'متابعة',
+      name: 'follow_reading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `السور`
+  String get al_surahs {
+    return Intl.message(
+      'السور',
+      name: 'al_surahs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الأجزاء`
+  String get al_juzs {
+    return Intl.message(
+      'الأجزاء',
+      name: 'al_juzs',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم حفظ علامة`
+  String get save_book_mark {
+    return Intl.message(
+      'تم حفظ علامة',
+      name: 'save_book_mark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم حذف العلامة`
+  String get remove_the_book_mark {
+    return Intl.message(
+      'تم حذف العلامة',
+      name: 'remove_the_book_mark',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

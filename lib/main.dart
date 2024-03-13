@@ -17,6 +17,7 @@ import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/fa
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
+import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
@@ -73,6 +74,9 @@ void main() async {
           create: (context) => FavoriteCubit(
             getIt.get<AzkarRepoImpl>(),
           )..getFavorite(),
+        ),
+        BlocProvider(
+          create: (context) => QuranCubit()..loadQuran(),
         )
       ],
       child: MyApp(startWidget: startWidget),

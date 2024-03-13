@@ -23,6 +23,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
+        "al_juzs": MessageLookupByLibrary.simpleMessage("الأجزاء"),
+        "al_surahs": MessageLookupByLibrary.simpleMessage("السور"),
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
         "aya_of_the_day":
             MessageLookupByLibrary.simpleMessage("Verse of the Day"),
@@ -48,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "follow":
             MessageLookupByLibrary.simpleMessage("Follow without Registration"),
+        "follow_reading": MessageLookupByLibrary.simpleMessage("متابعة"),
         "forget": MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "gender_confirm_hint_error":
             MessageLookupByLibrary.simpleMessage("Please select the gender"),
@@ -61,6 +64,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
+        "mark":
+            MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "no_favorite_azkar":
@@ -73,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "on_boarding_3": MessageLookupByLibrary.simpleMessage(
             "Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app."),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
+        "page": MessageLookupByLibrary.simpleMessage("صفحة"),
         "pass": MessageLookupByLibrary.simpleMessage("Password"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "phone_lenght_hint_error": MessageLookupByLibrary.simpleMessage(
@@ -85,8 +91,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "quran_kareem": MessageLookupByLibrary.simpleMessage("Quran Kareem"),
         "rate_app": MessageLookupByLibrary.simpleMessage("Rate the App"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "remove_the_book_mark":
+            MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),
         "reset": MessageLookupByLibrary.simpleMessage("Reset"),
         "reset_email": MessageLookupByLibrary.simpleMessage("Enter your email"),
+        "save_book_mark": MessageLookupByLibrary.simpleMessage("تم حفظ علامة"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":
