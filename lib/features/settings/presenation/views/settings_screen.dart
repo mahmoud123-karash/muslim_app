@@ -77,7 +77,7 @@ class SettingsScreen extends StatelessWidget {
           ),
           SettingsListTileWidget(
             title: S.of(context).contact_us,
-            icon: Ionicons.phone_portrait_outline,
+            icon: Icons.email_outlined,
             onTap: () {},
           ),
           const SizedBox(

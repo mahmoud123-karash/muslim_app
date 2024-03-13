@@ -6,8 +6,8 @@ import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
-class ZakrOfTheDayContainerWidget extends StatelessWidget {
-  const ZakrOfTheDayContainerWidget({super.key});
+class ZekrOfTheDayContainerWidget extends StatelessWidget {
+  const ZekrOfTheDayContainerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +26,16 @@ class ZakrOfTheDayContainerWidget extends StatelessWidget {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     S.of(context).zakr_of_the_day,
-                    style: TextStyles.style15.copyWith(
+                    style: TextStyles.style16Bold.copyWith(
                       fontWeight: FontWeight.bold,
-                      color: appColor,
+                      color: secondColor,
                     ),
                   ),
                   const SizedBox(

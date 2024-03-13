@@ -17,13 +17,18 @@ class AzkarScreen extends StatelessWidget {
         title: Text(S.of(context).azkar),
         centerTitle: true,
         actions: [
-          IconButton(
-            onPressed: () {
-              navigateTo(context, const FavoriteScreen());
-            },
-            icon: Icon(
-              Ionicons.heart,
-              color: appColor,
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 10,
+            ),
+            child: IconButton(
+              onPressed: () {
+                navigateTo(context, const FavoriteScreen());
+              },
+              icon: Icon(
+                Ionicons.heart,
+                color: secondColor,
+              ),
             ),
           ),
         ],

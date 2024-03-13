@@ -9,8 +9,6 @@ class AzkarCubit extends Cubit<AzkarStates> {
 
   final AzkarRepo azkarRepo;
 
-  List<String> categories = [];
-
   void getAzkar() async {
     var result = await azkarRepo.loadAzkar();
     result.fold(
@@ -18,11 +16,6 @@ class AzkarCubit extends Cubit<AzkarStates> {
         emit(ErrorLoadAzkar(message));
       },
       (list) {
-        for (var element in list) {
-          if (!categories.contains(element.category)) {
-            categories.add(element.category);
-          }
-        }
         generateZekrOfDay(list);
         emit(SuccessLoadAzkar(list));
       },
