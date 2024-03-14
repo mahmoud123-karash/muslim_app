@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("اللغة العربية"),
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
         "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
+        "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "confirm_pass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
@@ -36,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك تأكد من كلمة المرور"),
         "contact_us": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
         "copied": MessageLookupByLibrary.simpleMessage("تم النسخ"),
+        "copy_ayah": MessageLookupByLibrary.simpleMessage("النسخ"),
         "create": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "create1": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
@@ -56,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "juz": MessageLookupByLibrary.simpleMessage("الجزء"),
         "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
+        "listen_ayah": MessageLookupByLibrary.simpleMessage("التلاوة"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
         "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
@@ -65,8 +68,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
         "name": MessageLookupByLibrary.simpleMessage("الإسم"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
+        "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "مرحبًا بك في تطبيقنا الإسلامي، حيث يمكنك استكشاف جمال الإسلام وتعزيز رحلتك الروحية."),
@@ -95,7 +100,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
+        "share_ayah": MessageLookupByLibrary.simpleMessage("المشاركة"),
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("التفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),

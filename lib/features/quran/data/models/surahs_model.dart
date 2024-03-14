@@ -35,6 +35,7 @@ class Ayah {
   final String codeV2;
   final int juz;
   final int page;
+  final String audio;
   dynamic sajda;
 
   Ayah({
@@ -45,6 +46,7 @@ class Ayah {
     required this.codeV2,
     required this.juz,
     required this.page,
+    required this.audio,
     required this.sajda,
   });
 
@@ -57,6 +59,7 @@ class Ayah {
       codeV2: json['code_v2'],
       juz: json['juz'],
       page: json['page'],
+      audio: json['audio'],
       sajda: json['sajda'],
     );
   }

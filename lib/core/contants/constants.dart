@@ -20,7 +20,7 @@ String appLink = Platform.isIOS
 
 String kufiFamily = 'kufi';
 String uthmanicFamily = 'uthmanic';
-String naskhFamily = 'naskh';
 String uthmanic2Family = 'uthmanic2';
+String naskhFamily = 'naskh';
 
 String azkarBox = 'azkarBox';

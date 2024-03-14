@@ -63,7 +63,14 @@
     "al_surahs":"السور",
     "al_juzs":"الأجزاء",
     "save_book_mark":"تم حفظ علامة",
-    "remove_the_book_mark":"تم حذف العلامة"
+    "remove_the_book_mark":"تم حذف العلامة",
+    "tafsser_ayah":"التفسير",
+    "listen_ayah":"التلاوة",
+    "copy_ayah":"النسخ",
+    "share_ayah":"المشاركة",
+    "no_tafseer":"لا يوجد تفسير",
+    "back":"الرجوع",
+    "no_connection":"لا يوجد اتصال"
 
 
     

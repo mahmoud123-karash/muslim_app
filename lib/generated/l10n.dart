@@ -699,6 +699,76 @@ class S {
       args: [],
     );
   }
+
+  /// `التفسير`
+  String get tafsser_ayah {
+    return Intl.message(
+      'التفسير',
+      name: 'tafsser_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `التلاوة`
+  String get listen_ayah {
+    return Intl.message(
+      'التلاوة',
+      name: 'listen_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `النسخ`
+  String get copy_ayah {
+    return Intl.message(
+      'النسخ',
+      name: 'copy_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المشاركة`
+  String get share_ayah {
+    return Intl.message(
+      'المشاركة',
+      name: 'share_ayah',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لا يوجد تفسير`
+  String get no_tafseer {
+    return Intl.message(
+      'لا يوجد تفسير',
+      name: 'no_tafseer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الرجوع`
+  String get back {
+    return Intl.message(
+      'الرجوع',
+      name: 'back',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لا يوجد اتصال`
+  String get no_connection {
+    return Intl.message(
+      'لا يوجد اتصال',
+      name: 'no_connection',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

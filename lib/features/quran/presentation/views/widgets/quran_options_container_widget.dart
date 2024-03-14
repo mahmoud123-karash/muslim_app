@@ -25,7 +25,7 @@ class QuranOptionsContainerWidget extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            color: blackColor.withOpacity(0.7),
+            color: Colors.white,
             child: Row(
               children: [
                 IconButton(
@@ -33,9 +33,9 @@ class QuranOptionsContainerWidget extends StatelessWidget {
                     onPressed();
                     QuranCubit.get(context).openDrawer();
                   },
-                  icon: const Icon(
+                  icon: Icon(
                     Ionicons.menu_sharp,
-                    color: Colors.white,
+                    color: appColor,
                   ),
                 ),
                 const Spacer(),
@@ -43,9 +43,9 @@ class QuranOptionsContainerWidget extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.home_filled,
-                    color: Colors.white,
+                    color: appColor,
                   ),
                 ),
                 BlocBuilder<QuranCubit, QuranStates>(
@@ -67,18 +67,16 @@ class QuranOptionsContainerWidget extends StatelessWidget {
                         cachedPage == pageIndex
                             ? Icons.bookmark
                             : Icons.bookmark_border_outlined,
-                        color: cachedPage == pageIndex
-                            ? secondColor
-                            : Colors.white,
+                        color: cachedPage == pageIndex ? secondColor : appColor,
                       ),
                     );
                   },
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(
+                  icon: Icon(
                     Ionicons.search_outline,
-                    color: Colors.white,
+                    color: appColor,
                   ),
                 )
               ],

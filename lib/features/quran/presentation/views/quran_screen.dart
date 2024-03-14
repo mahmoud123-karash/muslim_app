@@ -33,6 +33,7 @@ class _QuranScreenState extends State<QuranScreen> {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: const Color(0xffFAF5ED),
       key: QuranCubit.get(context).quranKey,
       drawer: QuranDrawerWidget(
         pageController: pageController,
@@ -88,12 +89,15 @@ class _QuranScreenState extends State<QuranScreen> {
                           ),
                           Align(
                             alignment: Alignment.bottomCenter,
-                            child: Text(
-                              getArabicNumber(index + 1),
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontFamily: 'naskh',
-                                color: secondColor,
+                            child: Padding(
+                              padding: const EdgeInsets.only(bottom: 15),
+                              child: Text(
+                                getArabicNumber(index + 1),
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontFamily: 'naskh',
+                                  color: secondColor,
+                                ),
                               ),
                             ),
                           ),

@@ -3,8 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/features/quran/data/models/surahs_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
+import 'package:muslim_app/features/quran/presentation/views/widgets/ayah_details_dialog_widget.dart';
 
-import 'custom_span.dart';
+import '../../../../../core/widgets/custom_span.dart';
 
 class QuranAyahTextWidget extends StatelessWidget {
   const QuranAyahTextWidget({
@@ -42,9 +43,6 @@ class QuranAyahTextWidget extends StatelessWidget {
           children: List.generate(
             ayahs.length,
             (ayahIndex) {
-              // cubit.isSelected = cubit.selectedAyahIndexes
-              //     .contains(
-              //         ayahs[ayahIndex].ayahUQNumber);
               if (ayahIndex == 0) {
                 return span(
                   isFirstAyah: true,
@@ -57,20 +55,13 @@ class QuranAyahTextWidget extends StatelessWidget {
                   surahNum: cubit.getSurahNumberFromPage(pageIndex),
                   ayahNum: ayahs[ayahIndex].ayahUQNumber,
                   onLongPressStart: (LongPressStartDetails details) {
-                    // cubit.toggleAyahSelection(
-                    //     ayahs[ayahIndex].ayahUQNumber);
-                    // context.showAyahMenu(
-                    //     cubit.getSurahNumberFromPage(
-                    //         pageIndex),
-                    //     ayahs[ayahIndex].ayahNumber,
-                    //     ayahs[ayahIndex].codeV2,
-                    //     pageIndex,
-                    //     ayahs[ayahIndex].text,
-                    //     ayahs[ayahIndex].ayahUQNumber,
-                    //     cubit.getSurahNameFromPage(
-                    //         pageIndex),
-                    //     ayahIndex,
-                    //     details: details);
+                    showDialog(
+                      context: context,
+                      builder: (context) => AyahDetailsDialogWidget(
+                        ayah: ayahs[ayahIndex],
+                        surahName: cubit.getSurahNameFromPage(pageIndex),
+                      ),
+                    );
                   },
                 );
               }
@@ -84,20 +75,13 @@ class QuranAyahTextWidget extends StatelessWidget {
                 surahNum: cubit.getSurahNumberFromPage(pageIndex),
                 ayahNum: ayahs[ayahIndex].ayahUQNumber,
                 onLongPressStart: (LongPressStartDetails details) {
-                  // cubit.toggleAyahSelection(
-                  //     ayahs[ayahIndex].ayahUQNumber);
-                  // context.showAyahMenu(
-                  //     cubit.getSurahNumberFromPage(
-                  //         pageIndex),
-                  //     ayahs[ayahIndex].ayahNumber,
-                  //     ayahs[ayahIndex].code_v2,
-                  //     pageIndex,
-                  //     ayahs[ayahIndex].text,
-                  //     ayahs[ayahIndex].ayahUQNumber,
-                  //     cubit.getSurahNameFromPage(
-                  //         pageIndex),
-                  //     ayahIndex,
-                  //     details: details);
+                  showDialog(
+                    context: context,
+                    builder: (context) => AyahDetailsDialogWidget(
+                      ayah: ayahs[ayahIndex],
+                      surahName: cubit.getSurahNameFromPage(pageIndex),
+                    ),
+                  );
                 },
               );
             },

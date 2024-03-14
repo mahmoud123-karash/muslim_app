@@ -23,7 +23,6 @@ class QuranCubit extends Cubit<QuranStates> {
     Map<String, dynamic> jsonResponse = jsonDecode(jsonString);
     List<dynamic> surahsJson = jsonResponse['data']['surahs'];
     surahs = surahsJson.map((s) => Surah.fromJson(s)).toList();
-
     for (final surah in surahs) {
       allAyahs.addAll(surah.ayahs);
     }

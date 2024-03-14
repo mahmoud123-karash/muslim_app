@@ -12,6 +12,7 @@ TextSpan span({
   LongPressStartDetailsFunction? onLongPressStart,
   required bool isFirstAyah,
   required Color textColor,
+  double height = 1.8,
 }) {
   if (text.isNotEmpty) {
     final String partOne = text.length < 3 ? text[0] : text[0] + text[1];
@@ -27,13 +28,12 @@ TextSpan span({
         style: TextStyle(
           fontFamily: 'page${pageIndex + 1}',
           fontSize: fontSize,
-          height: 2,
+          height: height,
           color: textColor,
           letterSpacing: 30,
-          backgroundColor: secondColor.withOpacity(0.5),
         ),
         recognizer: LongPressGestureRecognizer(
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 200),
         )..onLongPressStart = onLongPressStart,
       );
       second = TextSpan(
@@ -41,13 +41,12 @@ TextSpan span({
         style: TextStyle(
           fontFamily: 'page${pageIndex + 1}',
           fontSize: fontSize,
-          height: 2,
+          height: height,
           letterSpacing: 5,
           color: textColor,
-          backgroundColor: secondColor.withOpacity(0.5),
         ),
         recognizer: LongPressGestureRecognizer(
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 200),
         )..onLongPressStart = onLongPressStart,
       );
     }
@@ -57,13 +56,12 @@ TextSpan span({
       style: TextStyle(
         fontFamily: 'page${pageIndex + 1}',
         fontSize: fontSize,
-        height: 2,
+        height: height,
         color: textColor,
         letterSpacing: 5,
-        backgroundColor: Colors.transparent,
       ),
       recognizer: LongPressGestureRecognizer(
-        duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 200),
       )..onLongPressStart = onLongPressStart,
     );
 
@@ -72,13 +70,13 @@ TextSpan span({
       style: TextStyle(
         fontFamily: 'page${pageIndex + 1}',
         fontSize: fontSize,
-        height: 2,
+        height: height,
         letterSpacing: 5,
         color: secondColor,
         backgroundColor: Colors.transparent,
       ),
       recognizer: LongPressGestureRecognizer(
-        duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 200),
       )..onLongPressStart = onLongPressStart,
     );
 
@@ -87,7 +85,7 @@ TextSpan span({
           ? [first!, second!, lastCharacterSpan]
           : [initialTextSpan, lastCharacterSpan],
       recognizer: LongPressGestureRecognizer(
-        duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 200),
       )..onLongPressStart = onLongPressStart,
     );
   } else {

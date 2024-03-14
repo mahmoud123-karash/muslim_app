@@ -27,6 +27,7 @@ class TopTitleWidget extends StatelessWidget {
         vertical: 10,
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             surahName,

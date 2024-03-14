@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "aya_of_the_day":
             MessageLookupByLibrary.simpleMessage("Verse of the Day"),
         "azkar": MessageLookupByLibrary.simpleMessage("Adhkar"),
+        "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
         "confirm_pass":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
@@ -36,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please confirm your password"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "copied": MessageLookupByLibrary.simpleMessage("Copied"),
+        "copy_ayah": MessageLookupByLibrary.simpleMessage("النسخ"),
         "create":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "create1": MessageLookupByLibrary.simpleMessage("Create an Account"),
@@ -59,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "juz": MessageLookupByLibrary.simpleMessage("Juz"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
+        "listen_ayah": MessageLookupByLibrary.simpleMessage("التلاوة"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("Listen to Quran"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -68,8 +71,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
+        "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey"),
@@ -100,7 +105,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
+        "share_ayah": MessageLookupByLibrary.simpleMessage("المشاركة"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start Now"),
+        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("التفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("Visual Tafseer"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),
