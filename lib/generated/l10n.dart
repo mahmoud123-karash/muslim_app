@@ -829,6 +829,36 @@ class S {
       args: [],
     );
   }
+
+  /// ` من الشمال الحقيقي`
+  String get from_real_nourth {
+    return Intl.message(
+      ' من الشمال الحقيقي',
+      name: 'from_real_nourth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الشمال الحقيقي`
+  String get real_nourth {
+    return Intl.message(
+      'الشمال الحقيقي',
+      name: 'real_nourth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الكعبة`
+  String get Kaaba {
+    return Intl.message(
+      'الكعبة',
+      name: 'Kaaba',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

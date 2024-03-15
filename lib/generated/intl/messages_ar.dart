@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Kaaba": MessageLookupByLibrary.simpleMessage("الكعبة"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
         "al_juzs": MessageLookupByLibrary.simpleMessage("الأجزاء"),
         "al_surahs": MessageLookupByLibrary.simpleMessage("السور"),
@@ -53,6 +54,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "follow": MessageLookupByLibrary.simpleMessage("المتابعه بدون تسجيل"),
         "follow_reading": MessageLookupByLibrary.simpleMessage("متابعة"),
         "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "from_real_nourth":
+            MessageLookupByLibrary.simpleMessage(" من الشمال الحقيقي"),
         "gender_confirm_hint_error":
             MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
         "have_an_account": MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
@@ -96,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),
         "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
+        "real_nourth": MessageLookupByLibrary.simpleMessage("الشمال الحقيقي"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "remove_the_book_mark":
             MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),

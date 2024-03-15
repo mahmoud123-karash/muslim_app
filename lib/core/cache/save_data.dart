@@ -88,3 +88,18 @@ void saveMark(value) => CacheHelper.saveData(
       key: 'saveMark',
       value: value,
     );
+
+void saveDirection(value) => CacheHelper.saveData(
+      key: 'direction',
+      value: value,
+    );
+
+void saveOffset(value) => CacheHelper.saveData(
+      key: 'qiplah',
+      value: value,
+    );
+
+void saveQibla(value) => CacheHelper.saveData(
+      key: 'offset',
+      value: value,
+    );

@@ -76,7 +76,10 @@
     "search_hint_enter":"أدخل اسم الآية التى تريد البحث عنها...",
     "no_results":"لا يوجد نتائج",
     "ayah_num":"الآية",
-    "num_of_the_ayahs":"عدد الآيات"
+    "num_of_the_ayahs":"عدد الآيات",
+    "from_real_nourth":" من الشمال الحقيقي",
+    "real_nourth":"الشمال الحقيقي",
+    "Kaaba":"الكعبة"
 
 
 
