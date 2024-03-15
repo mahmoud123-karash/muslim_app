@@ -14,6 +14,7 @@ import 'package:muslim_app/features/azkar/data/repo/azkar_repo_impl.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_cubit.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/favorite_cubit.dart';
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
+import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
@@ -22,6 +23,7 @@ import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/ma
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
 import 'core/sevices/permission_service.dart';
+import 'features/listen/domain/entites/reciter_entity.dart';
 import 'generated/l10n.dart';
 
 void main() async {
@@ -39,6 +41,8 @@ void main() async {
   setLocator();
   Hive.registerAdapter(ZekrAdapter());
   await Hive.openBox<Zekr>(azkarBox);
+  Hive.registerAdapter(ReciterEntityAdapter());
+  await Hive.openBox<ReciterEntity>(reciterBox);
 
   late Widget startWidget;
   bool isSkip = CacheHelper.getData(key: 'isSkip') ?? false;
@@ -78,6 +82,9 @@ void main() async {
         ),
         BlocProvider(
           create: (context) => AyahCubit()..loadTafseer(),
+        ),
+        BlocProvider(
+          create: (context) => PlayerCubit(),
         )
       ],
       child: MyApp(startWidget: startWidget),

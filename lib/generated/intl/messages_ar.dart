@@ -112,7 +112,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
         "share_ayah": MessageLookupByLibrary.simpleMessage("المشاركة"),
+        "soon": MessageLookupByLibrary.simpleMessage("قريبًا"),
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "success_download":
+            MessageLookupByLibrary.simpleMessage("تم التنزيل بنجاح"),
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("التفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),

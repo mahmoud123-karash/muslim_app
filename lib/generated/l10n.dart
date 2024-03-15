@@ -859,6 +859,26 @@ class S {
       args: [],
     );
   }
+
+  /// `تم التنزيل بنجاح`
+  String get success_download {
+    return Intl.message(
+      'تم التنزيل بنجاح',
+      name: 'success_download',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `قريبًا`
+  String get soon {
+    return Intl.message(
+      'قريبًا',
+      name: 'soon',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

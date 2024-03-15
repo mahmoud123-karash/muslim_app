@@ -103,3 +103,38 @@ void saveQibla(value) => CacheHelper.saveData(
       key: 'offset',
       value: value,
     );
+
+void isplay(ispaly) => CacheHelper.saveData(
+      key: 'ispaly',
+      value: ispaly,
+    );
+
+void cachePosition(value) => CacheHelper.saveData(
+      key: 'position',
+      value: value,
+    );
+
+void saveSIndex(index) => CacheHelper.saveData(
+      key: 'sindex',
+      value: index,
+    );
+
+void saveRId(id) => CacheHelper.saveData(
+      key: 'rindex',
+      value: id,
+    );
+
+void saveReciterImage(image) => CacheHelper.saveData(
+      key: 'rImage',
+      value: image,
+    );
+
+void saveReciterName(name) => CacheHelper.saveData(
+      key: 'rName',
+      value: name,
+    );
+
+void saveSurahName(name) => CacheHelper.saveData(
+      key: 'sName',
+      value: name,
+    );

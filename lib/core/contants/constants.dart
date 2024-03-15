@@ -24,3 +24,4 @@ String uthmanic2Family = 'uthmanic2';
 String naskhFamily = 'naskh';
 
 String azkarBox = 'azkarBox';
+String reciterBox = 'reciterBox';
