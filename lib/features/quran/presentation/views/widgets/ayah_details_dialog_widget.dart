@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
-import 'package:muslim_app/features/quran/data/models/surahs_model.dart';
+import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/tafseer_deatils_row_widget.dart';
 

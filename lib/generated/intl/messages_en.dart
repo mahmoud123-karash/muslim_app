@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
         "aya_of_the_day":
             MessageLookupByLibrary.simpleMessage("Verse of the Day"),
+        "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
         "azkar": MessageLookupByLibrary.simpleMessage("Adhkar"),
         "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
@@ -74,8 +75,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
+        "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "num_of_the_ayahs": MessageLookupByLibrary.simpleMessage("عدد الآيات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey"),
         "on_boarding_2": MessageLookupByLibrary.simpleMessage(
@@ -102,6 +105,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "reset": MessageLookupByLibrary.simpleMessage("Reset"),
         "reset_email": MessageLookupByLibrary.simpleMessage("Enter your email"),
         "save_book_mark": MessageLookupByLibrary.simpleMessage("تم حفظ علامة"),
+        "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "search_hint_enter": MessageLookupByLibrary.simpleMessage(
+            "أدخل اسم الآية التى تريد البحث عنها..."),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":

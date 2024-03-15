@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/sevices/services.dart';
-import 'package:muslim_app/features/quran/data/models/surahs_model.dart';
+import 'package:muslim_app/features/quran/data/models/surah_model.dart';
+import 'package:intl/intl.dart';
 
 class SurahNumStackWidget extends StatelessWidget {
   const SurahNumStackWidget({super.key, required this.surah});
@@ -14,19 +15,22 @@ class SurahNumStackWidget extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         SizedBox(
-            height: 30,
-            width: 30,
-            child: SvgPicture.asset(
-              'assets/svg/sora_num.svg',
-              colorFilter: ColorFilter.mode(
-                Theme.of(context).colorScheme.primary,
-                BlendMode.srcIn,
-              ),
-            )),
+          height: 30,
+          width: 30,
+          child: SvgPicture.asset(
+            'assets/svg/sora_num.svg',
+            colorFilter: ColorFilter.mode(
+              Theme.of(context).colorScheme.primary,
+              BlendMode.srcIn,
+            ),
+          ),
+        ),
         Transform.translate(
           offset: const Offset(0, 1),
           child: Text(
-            getArabicNumber(surah.surahNumber),
+            Intl.getCurrentLocale() == 'en'
+                ? surah.surahNumber.toString()
+                : getArabicNumber(surah.surahNumber),
             style: TextStyle(
               color: Theme.of(context).hintColor,
               fontFamily: kufiFamily,

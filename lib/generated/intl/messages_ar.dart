@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "arabic_language":
             MessageLookupByLibrary.simpleMessage("اللغة العربية"),
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
+        "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
         "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
         "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
@@ -71,8 +72,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
+        "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "num_of_the_ayahs": MessageLookupByLibrary.simpleMessage("عدد الآيات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "مرحبًا بك في تطبيقنا الإسلامي، حيث يمكنك استكشاف جمال الإسلام وتعزيز رحلتك الروحية."),
         "on_boarding_2": MessageLookupByLibrary.simpleMessage(
@@ -98,6 +101,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),
         "reset": MessageLookupByLibrary.simpleMessage("إعادة تعيين"),
         "save_book_mark": MessageLookupByLibrary.simpleMessage("تم حفظ علامة"),
+        "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "search_hint_enter": MessageLookupByLibrary.simpleMessage(
+            "أدخل اسم الآية التى تريد البحث عنها..."),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),

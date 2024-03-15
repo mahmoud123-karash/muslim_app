@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/sevices/services.dart';
+import 'package:intl/intl.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
@@ -38,7 +39,7 @@ class TopTitleWidget extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            '${S.of(context).juz} ${getArabicNumber(juzNum)}',
+            '${S.of(context).juz} ${Intl.getCurrentLocale() == 'en' ? juzNum : getArabicNumber(juzNum)}',
             style: TextStyles.style15.copyWith(
               fontFamily: naskhFamily,
               color: secondColor,

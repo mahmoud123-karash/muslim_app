@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/utils/lists.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/juz_item_widget.dart';
+import 'package:intl/intl.dart';
 
 class JuzListViewWidget extends StatelessWidget {
   const JuzListViewWidget({super.key, required this.pageController});
@@ -15,7 +16,9 @@ class JuzListViewWidget extends StatelessWidget {
         key: const PageStorageKey<String>('pageOne'),
         itemCount: 30,
         itemBuilder: (context, index) => JuzItemWidget(
-          text: juzNames[index],
+          text: Intl.getCurrentLocale() == 'en'
+              ? juzEnglishNames[index]
+              : juzNames[index],
           juzNumber: index + 1,
           pageController: pageController,
         ),

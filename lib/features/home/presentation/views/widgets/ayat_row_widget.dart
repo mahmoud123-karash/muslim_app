@@ -3,6 +3,7 @@ import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/generated/l10n.dart';
 import 'package:quran/quran.dart' as quran;
+import 'package:intl/intl.dart';
 
 class AyatRowWidget extends StatelessWidget {
   const AyatRowWidget(
@@ -23,7 +24,7 @@ class AyatRowWidget extends StatelessWidget {
         ),
         const Spacer(),
         Text(
-          "${quran.getSurahNameArabic(randomSurah)}($randomAyah)",
+          "${Intl.getCurrentLocale() == 'en' ? quran.getSurahNameEnglish(randomSurah) : quran.getSurahNameArabic(randomSurah)}($randomAyah)",
           style: TextStyles.style15.copyWith(
             fontWeight: FontWeight.bold,
             color: appColor,

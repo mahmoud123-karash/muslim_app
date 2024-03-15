@@ -779,6 +779,56 @@ class S {
       args: [],
     );
   }
+
+  /// `البحث`
+  String get search {
+    return Intl.message(
+      'البحث',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `أدخل اسم الآية التى تريد البحث عنها...`
+  String get search_hint_enter {
+    return Intl.message(
+      'أدخل اسم الآية التى تريد البحث عنها...',
+      name: 'search_hint_enter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `لا يوجد نتائج`
+  String get no_results {
+    return Intl.message(
+      'لا يوجد نتائج',
+      name: 'no_results',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الآية`
+  String get ayah_num {
+    return Intl.message(
+      'الآية',
+      name: 'ayah_num',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عدد الآيات`
+  String get num_of_the_ayahs {
+    return Intl.message(
+      'عدد الآيات',
+      name: 'num_of_the_ayahs',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

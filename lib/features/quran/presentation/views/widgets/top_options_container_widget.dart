@@ -6,11 +6,15 @@ import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_states.dart';
+import 'package:muslim_app/features/quran/presentation/views/seach_screen.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 class TopOptionsContainerWidget extends StatelessWidget {
-  const TopOptionsContainerWidget(
-      {super.key, required this.onPressed, required this.pageIndex});
+  const TopOptionsContainerWidget({
+    super.key,
+    required this.onPressed,
+    required this.pageIndex,
+  });
   final VoidCallback onPressed;
   final int pageIndex;
 
@@ -55,7 +59,10 @@ class TopOptionsContainerWidget extends StatelessWidget {
             },
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigateTo(context,
+                  SerachScreen(list: QuranCubit.get(context).allAyahs));
+            },
             icon: Icon(
               Ionicons.search_outline,
               color: appColor,
