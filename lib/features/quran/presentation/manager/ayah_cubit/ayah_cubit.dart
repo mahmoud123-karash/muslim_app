@@ -8,7 +8,6 @@ import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/quran/data/models/tafseer_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_states.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:muslim_app/generated/l10n.dart';
 
 class AyahCubit extends Cubit<AyahStates> {
   AyahCubit() : super(InitialAyahState());
@@ -32,20 +31,26 @@ class AyahCubit extends Cubit<AyahStates> {
   final player = AudioPlayer();
   bool isPaly = false;
 
-  void playAudio({required String uri, required BuildContext context}) async {
-    bool isConnected = await InternetConnectionChecker().hasConnection;
-    if (isConnected) {
-      player.play(UrlSource(uri)).then((value) {
-        isPaly = true;
-        player.onPlayerComplete.listen((event) {
-          stopAudio();
+  void playAudio({
+    required String uri,
+    required BuildContext context,
+    required String message,
+  }) async {
+    try {
+      bool isConnected = await InternetConnectionChecker().hasConnection;
+      if (isConnected) {
+        player.play(UrlSource(uri)).then((value) {
+          isPaly = true;
+          player.onPlayerComplete.listen((event) {
+            stopAudio();
+          });
+          emit(SuccessPlayAyahtate());
         });
-        emit(SuccessPlayAyahtate());
-      }).catchError((error) {
-        emit(ErrorStopAyahtate());
-      });
-    } else {
-      showToast(S.of(context).no_connection);
+      } else {
+        showToast(message);
+      }
+    } catch (e) {
+      emit(ErrorPlayAudioState(e.toString()));
     }
   }
 
@@ -54,7 +59,7 @@ class AyahCubit extends Cubit<AyahStates> {
       isPaly = false;
       emit(SuccessStopAyahtate());
     }).catchError((error) {
-      emit(ErrorStopAyahtate());
+      emit(ErrorPlayAudioState(error.toString()));
     });
   }
 
@@ -63,7 +68,7 @@ class AyahCubit extends Cubit<AyahStates> {
       isPaly = false;
       emit(SuccessStopAyahtate());
     }).catchError((error) {
-      emit(ErrorStopAyahtate());
+      emit(ErrorPlayAudioState(error.toString()));
     });
   }
 }

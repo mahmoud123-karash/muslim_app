@@ -93,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
         "qibla": MessageLookupByLibrary.simpleMessage("Qibla"),
+        "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("Quran Kareem"),
         "rate_app": MessageLookupByLibrary.simpleMessage("Rate the App"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),

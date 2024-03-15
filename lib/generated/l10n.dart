@@ -769,6 +769,16 @@ class S {
       args: [],
     );
   }
+
+  /// `دعاء الختم`
+  String get quran_dua {
+    return Intl.message(
+      'دعاء الختم',
+      name: 'quran_dua',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

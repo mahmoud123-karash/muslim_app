@@ -41,8 +41,9 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
                 style: TextStyles.style20.copyWith(
                   fontFamily: uthmanicFamily,
                   fontWeight: FontWeight.bold,
+                  color: blackColor.withOpacity(0.8),
                 ),
-                textAlign: TextAlign.center,
+                textAlign: TextAlign.justify,
               ),
               const SizedBox(
                 height: 15,

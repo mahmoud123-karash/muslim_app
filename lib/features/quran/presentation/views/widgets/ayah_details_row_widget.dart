@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/quran/data/models/surahs_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_states.dart';
@@ -28,7 +29,12 @@ class AyahDetailsRowWidget extends StatelessWidget {
           const SizedBox(
             width: 5,
           ),
-          BlocBuilder<AyahCubit, AyahStates>(
+          BlocConsumer<AyahCubit, AyahStates>(
+            listener: (context, state) {
+              if (state is ErrorPlayAudioState) {
+                showToast(state.message);
+              }
+            },
             builder: (context, state) {
               var cubit = AyahCubit.get(context);
               return AyahDetailsOptionsContainerWidget(
@@ -38,7 +44,11 @@ class AyahDetailsRowWidget extends StatelessWidget {
                   if (cubit.isPaly) {
                     cubit.pauseAudio();
                   } else {
-                    cubit.playAudio(uri: ayah.audio, context: context);
+                    cubit.playAudio(
+                      uri: ayah.audio,
+                      context: context,
+                      message: S.of(context).no_connection,
+                    );
                   }
                 },
               );

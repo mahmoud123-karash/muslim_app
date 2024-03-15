@@ -26,6 +26,9 @@ class HomeScreen extends StatelessWidget {
                 height: 20,
               ),
               const HomeGridViewWidget(),
+              const SizedBox(
+                height: 15,
+              ),
             ],
           ),
         ),

@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:muslim_app/core/cache/shared_preference.dart';
+
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
-import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
-import 'package:muslim_app/generated/l10n.dart';
+import 'package:muslim_app/features/quran/presentation/views/quran_dua_screen.dart';
 
-import '../../manager/quran_cubit/quran_states.dart';
+import 'package:muslim_app/features/quran/presentation/views/widgets/option_custom_button_widget.dart';
+import 'package:muslim_app/features/quran/presentation/views/widgets/top_options_container_widget.dart';
+import 'package:muslim_app/generated/l10n.dart';
 
 class QuranOptionsContainerWidget extends StatelessWidget {
   const QuranOptionsContainerWidget(
@@ -23,65 +21,43 @@ class QuranOptionsContainerWidget extends StatelessWidget {
       height: double.infinity,
       color: blackColor.withOpacity(0.6),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          TopOptionsContainerWidget(
+            onPressed: onPressed,
+            pageIndex: pageIndex,
+          ),
           Container(
-            color: Colors.white,
+            color: whiteColor,
+            height: 50,
             child: Row(
               children: [
-                IconButton(
-                  onPressed: () {
-                    onPressed();
-                    QuranCubit.get(context).openDrawer();
-                  },
-                  icon: Icon(
-                    Ionicons.menu_sharp,
-                    color: appColor,
+                Expanded(
+                  child: OptionCustomButtonWidget(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    lable: S.of(context).home,
+                    icon: Icons.home_filled,
                   ),
                 ),
-                const Spacer(),
-                IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  icon: Icon(
-                    Icons.home_filled,
-                    color: appColor,
+                Container(
+                  height: 50,
+                  width: 1,
+                  color: appColor,
+                ),
+                Expanded(
+                  child: OptionCustomButtonWidget(
+                    onPressed: () {
+                      navigateTo(context, const QuranDuaScreen());
+                    },
+                    lable: S.of(context).quran_dua,
+                    icon: Icons.menu_book_sharp,
                   ),
                 ),
-                BlocBuilder<QuranCubit, QuranStates>(
-                  builder: (context, state) {
-                    int cachedPage = CacheHelper.getData(key: 'saveMark') ?? 0;
-                    return IconButton(
-                      onPressed: () {
-                        onPressed();
-                        if (cachedPage == pageIndex) {
-                          QuranCubit.get(context).removeMarkPage();
-                          showSnackBar(
-                              context, S.of(context).remove_the_book_mark);
-                        } else {
-                          QuranCubit.get(context).saveMarkPage(pageIndex);
-                          showSnackBar(context, S.of(context).save_book_mark);
-                        }
-                      },
-                      icon: Icon(
-                        cachedPage == pageIndex
-                            ? Icons.bookmark
-                            : Icons.bookmark_border_outlined,
-                        color: cachedPage == pageIndex ? secondColor : appColor,
-                      ),
-                    );
-                  },
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Ionicons.search_outline,
-                    color: appColor,
-                  ),
-                )
               ],
             ),
-          ),
+          )
         ],
       ),
     );

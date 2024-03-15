@@ -8,4 +8,7 @@ class SuccessPlayAyahtate extends AyahStates {}
 
 class SuccessStopAyahtate extends AyahStates {}
 
-class ErrorStopAyahtate extends AyahStates {}
+class ErrorPlayAudioState extends AyahStates {
+  final String message;
+  ErrorPlayAudioState(this.message);
+}
