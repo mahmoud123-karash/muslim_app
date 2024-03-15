@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,22 @@ class QuranCubit extends Cubit<QuranStates> {
         );
       },
     );
+    generateRandomVerse();
     emit(SuccessLoadQuranState());
+  }
+
+  void generateRandomVerse() {
+    int cacheDay = CacheHelper.getData(key: 'vDay') ?? 0;
+    DateTime now = DateTime.now();
+    int day = now.day;
+    if (day != cacheDay) {
+      Random random = Random();
+      int randomS = random.nextInt(114) + 1;
+      int randomV = random.nextInt(surahs[randomS].ayahs.length) + 1;
+      saveSRandom(randomS);
+      saveVRandom(randomV);
+      saveVDay(day);
+    }
   }
 
   List<Ayah> getCurrentPageAyahs(int pageIndex) => pages[pageIndex];

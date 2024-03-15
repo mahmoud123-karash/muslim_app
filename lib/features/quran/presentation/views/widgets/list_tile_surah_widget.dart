@@ -4,7 +4,6 @@ import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/assets.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
-import 'package:quran/quran.dart' as quran;
 import 'package:intl/intl.dart';
 
 import 'surah_num_stack_widget.dart';
@@ -39,7 +38,7 @@ class ListTileSurahWidget extends StatelessWidget {
                   BlendMode.srcIn,
                 ),
               ),
-        trailing: quran.getPlaceOfRevelation(index + 1) == 'Makkah'
+        trailing: surah.revelationType == 'Meccan'
             ? SizedBox(
                 height: 30,
                 width: 40,

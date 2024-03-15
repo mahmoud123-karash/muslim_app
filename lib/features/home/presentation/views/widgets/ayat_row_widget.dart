@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/generated/l10n.dart';
-import 'package:quran/quran.dart' as quran;
-import 'package:intl/intl.dart';
 
 class AyatRowWidget extends StatelessWidget {
   const AyatRowWidget(
-      {super.key, required this.randomSurah, required this.randomAyah});
-  final int randomSurah;
-  final int randomAyah;
+      {super.key, required this.surahName, required this.ayahNum});
+  final String surahName;
+  final String ayahNum;
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +22,10 @@ class AyatRowWidget extends StatelessWidget {
         ),
         const Spacer(),
         Text(
-          "${Intl.getCurrentLocale() == 'en' ? quran.getSurahNameEnglish(randomSurah) : quran.getSurahNameArabic(randomSurah)}($randomAyah)",
-          style: TextStyles.style15.copyWith(
-            fontWeight: FontWeight.bold,
+          "$surahName($ayahNum)",
+          style: TextStyles.style20Bold.copyWith(
             color: appColor,
+            fontFamily: uthmanic2Family,
           ),
         ),
       ],

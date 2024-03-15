@@ -6,7 +6,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
@@ -38,8 +37,6 @@ void main() async {
   PermissionService.requestNotificationPremissions();
 
   setLocator();
-  generateVerseOfDay();
-
   Hive.registerAdapter(ZekrAdapter());
   await Hive.openBox<Zekr>(azkarBox);
 

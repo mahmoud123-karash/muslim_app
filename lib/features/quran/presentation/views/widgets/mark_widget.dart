@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
+import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/generated/l10n.dart';
+import 'package:intl/intl.dart';
 
 class MarkWidget extends StatelessWidget {
   const MarkWidget(
@@ -13,6 +15,7 @@ class MarkWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -43,7 +46,7 @@ class MarkWidget extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      "${S.of(context).page} ${mark + 1}",
+                      "${S.of(context).page} ${isEnglish ? mark + 1 : getArabicNumber(mark + 1)}",
                       style: const TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w600,

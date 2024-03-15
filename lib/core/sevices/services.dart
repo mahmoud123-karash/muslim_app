@@ -10,7 +10,6 @@ import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
 import 'package:muslim_app/generated/l10n.dart';
-import 'package:quran/quran.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void openUri({required Uri url}) async {
@@ -53,14 +52,14 @@ String getArabicNumber(int number) {
   return arabicNumber.convert(number);
 }
 
-void generateVerseOfDay() {
+void generateVerseOfDay(int ayahCount) {
   int cacheDay = CacheHelper.getData(key: 'vDay') ?? 0;
   DateTime now = DateTime.now();
   int day = now.day;
   if (day != cacheDay) {
     Random random = Random();
     int randomS = random.nextInt(114) + 1;
-    int randomV = random.nextInt(getVerseCount(randomS)) + 1;
+    int randomV = random.nextInt(ayahCount) + 1;
     saveSRandom(randomS);
     saveVRandom(randomV);
     saveVDay(day);

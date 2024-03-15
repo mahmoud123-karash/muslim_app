@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/home/presentation/views/widgets/share_ayat_widget.dart';
-import 'package:quran/quran.dart' as quran;
 
 import 'ayat_row_widget.dart';
 
 class VerseOfTheDayContainerWidget extends StatelessWidget {
-  const VerseOfTheDayContainerWidget({super.key});
+  const VerseOfTheDayContainerWidget({
+    super.key,
+    required this.surahName,
+    required this.ayahNum,
+    required this.ayahText,
+  });
+  final String surahName;
+  final String ayahText;
+  final String ayahNum;
 
   @override
   Widget build(BuildContext context) {
-    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 1;
-    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 1;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
@@ -27,19 +31,16 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               AyatRowWidget(
-                randomAyah: randomAyah,
-                randomSurah: randomSurah,
+                ayahNum: ayahNum,
+                surahName: surahName,
               ),
               const SizedBox(
                 height: 15,
               ),
               Text(
-                quran.getVerse(
-                  randomSurah,
-                  randomAyah,
-                ),
+                ayahText,
                 style: TextStyles.style20.copyWith(
-                  fontFamily: uthmanicFamily,
+                  fontFamily: uthmanic2Family,
                   fontWeight: FontWeight.bold,
                   color: blackColor.withOpacity(0.8),
                 ),
@@ -49,7 +50,7 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
                 height: 15,
               ),
               ShareAyatWidget(
-                text: quran.getVerse(randomSurah, randomAyah),
+                text: ayahText,
               ),
             ],
           ),
