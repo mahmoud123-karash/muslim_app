@@ -85,6 +85,10 @@ class Assets {
   /// assets/images/onboarging2.jpeg
   static const String imagesOnboarging2 = "assets/images/onboarging2.jpeg";
 
+  /// Assets for imagesProfile
+  /// assets/images/profile.png
+  static const String imagesProfile = "assets/images/profile.png";
+
   /// Assets for imagesQuran
   /// assets/images/quran.png
   static const String imagesQuran = "assets/images/quran.png";

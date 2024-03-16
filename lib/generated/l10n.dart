@@ -899,6 +899,46 @@ class S {
       args: [],
     );
   }
+
+  /// `الملف الشخصي`
+  String get profile {
+    return Intl.message(
+      'الملف الشخصي',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `هل تريد تسجبل الخروج؟`
+  String get logout_question {
+    return Intl.message(
+      'هل تريد تسجبل الخروج؟',
+      name: 'logout_question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إلغاء`
+  String get cancel {
+    return Intl.message(
+      'إلغاء',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `خروج`
+  String get logout_ok {
+    return Intl.message(
+      'خروج',
+      name: 'logout_ok',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

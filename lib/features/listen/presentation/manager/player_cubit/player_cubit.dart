@@ -30,9 +30,9 @@ class PlayerCubit extends Cubit<PlayerStates> {
           .then((value) {
         isPaly = true;
         isplay(true);
-        player.onPlayerComplete.listen((event) {
-          position = Duration.zero;
-          stopAudio();
+        player.getDuration().then((value) {
+          duration = value ?? Duration.zero;
+          emit(SuccessPlayState());
         });
         player.onPositionChanged.listen((event) async {
           player.getCurrentPosition().then((value) {
@@ -41,9 +41,10 @@ class PlayerCubit extends Cubit<PlayerStates> {
           });
           emit(SuccessGetPositionState());
         });
-        player.getDuration().then((value) {
-          duration = value ?? Duration.zero;
-          emit(SuccessPlayState());
+        player.onPlayerComplete.listen((event) {
+          position = Duration.zero;
+          cachePosition(0);
+          stopAudio();
         });
       }).catchError((error) {
         emit(ErrorPlayState());

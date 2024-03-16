@@ -9,6 +9,7 @@ import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
+import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
 import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
 import 'package:muslim_app/features/azkar/data/repo/azkar_repo_impl.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_cubit.dart';
@@ -19,6 +20,7 @@ import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dar
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
+import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
@@ -43,6 +45,8 @@ void main() async {
   await Hive.openBox<Zekr>(azkarBox);
   Hive.registerAdapter(ReciterEntityAdapter());
   await Hive.openBox<ReciterEntity>(reciterBox);
+  Hive.registerAdapter(UserModelAdapter());
+  await Hive.openBox<UserModel>(userBox);
 
   late Widget startWidget;
   bool isSkip = CacheHelper.getData(key: 'isSkip') ?? false;
@@ -85,7 +89,10 @@ void main() async {
         ),
         BlocProvider(
           create: (context) => PlayerCubit(),
-        )
+        ),
+        BlocProvider(
+          create: (context) => LogoutCubit(),
+        ),
       ],
       child: MyApp(startWidget: startWidget),
     ),

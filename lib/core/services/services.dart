@@ -4,10 +4,12 @@ import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_share/flutter_share.dart';
+import 'package:hive/hive.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
+import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
 import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
 import 'package:muslim_app/generated/l10n.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -104,4 +106,9 @@ int navigateToFirstPage(juzNumber) {
   } else {
     return ((juzNumber - 1) * 20) + 1;
   }
+}
+
+UserModel getUser() {
+  var box = Hive.box<UserModel>(userBox);
+  return box.values.toList().first;
 }

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
@@ -65,6 +67,7 @@ class _HomeAudioBuilderWidgetState extends State<HomeAudioBuilderWidget> {
                       ),
                       HomeAudioWidget(
                         playTap: () {
+                          log(cubit.isPaly.toString());
                           if (cubit.isPaly) {
                             cubit.stopAudio();
                           } else {

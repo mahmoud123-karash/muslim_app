@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
         "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
         "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
+        "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "confirm_pass":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
@@ -70,6 +71,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الإستماع للقرآن"),
         "login": MessageLookupByLibrary.simpleMessage("تسجبل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجبل الخروج"),
+        "logout_ok": MessageLookupByLibrary.simpleMessage("خروج"),
+        "logout_question":
+            MessageLookupByLibrary.simpleMessage("هل تريد تسجبل الخروج؟"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "mark":
             MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
@@ -98,6 +102,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "previous": MessageLookupByLibrary.simpleMessage("السابق"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("السياسة والخصوصية"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "qibla": MessageLookupByLibrary.simpleMessage("القبلة"),
         "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),

@@ -1,8 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:hive/hive.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/auth/data/data_source/remote_data_source/user_remote_data_source.dart';
 import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
 import 'package:muslim_app/features/auth/domain/repo/auth_repo.dart';
@@ -37,7 +39,8 @@ class AuthRepoImpl extends AuthRepo {
       phone: phone,
       uid: uid,
       gender: gender,
-      role: 'user',
+      age: 0,
+      image: '',
     );
     await FirebaseFirestore.instance.collection('users').doc(uid).set(
           model.toMap(),
@@ -54,9 +57,11 @@ class AuthRepoImpl extends AuthRepo {
         email: email,
         password: password,
       );
-      if (user.user!.emailVerified) {
+      if (!user.user!.emailVerified) {
         UserModel model = await userRemoteDataSource.get(uid: user.user!.uid);
         saveEmail(model.email);
+        var box = Hive.box<UserModel>(userBox);
+        await box.add(model);
         return right(user.user!.uid);
       } else {
         await FirebaseAuth.instance.currentUser!.sendEmailVerification();

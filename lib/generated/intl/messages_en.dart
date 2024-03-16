@@ -32,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
         "azkar": MessageLookupByLibrary.simpleMessage("Adhkar"),
         "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
+        "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
         "confirm_pass":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
@@ -73,6 +74,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Listen to Quran"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "logout_ok": MessageLookupByLibrary.simpleMessage("خروج"),
+        "logout_question":
+            MessageLookupByLibrary.simpleMessage("هل تريد تسجبل الخروج؟"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "mark":
             MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
@@ -101,6 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "previous": MessageLookupByLibrary.simpleMessage("Previous"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "qibla": MessageLookupByLibrary.simpleMessage("Qibla"),
         "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("Quran Kareem"),
