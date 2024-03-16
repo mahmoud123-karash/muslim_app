@@ -39,7 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please confirm your password"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "copied": MessageLookupByLibrary.simpleMessage("Copied"),
-        "copy_ayah": MessageLookupByLibrary.simpleMessage("النسخ"),
+        "copy_ayah": MessageLookupByLibrary.simpleMessage("نسخ"),
         "create":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "create1": MessageLookupByLibrary.simpleMessage("Create an Account"),
@@ -67,7 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "juz": MessageLookupByLibrary.simpleMessage("Juz"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
-        "listen_ayah": MessageLookupByLibrary.simpleMessage("التلاوة"),
+        "last_listen": MessageLookupByLibrary.simpleMessage("آخر إستماع"),
+        "listen_ayah": MessageLookupByLibrary.simpleMessage("تلاوة"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("Listen to Quran"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -118,12 +119,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
-        "share_ayah": MessageLookupByLibrary.simpleMessage("المشاركة"),
+        "share_ayah": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "soon": MessageLookupByLibrary.simpleMessage("قريبًا"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start Now"),
         "success_download":
             MessageLookupByLibrary.simpleMessage("تم التنزيل بنجاح"),
-        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("التفسير"),
+        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("تفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("Visual Tafseer"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),

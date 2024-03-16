@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
+import 'package:muslim_app/features/quran/presentation/views/widgets/dialog_row_title_widget.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/tafseer_deatils_row_widget.dart';
+import 'package:intl/intl.dart';
 
 import 'package:muslim_app/features/quran/presentation/views/widgets/tafseer_text_builder_widget.dart';
 
@@ -12,9 +14,13 @@ import 'ayah_details_row_widget.dart';
 
 class AyahDetailsDialogWidget extends StatefulWidget {
   const AyahDetailsDialogWidget(
-      {super.key, required this.ayah, required this.surahName});
+      {super.key,
+      required this.ayah,
+      required this.surahName,
+      required this.surahEnName});
   final Ayah ayah;
   final String surahName;
+  final String surahEnName;
 
   @override
   State<AyahDetailsDialogWidget> createState() =>
@@ -38,22 +44,17 @@ class _AyahDetailsDialogWidgetState extends State<AyahDetailsDialogWidget> {
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
+
     return AlertDialog(
-      title: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: appColor.withOpacity(0.5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            '${widget.surahName}: ${getArabicNumber(widget.ayah.ayahNumber)}',
-            style: TextStyles.style19.copyWith(
-              fontFamily: naskhFamily,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
+      title: DialogRowTitleWidget(
+        surahName: isEnglish ? widget.surahEnName : widget.surahName,
+        ayahNumber: isEnglish
+            ? widget.ayah.ayahNumber.toString()
+            : getArabicNumber(
+                widget.ayah.ayahNumber,
+              ),
+        shareText: widget.ayah.text,
       ),
       content: SingleChildScrollView(
         child: Column(
@@ -71,11 +72,11 @@ class _AyahDetailsDialogWidgetState extends State<AyahDetailsDialogWidget> {
             if (isTafseer)
               TafseerTextBuilderWidget(ayahNum: widget.ayah.ayahUQNumber),
             const SizedBox(
-              height: 25,
+              height: 50,
             ),
             isTafseer
                 ? TafseerDetailsRowWidget(
-                    text: cubit.getTafsser(widget.ayah.ayahNumber),
+                    text: cubit.getTafsser(widget.ayah.ayahUQNumber),
                     ayaTap: () {
                       isTafseer = false;
                       setState(() {});

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:muslim_app/core/sevices/json_service.dart';
+import 'package:muslim_app/core/services/json_service.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/quran/data/models/tafseer_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_states.dart';

@@ -64,10 +64,10 @@
     "al_juzs":"الأجزاء",
     "save_book_mark":"تم حفظ علامة",
     "remove_the_book_mark":"تم حذف العلامة",
-    "tafsser_ayah":"التفسير",
-    "listen_ayah":"التلاوة",
-    "copy_ayah":"النسخ",
-    "share_ayah":"المشاركة",
+    "tafsser_ayah":"تفسير",
+    "listen_ayah":"تلاوة",
+    "copy_ayah":"نسخ",
+    "share_ayah":"مشاركة",
     "no_tafseer":"لا يوجد تفسير",
     "back":"الرجوع",
     "no_connection":"لا يوجد اتصال",
@@ -82,7 +82,8 @@
     "Kaaba":"الكعبة",
     "success_download":"تم التنزيل بنجاح",
     "soon":"قريبًا",
-    "download_waiting":"يرجي الإنتظار لإكمال التنزيل"
+    "download_waiting":"يرجي الإنتظار لإكمال التنزيل",
+    "last_listen":"آخر إستماع"
 
 
     

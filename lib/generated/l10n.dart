@@ -700,40 +700,40 @@ class S {
     );
   }
 
-  /// `التفسير`
+  /// `تفسير`
   String get tafsser_ayah {
     return Intl.message(
-      'التفسير',
+      'تفسير',
       name: 'tafsser_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `التلاوة`
+  /// `تلاوة`
   String get listen_ayah {
     return Intl.message(
-      'التلاوة',
+      'تلاوة',
       name: 'listen_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `النسخ`
+  /// `نسخ`
   String get copy_ayah {
     return Intl.message(
-      'النسخ',
+      'نسخ',
       name: 'copy_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `المشاركة`
+  /// `مشاركة`
   String get share_ayah {
     return Intl.message(
-      'المشاركة',
+      'مشاركة',
       name: 'share_ayah',
       desc: '',
       args: [],
@@ -885,6 +885,16 @@ class S {
     return Intl.message(
       'يرجي الإنتظار لإكمال التنزيل',
       name: 'download_waiting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `آخر إستماع`
+  String get last_listen {
+    return Intl.message(
+      'آخر إستماع',
+      name: 'last_listen',
       desc: '',
       args: [],
     );

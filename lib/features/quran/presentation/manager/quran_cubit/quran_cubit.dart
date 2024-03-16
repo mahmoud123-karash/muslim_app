@@ -7,7 +7,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
-import 'package:muslim_app/core/sevices/json_service.dart';
+import 'package:muslim_app/core/services/json_service.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_states.dart';
 

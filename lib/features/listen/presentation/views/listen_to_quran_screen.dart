@@ -6,8 +6,8 @@ import 'package:muslim_app/features/listen/presentation/manager/reciter_cubit/re
 import 'package:muslim_app/features/listen/presentation/views/widgets/reciter_grid_view_builder_widget.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
-class ReciterScreen extends StatelessWidget {
-  const ReciterScreen({super.key});
+class ListenToQuranScreen extends StatelessWidget {
+  const ListenToQuranScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

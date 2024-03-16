@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
@@ -23,6 +23,7 @@ class SearchItemWidget extends StatelessWidget {
           builder: (context) => AyahDetailsDialogWidget(
             ayah: ayah,
             surahName: cubit.getSurahNameFromPage(ayah.page),
+            surahEnName: cubit.getSurahEnglishNameFromPage(ayah.page),
           ),
         );
       },

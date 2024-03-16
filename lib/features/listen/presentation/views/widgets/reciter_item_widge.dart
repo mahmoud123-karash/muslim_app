@@ -32,7 +32,7 @@ class ReciterItemWidget extends StatelessWidget {
                 id: id,
                 reciterName: text,
                 image: image,
-                style: sText == '' ? '' : sText,
+                style: sText,
               ),
             );
           }

@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/services/services.dart';
 import 'package:intl/intl.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/generated/l10n.dart';

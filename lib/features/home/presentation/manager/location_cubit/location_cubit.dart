@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
-import 'package:muslim_app/core/sevices/location_service.dart';
+import 'package:muslim_app/core/services/location_service.dart';
 
 import 'location_states.dart';
 

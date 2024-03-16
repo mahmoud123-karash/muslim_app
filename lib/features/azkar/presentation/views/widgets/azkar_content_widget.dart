@@ -27,15 +27,11 @@ class _AzkarContentWidgetState extends State<AzkarContentWidget> {
         scrollController.position.maxScrollExtent) {
       if (widget.list.length > length) {
         length += 10;
-        Future.delayed(const Duration(microseconds: 200)).then(
-          (value) {
-            WidgetsBinding.instance.addPostFrameCallback(
-              (timeStamp) {
-                if (mounted) {
-                  setState(() {});
-                }
-              },
-            );
+        WidgetsBinding.instance.addPostFrameCallback(
+          (timeStamp) {
+            if (mounted) {
+              setState(() {});
+            }
           },
         );
       }

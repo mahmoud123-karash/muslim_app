@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_states.dart';
 import 'package:muslim_app/features/quran/presentation/views/quran_drawer_widget.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 
 class AyahDetailsOptionsContainerWidget extends StatelessWidget {
@@ -30,7 +31,13 @@ class AyahDetailsOptionsContainerWidget extends StatelessWidget {
                 icon,
                 color: appColor,
               ),
-              Text(lable)
+              Text(
+                lable,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14.w,
+                ),
+              )
             ],
           ),
         ),

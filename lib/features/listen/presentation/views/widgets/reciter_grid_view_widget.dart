@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:muslim_app/core/sevices/services.dart';
+import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/utils/lists.dart';
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 import 'reciter_item_widge.dart';

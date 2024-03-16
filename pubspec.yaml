@@ -58,6 +58,7 @@ dependencies:
   internet_connection_checker: ^1.0.0+1
   ionicons: ^0.2.2
   jhijri: ^1.0.0
+  lottie: ^3.1.0
   path_provider: ^2.1.2
   shared_preferences: ^2.2.2
   shimmer: ^3.0.0
@@ -2525,9 +2526,6 @@ flutter:
     - family: page604
       fonts:
         - asset: assets/fonts/quran_fonts/p2604.ttf
-
-
-
 
 flutter_assets:
   assets_path: assets/images

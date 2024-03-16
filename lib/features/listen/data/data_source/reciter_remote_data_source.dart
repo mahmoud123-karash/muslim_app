@@ -15,7 +15,7 @@ class ReciterRemoteDataSourceImpl extends ReciterRemoteDataSource {
   ReciterRemoteDataSourceImpl(this.dioHelper);
   @override
   Future<List<ReciterEntity>> getReciterData() async {
-    var response = await dioHelper.getData(endPount: EndPoints.reciterEndPoint);
+    var response = await dioHelper.getData(endPoint: EndPoints.reciterEndPoint);
     List<ReciterEntity> reciters = parseData(response);
     saveRecitersLocal(sortElementsById(reciters));
 

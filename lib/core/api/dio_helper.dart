@@ -6,8 +6,8 @@ class DioHelper {
 
   String baseUri = 'https://api.quran.com/api/v4/';
 
-  Future<Map<String, dynamic>> getData({required String endPount}) async {
-    var reciters = await dio.get('$baseUri$endPount');
+  Future<Map<String, dynamic>> getData({required String endPoint}) async {
+    var reciters = await dio.get('$baseUri$endPoint');
     return reciters.data;
   }
 
@@ -21,16 +21,5 @@ class DioHelper {
       filePath,
       onReceiveProgress: onReceiveProgress,
     );
-  }
-
-  Future downloadImage({
-    required String uri,
-  }) async {
-    var response = await dio.get(
-      uri,
-      options: Options(responseType: ResponseType.bytes),
-    );
-
-    return response;
   }
 }

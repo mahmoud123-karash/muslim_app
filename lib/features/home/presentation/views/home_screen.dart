@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:muslim_app/core/sevices/date_sevice.dart';
+import 'package:muslim_app/core/services/date_service.dart';
+import 'package:muslim_app/features/home/presentation/views/widgets/home_audio_builder_widget.dart';
 import 'package:muslim_app/features/home/presentation/views/widgets/location_home_builder_widget.dart';
 
 import 'widgets/home_grid_view_widget.dart';
@@ -22,10 +23,14 @@ class HomeScreen extends StatelessWidget {
               const LocationHomeBuilderWidget(),
               HomeRowWidget(
                 lable: isEnglish
-                    ? DateSevice.jHijriFormatted
+                    ? DateSevice.dateFormatted
                     : DateSevice.arJHijriDate,
                 icon: Ionicons.calendar_outline,
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              const HomeAudioBuilderWidget(),
               const SizedBox(
                 height: 20,
               ),

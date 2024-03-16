@@ -14,7 +14,7 @@ class AudioRemoteDataSourceImpl extends AudioRemoteDataSource {
   @override
   Future<List<AudioModel>> getRemoteAudioFiles({required int id}) async {
     Map<String, dynamic> data =
-        await dioHelper.getData(endPount: EndPoints.audioEndPoint(id));
+        await dioHelper.getData(endPoint: EndPoints.audioEndPoint(id));
     List<AudioModel> audiofiles = parseData(data);
     return audiofiles;
   }

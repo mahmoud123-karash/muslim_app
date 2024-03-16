@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/contants/constants.dart';
-import 'package:muslim_app/core/sevices/normilze_text_service.dart';
+import 'package:muslim_app/core/services/normilze_text_service.dart';
 import 'package:muslim_app/core/widgets/message_builder_widget.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/search_text_field_widget.dart';

@@ -60,6 +60,8 @@ class QuranAyahTextWidget extends StatelessWidget {
                       builder: (context) => AyahDetailsDialogWidget(
                         ayah: ayahs[ayahIndex],
                         surahName: cubit.getSurahNameFromPage(pageIndex),
+                        surahEnName:
+                            cubit.getSurahEnglishNameFromPage(pageIndex),
                       ),
                     );
                   },
@@ -80,6 +82,7 @@ class QuranAyahTextWidget extends StatelessWidget {
                     builder: (context) => AyahDetailsDialogWidget(
                       ayah: ayahs[ayahIndex],
                       surahName: cubit.getSurahNameFromPage(pageIndex),
+                      surahEnName: cubit.getSurahEnglishNameFromPage(pageIndex),
                     ),
                   );
                 },

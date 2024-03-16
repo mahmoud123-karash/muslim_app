@@ -22,7 +22,7 @@ import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/firebase_options.dart';
-import 'core/sevices/permission_service.dart';
+import 'core/services/permission_service.dart';
 import 'features/listen/domain/entites/reciter_entity.dart';
 import 'generated/l10n.dart';
 
