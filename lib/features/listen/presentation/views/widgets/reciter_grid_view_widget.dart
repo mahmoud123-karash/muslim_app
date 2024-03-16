@@ -3,6 +3,7 @@ import 'package:muslim_app/core/sevices/services.dart';
 import 'package:muslim_app/core/utils/lists.dart';
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 import 'reciter_item_widge.dart';
+import 'package:intl/intl.dart';
 
 class ReciterGridViewWidget extends StatelessWidget {
   const ReciterGridViewWidget({super.key, required this.reciters});
@@ -10,6 +11,7 @@ class ReciterGridViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
@@ -21,7 +23,11 @@ class ReciterGridViewWidget extends StatelessWidget {
         child: ReciterItemWidget(
           text: reciters[index].name,
           image: recitersImage[index],
-          sText: readStyle(reciters[index].style),
+          sText: isEnglish
+              ? reciters[index].style == ''
+                  ? 'muratal'
+                  : reciters[index].style
+              : readStyle(reciters[index].style),
           id: reciters[index].id,
         ),
       ),

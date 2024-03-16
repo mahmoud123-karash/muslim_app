@@ -73,6 +73,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
         String min = formatDuration(duration: cubit.position.toString());
         String max = formatDuration(duration: cubit.duration.toString());
         return Scaffold(
+          appBar: AppBar(),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

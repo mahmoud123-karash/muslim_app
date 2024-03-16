@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'play_button_widget.dart';
 import 'skip_widget.dart';
+import 'package:intl/intl.dart';
 
 class PalyAndSkipWidget extends StatelessWidget {
   const PalyAndSkipWidget(
@@ -17,12 +18,13 @@ class PalyAndSkipWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         SkipWidget(
           ontap: skipPreviousTap,
-          icon: Icons.skip_next,
+          icon: isEnglish ? Icons.skip_previous : Icons.skip_next,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(
@@ -35,7 +37,7 @@ class PalyAndSkipWidget extends StatelessWidget {
         ),
         SkipWidget(
           ontap: skipNextTap,
-          icon: Icons.skip_previous,
+          icon: !isEnglish ? Icons.skip_previous : Icons.skip_next,
         ),
       ],
     );

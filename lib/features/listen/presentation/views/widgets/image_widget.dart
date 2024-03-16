@@ -8,7 +8,7 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     return CircleAvatar(
-      radius: width / 3,
+      radius: width / 3.5,
       backgroundImage: AssetImage(
         image,
       ),

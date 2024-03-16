@@ -79,6 +79,7 @@ flutter:
     - assets/svg/
     - assets/svg/surah_name/
     - assets/json/
+    - assets/lottie/
 
   fonts:
     - family: cairo

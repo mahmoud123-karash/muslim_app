@@ -6,12 +6,14 @@ import 'package:muslim_app/features/home/presentation/views/widgets/location_hom
 import 'widgets/home_grid_view_widget.dart';
 import 'widgets/home_row_widget.dart';
 import 'widgets/verse_of_the_day_builder_widget.dart';
+import 'package:intl/intl.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
@@ -19,7 +21,9 @@ class HomeScreen extends StatelessWidget {
             children: [
               const LocationHomeBuilderWidget(),
               HomeRowWidget(
-                lable: DateSevice.jHijriDate,
+                lable: isEnglish
+                    ? DateSevice.jHijriFormatted
+                    : DateSevice.arJHijriDate,
                 icon: Ionicons.calendar_outline,
               ),
               const SizedBox(

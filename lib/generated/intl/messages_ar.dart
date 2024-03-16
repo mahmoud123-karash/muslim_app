@@ -43,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "create": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "create1": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
+        "download_waiting": MessageLookupByLibrary.simpleMessage(
+            "يرجي الإنتظار لإكمال التنزيل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "email_verify": MessageLookupByLibrary.simpleMessage(
             "من فضلك قم بتفعيل الايميل الخاص"),

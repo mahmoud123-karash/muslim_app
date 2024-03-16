@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 class HomeAppBarTiltleWidget extends StatelessWidget {
@@ -14,10 +14,11 @@ class HomeAppBarTiltleWidget extends StatelessWidget {
         const SizedBox(
           width: 5,
         ),
-        const Icon(
-          Ionicons.hand_right,
-          color: Colors.amber,
-        ),
+        SvgPicture.asset(
+          width: 30,
+          height: 30,
+          'assets/svg/waving-hand.svg',
+        )
       ],
     );
   }

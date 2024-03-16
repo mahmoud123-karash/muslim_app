@@ -35,10 +35,13 @@ class ItemSurahWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return BlocBuilder<QuranCubit, QuranStates>(
       builder: (context, state) {
         List<Surah> list = QuranCubit.get(context).surahs;
         if (list.isNotEmpty) {
+          String surahName =
+              isEnglish ? list[index].englishName : list[index].arabicName;
           return GestureDetector(
             onTap: () async {
               AudioCubit.get(context).index = index;
@@ -46,11 +49,11 @@ class ItemSurahWidget extends StatelessWidget {
                 '${(await getTemporaryDirectory()).path}$index $id',
               ).exists()) {
                 if (AudioCubit.get(context).isDownloading) {
-                  showSnackBar(context, 'يرجي الإنتظار لإكمال التنزيل');
+                  showSnackBar(context, S.of(context).download_waiting);
                 } else {
                   saveReciterImage(image);
                   saveReciterName(name);
-                  saveSurahName(list[index].arabicName);
+                  saveSurahName(surahName);
                   navigateTo(
                     context,
                     PlayerScreen(isHome: false, id: id, index: index),
@@ -84,9 +87,7 @@ class ItemSurahWidget extends StatelessWidget {
                       width: 25,
                     ),
                     Text(
-                      Intl.getCurrentLocale() == 'ar'
-                          ? list[index].arabicName
-                          : list[index].englishName,
+                      surahName,
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

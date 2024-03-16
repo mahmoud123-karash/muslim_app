@@ -45,6 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "create1": MessageLookupByLibrary.simpleMessage("Create an Account"),
         "device_language":
             MessageLookupByLibrary.simpleMessage("Device Language"),
+        "download_waiting": MessageLookupByLibrary.simpleMessage(
+            "يرجي الإنتظار لإكمال التنزيل"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_verify":
             MessageLookupByLibrary.simpleMessage("Please activate your email"),

@@ -15,8 +15,8 @@ class SurahNumStackWidget extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         SizedBox(
-          height: 30,
-          width: 30,
+          height: 40,
+          width: 40,
           child: SvgPicture.asset(
             'assets/svg/sora_num.svg',
             colorFilter: ColorFilter.mode(

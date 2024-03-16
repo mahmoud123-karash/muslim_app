@@ -879,6 +879,16 @@ class S {
       args: [],
     );
   }
+
+  /// `يرجي الإنتظار لإكمال التنزيل`
+  String get download_waiting {
+    return Intl.message(
+      'يرجي الإنتظار لإكمال التنزيل',
+      name: 'download_waiting',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
