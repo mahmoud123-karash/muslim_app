@@ -22,19 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Kaaba": MessageLookupByLibrary.simpleMessage("الكعبة"),
+        "Kaaba": MessageLookupByLibrary.simpleMessage("Kaaba"),
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
-        "age": MessageLookupByLibrary.simpleMessage("العمر"),
-        "age_hint": MessageLookupByLibrary.simpleMessage("يرجي ادخال عمر صالح"),
-        "al_juzs": MessageLookupByLibrary.simpleMessage("الأجزاء"),
-        "al_surahs": MessageLookupByLibrary.simpleMessage("السور"),
+        "age": MessageLookupByLibrary.simpleMessage("Age"),
+        "age_hint":
+            MessageLookupByLibrary.simpleMessage("Please enter a valid age"),
+        "al_juzs": MessageLookupByLibrary.simpleMessage("Juzs"),
+        "al_surahs": MessageLookupByLibrary.simpleMessage("Surahs"),
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
         "aya_of_the_day":
             MessageLookupByLibrary.simpleMessage("Verse of the Day"),
-        "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
+        "ayah_num": MessageLookupByLibrary.simpleMessage("Verse"),
         "azkar": MessageLookupByLibrary.simpleMessage("Adhkar"),
-        "back": MessageLookupByLibrary.simpleMessage("الرجوع"),
-        "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
+        "back": MessageLookupByLibrary.simpleMessage("Back"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "confirm_lang": MessageLookupByLibrary.simpleMessage("Apply"),
         "confirm_pass":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
@@ -42,18 +43,19 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please confirm your password"),
         "contact_us": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "copied": MessageLookupByLibrary.simpleMessage("Copied"),
-        "copy_ayah": MessageLookupByLibrary.simpleMessage("نسخ"),
+        "copy_ayah": MessageLookupByLibrary.simpleMessage("Copy"),
         "create":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "create1": MessageLookupByLibrary.simpleMessage("Create an Account"),
-        "delete": MessageLookupByLibrary.simpleMessage("حذف"),
-        "delete_account": MessageLookupByLibrary.simpleMessage("حذف الحساب"),
-        "delete_account_question":
-            MessageLookupByLibrary.simpleMessage("هل تريد حذف الحساب ؟"),
+        "delete": MessageLookupByLibrary.simpleMessage("Delete"),
+        "delete_account":
+            MessageLookupByLibrary.simpleMessage("Delete Account"),
+        "delete_account_question": MessageLookupByLibrary.simpleMessage(
+            "Do you want to delete the account?"),
         "device_language":
             MessageLookupByLibrary.simpleMessage("Device Language"),
         "download_waiting": MessageLookupByLibrary.simpleMessage(
-            "يرجي الإنتظار لإكمال التنزيل"),
+            "Please wait for the download to complete"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_verify":
             MessageLookupByLibrary.simpleMessage("Please activate your email"),
@@ -63,11 +65,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "follow":
             MessageLookupByLibrary.simpleMessage("Follow without Registration"),
-        "follow_reading": MessageLookupByLibrary.simpleMessage("متابعة"),
+        "follow_reading": MessageLookupByLibrary.simpleMessage("Follow"),
         "forget": MessageLookupByLibrary.simpleMessage("Forgot Password"),
         "from_real_nourth":
-            MessageLookupByLibrary.simpleMessage(" من الشمال الحقيقي"),
-        "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
+            MessageLookupByLibrary.simpleMessage("From True North"),
+        "gender": MessageLookupByLibrary.simpleMessage("Gender"),
         "gender_confirm_hint_error":
             MessageLookupByLibrary.simpleMessage("Please select the gender"),
         "have_an_account":
@@ -75,27 +77,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "juz": MessageLookupByLibrary.simpleMessage("Juz"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
-        "last_listen": MessageLookupByLibrary.simpleMessage("آخر إستماع"),
-        "listen_ayah": MessageLookupByLibrary.simpleMessage("تلاوة"),
+        "last_listen": MessageLookupByLibrary.simpleMessage("Last Listen"),
+        "listen_ayah": MessageLookupByLibrary.simpleMessage("Recitation"),
         "listen_to_quran":
             MessageLookupByLibrary.simpleMessage("Listen to Quran"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
-        "logout_ok": MessageLookupByLibrary.simpleMessage("خروج"),
+        "logout_ok": MessageLookupByLibrary.simpleMessage("Logout"),
         "logout_question":
-            MessageLookupByLibrary.simpleMessage("هل تريد تسجبل الخروج؟"),
+            MessageLookupByLibrary.simpleMessage("Do you want to log out?"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
-        "mark":
-            MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
+        "mark": MessageLookupByLibrary.simpleMessage("Resume Reading"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
-        "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
+        "no_connection": MessageLookupByLibrary.simpleMessage("No Connection"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
-        "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
-        "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
+        "no_results": MessageLookupByLibrary.simpleMessage("No Results"),
+        "no_tafseer": MessageLookupByLibrary.simpleMessage("No Tafsir"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
-        "num_of_the_ayahs": MessageLookupByLibrary.simpleMessage("عدد الآيات"),
+        "num_of_the_ayahs":
+            MessageLookupByLibrary.simpleMessage("Number of Verses"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
             "Welcome to our Islamic app, where you can explore the beauty of Islam and enhance your spiritual journey"),
         "on_boarding_2": MessageLookupByLibrary.simpleMessage(
@@ -103,7 +105,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "on_boarding_3": MessageLookupByLibrary.simpleMessage(
             "Embrace the teachings of Islam and incorporate them into your daily life with the help of our user-friendly Islamic app."),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
-        "page": MessageLookupByLibrary.simpleMessage("صفحة"),
+        "page": MessageLookupByLibrary.simpleMessage("Page"),
         "pass": MessageLookupByLibrary.simpleMessage("Password"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "phone_lenght_hint_error": MessageLookupByLibrary.simpleMessage(
@@ -112,38 +114,39 @@ class MessageLookup extends MessageLookupByLibrary {
         "previous": MessageLookupByLibrary.simpleMessage("Previous"),
         "privacy_and_policy":
             MessageLookupByLibrary.simpleMessage("Privacy and Policy"),
-        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "qibla": MessageLookupByLibrary.simpleMessage("Qibla"),
-        "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
+        "quran_dua": MessageLookupByLibrary.simpleMessage("Quran Dua"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("Quran Kareem"),
         "rate_app": MessageLookupByLibrary.simpleMessage("Rate the App"),
         "re_auth_account": MessageLookupByLibrary.simpleMessage(
-            "من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب"),
-        "real_nourth": MessageLookupByLibrary.simpleMessage("الشمال الحقيقي"),
+            "Please log in again to confirm the account"),
+        "real_nourth": MessageLookupByLibrary.simpleMessage("True North"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "remove_the_book_mark":
-            MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),
+            MessageLookupByLibrary.simpleMessage("Bookmark Removed"),
         "reset": MessageLookupByLibrary.simpleMessage("Reset"),
         "reset_email": MessageLookupByLibrary.simpleMessage("Enter your email"),
-        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
-        "save_book_mark": MessageLookupByLibrary.simpleMessage("تم حفظ علامة"),
-        "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
+        "save_book_mark":
+            MessageLookupByLibrary.simpleMessage("Bookmark Saved"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
         "search_hint_enter": MessageLookupByLibrary.simpleMessage(
-            "أدخل اسم الآية التى تريد البحث عنها..."),
+            "Enter the verse name you want to search for..."),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
-        "share_ayah": MessageLookupByLibrary.simpleMessage("مشاركة"),
-        "soon": MessageLookupByLibrary.simpleMessage("قريبًا"),
+        "share_ayah": MessageLookupByLibrary.simpleMessage("Share"),
+        "soon": MessageLookupByLibrary.simpleMessage("Coming Soon"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start Now"),
         "success_download":
-            MessageLookupByLibrary.simpleMessage("تم التنزيل بنجاح"),
+            MessageLookupByLibrary.simpleMessage("Download Successful"),
         "success_logout":
-            MessageLookupByLibrary.simpleMessage("تم تسجبل الخروج"),
+            MessageLookupByLibrary.simpleMessage("Logged out successfully"),
         "success_update":
-            MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات"),
-        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("تفسير"),
+            MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
+        "tafsser_ayah": MessageLookupByLibrary.simpleMessage("Tafsir"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("Visual Tafseer"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),

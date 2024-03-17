@@ -630,410 +630,410 @@ class S {
     );
   }
 
-  /// `صفحة`
+  /// `Page`
   String get page {
     return Intl.message(
-      'صفحة',
+      'Page',
       name: 'page',
       desc: '',
       args: [],
     );
   }
 
-  /// `متابعة القراءة من حيث توقفت`
+  /// `Resume Reading`
   String get mark {
     return Intl.message(
-      'متابعة القراءة من حيث توقفت',
+      'Resume Reading',
       name: 'mark',
       desc: '',
       args: [],
     );
   }
 
-  /// `متابعة`
+  /// `Follow`
   String get follow_reading {
     return Intl.message(
-      'متابعة',
+      'Follow',
       name: 'follow_reading',
       desc: '',
       args: [],
     );
   }
 
-  /// `السور`
+  /// `Surahs`
   String get al_surahs {
     return Intl.message(
-      'السور',
+      'Surahs',
       name: 'al_surahs',
       desc: '',
       args: [],
     );
   }
 
-  /// `الأجزاء`
+  /// `Juzs`
   String get al_juzs {
     return Intl.message(
-      'الأجزاء',
+      'Juzs',
       name: 'al_juzs',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم حفظ علامة`
+  /// `Bookmark Saved`
   String get save_book_mark {
     return Intl.message(
-      'تم حفظ علامة',
+      'Bookmark Saved',
       name: 'save_book_mark',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم حذف العلامة`
+  /// `Bookmark Removed`
   String get remove_the_book_mark {
     return Intl.message(
-      'تم حذف العلامة',
+      'Bookmark Removed',
       name: 'remove_the_book_mark',
       desc: '',
       args: [],
     );
   }
 
-  /// `تفسير`
+  /// `Tafsir`
   String get tafsser_ayah {
     return Intl.message(
-      'تفسير',
+      'Tafsir',
       name: 'tafsser_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `تلاوة`
+  /// `Recitation`
   String get listen_ayah {
     return Intl.message(
-      'تلاوة',
+      'Recitation',
       name: 'listen_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `نسخ`
+  /// `Copy`
   String get copy_ayah {
     return Intl.message(
-      'نسخ',
+      'Copy',
       name: 'copy_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `مشاركة`
+  /// `Share`
   String get share_ayah {
     return Intl.message(
-      'مشاركة',
+      'Share',
       name: 'share_ayah',
       desc: '',
       args: [],
     );
   }
 
-  /// `لا يوجد تفسير`
+  /// `No Tafsir`
   String get no_tafseer {
     return Intl.message(
-      'لا يوجد تفسير',
+      'No Tafsir',
       name: 'no_tafseer',
       desc: '',
       args: [],
     );
   }
 
-  /// `الرجوع`
+  /// `Back`
   String get back {
     return Intl.message(
-      'الرجوع',
+      'Back',
       name: 'back',
       desc: '',
       args: [],
     );
   }
 
-  /// `لا يوجد اتصال`
+  /// `No Connection`
   String get no_connection {
     return Intl.message(
-      'لا يوجد اتصال',
+      'No Connection',
       name: 'no_connection',
       desc: '',
       args: [],
     );
   }
 
-  /// `دعاء الختم`
+  /// `Quran Dua`
   String get quran_dua {
     return Intl.message(
-      'دعاء الختم',
+      'Quran Dua',
       name: 'quran_dua',
       desc: '',
       args: [],
     );
   }
 
-  /// `البحث`
+  /// `Search`
   String get search {
     return Intl.message(
-      'البحث',
+      'Search',
       name: 'search',
       desc: '',
       args: [],
     );
   }
 
-  /// `أدخل اسم الآية التى تريد البحث عنها...`
+  /// `Enter the verse name you want to search for...`
   String get search_hint_enter {
     return Intl.message(
-      'أدخل اسم الآية التى تريد البحث عنها...',
+      'Enter the verse name you want to search for...',
       name: 'search_hint_enter',
       desc: '',
       args: [],
     );
   }
 
-  /// `لا يوجد نتائج`
+  /// `No Results`
   String get no_results {
     return Intl.message(
-      'لا يوجد نتائج',
+      'No Results',
       name: 'no_results',
       desc: '',
       args: [],
     );
   }
 
-  /// `الآية`
+  /// `Verse`
   String get ayah_num {
     return Intl.message(
-      'الآية',
+      'Verse',
       name: 'ayah_num',
       desc: '',
       args: [],
     );
   }
 
-  /// `عدد الآيات`
+  /// `Number of Verses`
   String get num_of_the_ayahs {
     return Intl.message(
-      'عدد الآيات',
+      'Number of Verses',
       name: 'num_of_the_ayahs',
       desc: '',
       args: [],
     );
   }
 
-  /// ` من الشمال الحقيقي`
+  /// `From True North`
   String get from_real_nourth {
     return Intl.message(
-      ' من الشمال الحقيقي',
+      'From True North',
       name: 'from_real_nourth',
       desc: '',
       args: [],
     );
   }
 
-  /// `الشمال الحقيقي`
+  /// `True North`
   String get real_nourth {
     return Intl.message(
-      'الشمال الحقيقي',
+      'True North',
       name: 'real_nourth',
       desc: '',
       args: [],
     );
   }
 
-  /// `الكعبة`
+  /// `Kaaba`
   String get Kaaba {
     return Intl.message(
-      'الكعبة',
+      'Kaaba',
       name: 'Kaaba',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم التنزيل بنجاح`
+  /// `Download Successful`
   String get success_download {
     return Intl.message(
-      'تم التنزيل بنجاح',
+      'Download Successful',
       name: 'success_download',
       desc: '',
       args: [],
     );
   }
 
-  /// `قريبًا`
+  /// `Coming Soon`
   String get soon {
     return Intl.message(
-      'قريبًا',
+      'Coming Soon',
       name: 'soon',
       desc: '',
       args: [],
     );
   }
 
-  /// `يرجي الإنتظار لإكمال التنزيل`
+  /// `Please wait for the download to complete`
   String get download_waiting {
     return Intl.message(
-      'يرجي الإنتظار لإكمال التنزيل',
+      'Please wait for the download to complete',
       name: 'download_waiting',
       desc: '',
       args: [],
     );
   }
 
-  /// `آخر إستماع`
+  /// `Last Listen`
   String get last_listen {
     return Intl.message(
-      'آخر إستماع',
+      'Last Listen',
       name: 'last_listen',
       desc: '',
       args: [],
     );
   }
 
-  /// `الملف الشخصي`
+  /// `Profile`
   String get profile {
     return Intl.message(
-      'الملف الشخصي',
+      'Profile',
       name: 'profile',
       desc: '',
       args: [],
     );
   }
 
-  /// `هل تريد تسجبل الخروج؟`
+  /// `Do you want to log out?`
   String get logout_question {
     return Intl.message(
-      'هل تريد تسجبل الخروج؟',
+      'Do you want to log out?',
       name: 'logout_question',
       desc: '',
       args: [],
     );
   }
 
-  /// `إلغاء`
+  /// `Cancel`
   String get cancel {
     return Intl.message(
-      'إلغاء',
+      'Cancel',
       name: 'cancel',
       desc: '',
       args: [],
     );
   }
 
-  /// `خروج`
+  /// `Logout`
   String get logout_ok {
     return Intl.message(
-      'خروج',
+      'Logout',
       name: 'logout_ok',
       desc: '',
       args: [],
     );
   }
 
-  /// `العمر`
+  /// `Age`
   String get age {
     return Intl.message(
-      'العمر',
+      'Age',
       name: 'age',
       desc: '',
       args: [],
     );
   }
 
-  /// `الجنس`
+  /// `Gender`
   String get gender {
     return Intl.message(
-      'الجنس',
+      'Gender',
       name: 'gender',
       desc: '',
       args: [],
     );
   }
 
-  /// `حفظ`
+  /// `Save`
   String get save {
     return Intl.message(
-      'حفظ',
+      'Save',
       name: 'save',
       desc: '',
       args: [],
     );
   }
 
-  /// `يرجي ادخال عمر صالح`
+  /// `Please enter a valid age`
   String get age_hint {
     return Intl.message(
-      'يرجي ادخال عمر صالح',
+      'Please enter a valid age',
       name: 'age_hint',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم حفظ التغييرات`
+  /// `Changes saved successfully`
   String get success_update {
     return Intl.message(
-      'تم حفظ التغييرات',
+      'Changes saved successfully',
       name: 'success_update',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب`
+  /// `Please log in again to confirm the account`
   String get re_auth_account {
     return Intl.message(
-      'من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب',
+      'Please log in again to confirm the account',
       name: 're_auth_account',
       desc: '',
       args: [],
     );
   }
 
-  /// `حذف الحساب`
+  /// `Delete Account`
   String get delete_account {
     return Intl.message(
-      'حذف الحساب',
+      'Delete Account',
       name: 'delete_account',
       desc: '',
       args: [],
     );
   }
 
-  /// `هل تريد حذف الحساب ؟`
+  /// `Do you want to delete the account?`
   String get delete_account_question {
     return Intl.message(
-      'هل تريد حذف الحساب ؟',
+      'Do you want to delete the account?',
       name: 'delete_account_question',
       desc: '',
       args: [],
     );
   }
 
-  /// `حذف`
+  /// `Delete`
   String get delete {
     return Intl.message(
-      'حذف',
+      'Delete',
       name: 'delete',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم تسجبل الخروج`
+  /// `Logged out successfully`
   String get success_logout {
     return Intl.message(
-      'تم تسجبل الخروج',
+      'Logged out successfully',
       name: 'success_logout',
       desc: '',
       args: [],

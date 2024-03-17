@@ -64,7 +64,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "follow_reading": MessageLookupByLibrary.simpleMessage("متابعة"),
         "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "from_real_nourth":
-            MessageLookupByLibrary.simpleMessage(" من الشمال الحقيقي"),
+            MessageLookupByLibrary.simpleMessage("من الشمال الحقيقي"),
         "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
         "gender_confirm_hint_error":
             MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
