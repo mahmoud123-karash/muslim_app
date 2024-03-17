@@ -33,7 +33,6 @@ dependencies:
   awesome_dialog: ^3.2.0
   awesome_notifications: 0.8.2
   badges: ^3.1.2
-  cached_network_image: ^3.3.1
   cloud_firestore: ^4.15.8
   cupertino_icons: ^1.0.6
   dartz: ^0.10.1

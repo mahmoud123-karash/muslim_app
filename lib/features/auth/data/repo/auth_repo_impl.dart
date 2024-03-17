@@ -3,7 +3,6 @@ import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 import 'package:muslim_app/core/cache/save_data.dart';
-import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/auth/data/data_source/remote_data_source/user_remote_data_source.dart';
 import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
@@ -60,6 +59,7 @@ class AuthRepoImpl extends AuthRepo {
       if (!user.user!.emailVerified) {
         UserModel model = await userRemoteDataSource.get(uid: user.user!.uid);
         saveEmail(model.email);
+        saveUid(model.uid);
         var box = Hive.box<UserModel>(userBox);
         await box.add(model);
         return right(user.user!.uid);
@@ -79,18 +79,16 @@ class AuthRepoImpl extends AuthRepo {
       User? user = firebaseAuth.currentUser;
       if (user != null) {
         user.delete();
-        String uid = CacheHelper.getData(key: 'uid') ?? '';
-        await FirebaseFirestore.instance.collection('users').doc(uid).delete();
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(user.uid)
+            .delete();
         return right('r');
       } else {
-        return right('re');
+        return left('re');
       }
-    } on FirebaseAuthException catch (e) {
-      if (e.code == "requires-recent-login") {
-        return right('re');
-      } else {
-        return left(e.code);
-      }
+    } catch (e) {
+      return left(e.toString());
     }
   }
 }

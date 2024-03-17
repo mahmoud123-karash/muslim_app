@@ -46,6 +46,7 @@ class LogoutDialogWidget extends StatelessWidget {
           listener: (context, state) {
             if (state is SuccessLogoutState) {
               Navigator.pop(context);
+              showSnackBar(context, S.of(context).success_logout);
             }
             if (state is ErrorLogoutState) {
               showToast(state.message);

@@ -24,6 +24,8 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Kaaba": MessageLookupByLibrary.simpleMessage("الكعبة"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
+        "age": MessageLookupByLibrary.simpleMessage("العمر"),
+        "age_hint": MessageLookupByLibrary.simpleMessage("يرجي ادخال عمر صالح"),
         "al_juzs": MessageLookupByLibrary.simpleMessage("الأجزاء"),
         "al_surahs": MessageLookupByLibrary.simpleMessage("السور"),
         "arabic_language":
@@ -43,6 +45,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "copy_ayah": MessageLookupByLibrary.simpleMessage("نسخ"),
         "create": MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "create1": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+        "delete": MessageLookupByLibrary.simpleMessage("حذف"),
+        "delete_account": MessageLookupByLibrary.simpleMessage("حذف الحساب"),
+        "delete_account_question":
+            MessageLookupByLibrary.simpleMessage("هل تريد حذف الحساب ؟"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
         "download_waiting": MessageLookupByLibrary.simpleMessage(
             "يرجي الإنتظار لإكمال التنزيل"),
@@ -59,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "from_real_nourth":
             MessageLookupByLibrary.simpleMessage(" من الشمال الحقيقي"),
+        "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
         "gender_confirm_hint_error":
             MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
         "have_an_account": MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
@@ -107,11 +114,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "quran_dua": MessageLookupByLibrary.simpleMessage("دعاء الختم"),
         "quran_kareem": MessageLookupByLibrary.simpleMessage("القرآن الكريم"),
         "rate_app": MessageLookupByLibrary.simpleMessage("تقييم التطبيق"),
+        "re_auth_account": MessageLookupByLibrary.simpleMessage(
+            "من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب"),
         "real_nourth": MessageLookupByLibrary.simpleMessage("الشمال الحقيقي"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "remove_the_book_mark":
             MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),
         "reset": MessageLookupByLibrary.simpleMessage("إعادة تعيين"),
+        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "save_book_mark": MessageLookupByLibrary.simpleMessage("تم حفظ علامة"),
         "search": MessageLookupByLibrary.simpleMessage("البحث"),
         "search_hint_enter": MessageLookupByLibrary.simpleMessage(
@@ -124,6 +134,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "success_download":
             MessageLookupByLibrary.simpleMessage("تم التنزيل بنجاح"),
+        "success_logout":
+            MessageLookupByLibrary.simpleMessage("تم تسجبل الخروج"),
+        "success_update":
+            MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات"),
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("تفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),

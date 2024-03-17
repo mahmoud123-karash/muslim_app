@@ -18,6 +18,9 @@ import 'package:muslim_app/features/home/presentation/manager/location_cubit/loc
 import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
+import 'package:muslim_app/features/profile/data/repo/profile_repo_impl.dart';
+import 'package:muslim_app/features/profile/presentation/manager/image_cubit/image_cubit.dart';
+import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
@@ -92,6 +95,14 @@ void main() async {
         ),
         BlocProvider(
           create: (context) => LogoutCubit(),
+        ),
+        BlocProvider(
+          create: (context) => ImageCubit(),
+        ),
+        BlocProvider(
+          create: (context) => ProfileCubit(
+            getIt.get<ProfileRepoImpl>(),
+          ),
         ),
       ],
       child: MyApp(startWidget: startWidget),

@@ -87,7 +87,23 @@
     "profile":"الملف الشخصي",    
     "logout_question":"هل تريد تسجبل الخروج؟",
     "cancel":"إلغاء",
-    "logout_ok":"خروج"
+    "logout_ok":"خروج",
+    "age":"العمر",
+    "gender":"الجنس",
+    "save":"حفظ",
+    "age_hint":"يرجي ادخال عمر صالح",
+    "success_update":"تم حفظ التغييرات",
+    "re_auth_account":"من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب",
+    "delete_account":"حذف الحساب",
+    "delete_account_question":"هل تريد حذف الحساب ؟",
+    "delete":"حذف",
+    "success_logout":"تم تسجبل الخروج"
+
+
+
+
+
+
 
 
 

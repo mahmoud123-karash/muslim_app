@@ -13,6 +13,7 @@ import 'package:muslim_app/features/listen/data/data_source/reciter_remote_data_
 import 'package:muslim_app/features/listen/data/repo/audio_repo_imol.dart';
 import 'package:muslim_app/features/listen/data/repo/reciter_repo_impl.dart';
 import 'package:muslim_app/features/listen/domain/use_cases/download_use_case.dart';
+import 'package:muslim_app/features/profile/data/repo/profile_repo_impl.dart';
 
 GetIt getIt = GetIt.instance;
 
@@ -63,5 +64,9 @@ void setLocator() {
       getIt.get<AudioRepoImpl>(),
       getIt.get<DioHelper>(),
     ),
+  );
+
+  getIt.registerSingleton<ProfileRepoImpl>(
+    ProfileRepoImpl(),
   );
 }

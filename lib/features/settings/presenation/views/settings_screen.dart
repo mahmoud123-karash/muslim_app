@@ -4,7 +4,10 @@ import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/shared/components.dart';
+import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
 import 'package:muslim_app/features/auth/presentation/views/login_screen.dart';
+import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_cubit.dart';
+import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_states.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_states.dart';
 import 'package:muslim_app/features/settings/presenation/views/language_screen.dart';
@@ -29,7 +32,13 @@ class SettingsScreen extends StatelessWidget {
           ),
           child: ListView(
             children: [
-              if (email != '') ProfileContainerWidget(user: getUser()),
+              if (email != '')
+                BlocBuilder<ProfileCubit, ProfileStates>(
+                  builder: (context, state) {
+                    UserModel user = getUser();
+                    return ProfileContainerWidget(user: user);
+                  },
+                ),
               SwitchListTileWidget(
                 isEnabled: CacheHelper.getData(key: 'isnotify') ?? false,
                 icon: Ionicons.notifications_outline,

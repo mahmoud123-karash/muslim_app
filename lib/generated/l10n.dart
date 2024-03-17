@@ -939,6 +939,106 @@ class S {
       args: [],
     );
   }
+
+  /// `العمر`
+  String get age {
+    return Intl.message(
+      'العمر',
+      name: 'age',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الجنس`
+  String get gender {
+    return Intl.message(
+      'الجنس',
+      name: 'gender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `حفظ`
+  String get save {
+    return Intl.message(
+      'حفظ',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `يرجي ادخال عمر صالح`
+  String get age_hint {
+    return Intl.message(
+      'يرجي ادخال عمر صالح',
+      name: 'age_hint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم حفظ التغييرات`
+  String get success_update {
+    return Intl.message(
+      'تم حفظ التغييرات',
+      name: 'success_update',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب`
+  String get re_auth_account {
+    return Intl.message(
+      'من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب',
+      name: 're_auth_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `حذف الحساب`
+  String get delete_account {
+    return Intl.message(
+      'حذف الحساب',
+      name: 'delete_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `هل تريد حذف الحساب ؟`
+  String get delete_account_question {
+    return Intl.message(
+      'هل تريد حذف الحساب ؟',
+      name: 'delete_account_question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `حذف`
+  String get delete {
+    return Intl.message(
+      'حذف',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم تسجبل الخروج`
+  String get success_logout {
+    return Intl.message(
+      'تم تسجبل الخروج',
+      name: 'success_logout',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
