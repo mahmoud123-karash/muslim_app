@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
 import 'package:muslim_app/features/profile/presentation/manager/image_cubit/image_cubit.dart';
-import 'package:muslim_app/features/profile/presentation/views/widgets/remove_profile_dialog_widget.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 import '../manager/profile_cubit/profile_cubit.dart';
@@ -53,16 +51,16 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       appBar: AppBar(
         title: Text(S.of(context).profile),
         centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => const RemoveDialogtDialogWidget(),
-              );
-            },
-            icon: const Icon(Ionicons.person_remove_outline),
-          )
+        actions: const [
+          // IconButton(
+          //   onPressed: () {
+          //     showDialog(
+          //       context: context,
+          //       builder: (context) => const RemoveDialogtDialogWidget(),
+          //     );
+          //   },
+          //   icon: const Icon(Ionicons.person_remove_outline),
+          // )
         ],
       ),
       body: CustomScrollView(

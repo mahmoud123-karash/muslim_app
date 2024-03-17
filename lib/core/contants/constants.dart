@@ -26,3 +26,4 @@ String naskhFamily = 'naskh';
 String azkarBox = 'azkarBox';
 String reciterBox = 'reciterBox';
 String userBox = 'userBox';
+String salatBox = 'salatBox';

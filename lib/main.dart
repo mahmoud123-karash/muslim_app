@@ -23,6 +23,7 @@ import 'package:muslim_app/features/profile/presentation/manager/image_cubit/ima
 import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
+import 'package:muslim_app/features/salat/domain/entities/salat_entity.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
@@ -50,6 +51,8 @@ void main() async {
   await Hive.openBox<ReciterEntity>(reciterBox);
   Hive.registerAdapter(UserModelAdapter());
   await Hive.openBox<UserModel>(userBox);
+  Hive.registerAdapter(SalatEntityAdapter());
+  await Hive.openBox<SalatEntity>(salatBox);
 
   late Widget startWidget;
   bool isSkip = CacheHelper.getData(key: 'isSkip') ?? false;
