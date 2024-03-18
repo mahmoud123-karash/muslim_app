@@ -18,9 +18,9 @@ class SalatModel extends SalatEntity {
           sunset: timings.sunset ?? '',
           maghrib: timings.maghrib ?? '',
           isha: timings.isha ?? '',
-          dateTime: '${date!.gregorian!.weekday!.en}${date.readable}',
+          dateTime: '${date!.gregorian!.weekday!.en} ${date.readable}',
           jihri:
-              '${date.hijri!.weekday!.ar}${date.hijri!.day}${date.hijri!.month!.ar}${date.hijri!.year}',
+              '${date.hijri!.weekday!.ar} ${date.hijri!.day} ${date.hijri!.month!.ar} ${date.hijri!.year}',
         );
 
   factory SalatModel.fromJson(Map<String, dynamic> json) => SalatModel(

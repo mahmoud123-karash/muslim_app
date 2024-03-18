@@ -97,7 +97,24 @@
     "delete_account": "Delete Account",
     "delete_account_question": "Do you want to delete the account?",
     "delete": "Delete",
-    "success_logout": "Logged out successfully"
+    "success_logout": "Logged out successfully",
+    "fajr":"الفجر",
+    "shurooq":"الشروق",
+    "dhuhr":"الظهر",
+    "asr":"العصر",
+    "maghrib":"المغرب",
+    "isha":"العشاء",
+    "time_of_the_next_prayer":"موعد الصلاة القادمة",
+    "prayer":"صلاة",
+    "after":"بعد",
+    "hours":"ساعات",
+    "hour_1":"ساعة",
+    "hours_2":"ساعتين",
+    "mintues":"دقائق",
+    "mintue_1":"دقيقة",
+    "mintue_2":"دقيقتين",
+    "and":"و"
+
 
 
 

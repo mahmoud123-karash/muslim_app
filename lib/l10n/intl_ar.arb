@@ -97,7 +97,23 @@
     "delete_account":"حذف الحساب",
     "delete_account_question":"هل تريد حذف الحساب ؟",
     "delete":"حذف",
-    "success_logout":"تم تسجبل الخروج"
+    "success_logout":"تم تسجبل الخروج",
+    "fajr":"الفجر",
+    "shurooq":"الشروق",
+    "dhuhr":"الظهر",
+    "asr":"العصر",
+    "maghrib":"المغرب",
+    "isha":"العشاء",
+    "time_of_the_next_prayer":"موعد الصلاة القادمة",
+    "prayer":"صلاة",
+    "after":"بعد",
+    "hours":"ساعات",
+    "hour_1":"ساعة",
+    "hours_2":"ساعتين",
+    "mintues":"دقائق",
+    "mintue_1":"دقيقة",
+    "mintue_2":"دقيقتين",
+    "and":"و"
 
 
     

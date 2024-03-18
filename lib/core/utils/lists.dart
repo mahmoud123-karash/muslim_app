@@ -4,6 +4,7 @@ import 'package:muslim_app/features/azkar/presentation/views/azkar_screen.dart';
 import 'package:muslim_app/features/listen/presentation/views/listen_to_quran_screen.dart';
 import 'package:muslim_app/features/qibla/presentation/views/qibla_screen.dart';
 import 'package:muslim_app/features/quran/presentation/views/quran_screen.dart';
+import 'package:muslim_app/features/salat/presentation/views/prayer_times_screen.dart';
 import 'package:muslim_app/features/tafseer_vedio/presentation/views/tafseer_video_screen.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
@@ -29,7 +30,7 @@ List<Widget> screens = [
   const QuranScreen(),
   const AzkarScreen(),
   const ListenToQuranScreen(),
-  const TafseerVideoScreen(),
+  const PrayersTimesScreen(),
   const TafseerVideoScreen(),
   const QiblaScreen(),
 ];
@@ -159,3 +160,11 @@ List<String> recitersImage = [
   Assets.images9,
   Assets.images5
 ];
+
+List<String> salatNames(context) => [
+      S.of(context).fajr,
+      S.of(context).dhuhr,
+      S.of(context).asr,
+      S.of(context).maghrib,
+      S.of(context).isha,
+    ];

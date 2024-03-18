@@ -1039,6 +1039,166 @@ class S {
       args: [],
     );
   }
+
+  /// `الفجر`
+  String get fajr {
+    return Intl.message(
+      'الفجر',
+      name: 'fajr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الشروق`
+  String get shurooq {
+    return Intl.message(
+      'الشروق',
+      name: 'shurooq',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الظهر`
+  String get dhuhr {
+    return Intl.message(
+      'الظهر',
+      name: 'dhuhr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `العصر`
+  String get asr {
+    return Intl.message(
+      'العصر',
+      name: 'asr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المغرب`
+  String get maghrib {
+    return Intl.message(
+      'المغرب',
+      name: 'maghrib',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `العشاء`
+  String get isha {
+    return Intl.message(
+      'العشاء',
+      name: 'isha',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `موعد الصلاة القادمة`
+  String get time_of_the_next_prayer {
+    return Intl.message(
+      'موعد الصلاة القادمة',
+      name: 'time_of_the_next_prayer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `صلاة`
+  String get prayer {
+    return Intl.message(
+      'صلاة',
+      name: 'prayer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `بعد`
+  String get after {
+    return Intl.message(
+      'بعد',
+      name: 'after',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ساعات`
+  String get hours {
+    return Intl.message(
+      'ساعات',
+      name: 'hours',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ساعة`
+  String get hour_1 {
+    return Intl.message(
+      'ساعة',
+      name: 'hour_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ساعتين`
+  String get hours_2 {
+    return Intl.message(
+      'ساعتين',
+      name: 'hours_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `دقائق`
+  String get mintues {
+    return Intl.message(
+      'دقائق',
+      name: 'mintues',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `دقيقة`
+  String get mintue_1 {
+    return Intl.message(
+      'دقيقة',
+      name: 'mintue_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `دقيقتين`
+  String get mintue_2 {
+    return Intl.message(
+      'دقيقتين',
+      name: 'mintue_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `و`
+  String get and {
+    return Intl.message(
+      'و',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

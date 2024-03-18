@@ -112,3 +112,22 @@ UserModel getUser() {
   var box = Hive.box<UserModel>(userBox);
   return box.values.toList().first;
 }
+
+DateTime extractFormatedTime(String originalString, int day) {
+  String formatedString = extractTime(originalString);
+  DateTime now = DateTime.now();
+  int hour = int.parse(formatedString.split(':')[0]);
+  int mintue = int.parse(formatedString.split(':')[1]);
+  DateTime time = DateTime(now.year, now.month, day, hour, mintue);
+  return time;
+}
+
+String extractTime(String originalString) {
+  RegExp regExp = RegExp(r'(\d{2}:\d{2})');
+  RegExpMatch? match = regExp.firstMatch(originalString);
+  if (match != null) {
+    return match.group(0) ?? '';
+  } else {
+    return '';
+  }
+}

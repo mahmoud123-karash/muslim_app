@@ -14,6 +14,9 @@ import 'package:muslim_app/features/listen/data/repo/audio_repo_imol.dart';
 import 'package:muslim_app/features/listen/data/repo/reciter_repo_impl.dart';
 import 'package:muslim_app/features/listen/domain/use_cases/download_use_case.dart';
 import 'package:muslim_app/features/profile/data/repo/profile_repo_impl.dart';
+import 'package:muslim_app/features/salat/data/data_source/local_data_source/local_remote_data_source.dart';
+import 'package:muslim_app/features/salat/data/data_source/remote_data_source/salat_remote_data_source.dart';
+import 'package:muslim_app/features/salat/data/repo/salat_repo_impl.dart';
 
 GetIt getIt = GetIt.instance;
 
@@ -68,5 +71,14 @@ void setLocator() {
 
   getIt.registerSingleton<ProfileRepoImpl>(
     ProfileRepoImpl(),
+  );
+
+  getIt.registerSingleton(
+    SalatRepImpl(
+      SalatRemoteDataSourceImpl(
+        getIt.get<DioHelper>(),
+      ),
+      SalatLocalDataSourceImpl(),
+    ),
   );
 }

@@ -24,12 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Kaaba": MessageLookupByLibrary.simpleMessage("Kaaba"),
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
+        "after": MessageLookupByLibrary.simpleMessage("بعد"),
         "age": MessageLookupByLibrary.simpleMessage("Age"),
         "age_hint":
             MessageLookupByLibrary.simpleMessage("Please enter a valid age"),
         "al_juzs": MessageLookupByLibrary.simpleMessage("Juzs"),
         "al_surahs": MessageLookupByLibrary.simpleMessage("Surahs"),
+        "and": MessageLookupByLibrary.simpleMessage("و"),
         "arabic_language": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "asr": MessageLookupByLibrary.simpleMessage("العصر"),
         "aya_of_the_day":
             MessageLookupByLibrary.simpleMessage("Verse of the Day"),
         "ayah_num": MessageLookupByLibrary.simpleMessage("Verse"),
@@ -54,12 +57,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Do you want to delete the account?"),
         "device_language":
             MessageLookupByLibrary.simpleMessage("Device Language"),
+        "dhuhr": MessageLookupByLibrary.simpleMessage("الظهر"),
         "download_waiting": MessageLookupByLibrary.simpleMessage(
             "Please wait for the download to complete"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_verify":
             MessageLookupByLibrary.simpleMessage("Please activate your email"),
         "english_language": MessageLookupByLibrary.simpleMessage("English"),
+        "fajr": MessageLookupByLibrary.simpleMessage("الفجر"),
         "favorite_azkar":
             MessageLookupByLibrary.simpleMessage("Favorite Adhkar"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
@@ -75,6 +80,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "have_an_account":
             MessageLookupByLibrary.simpleMessage("Have an account?"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "hour_1": MessageLookupByLibrary.simpleMessage("ساعة"),
+        "hours": MessageLookupByLibrary.simpleMessage("ساعات"),
+        "hours_2": MessageLookupByLibrary.simpleMessage("ساعتين"),
+        "isha": MessageLookupByLibrary.simpleMessage("العشاء"),
         "juz": MessageLookupByLibrary.simpleMessage("Juz"),
         "language": MessageLookupByLibrary.simpleMessage("App Language"),
         "last_listen": MessageLookupByLibrary.simpleMessage("Last Listen"),
@@ -86,8 +95,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout_ok": MessageLookupByLibrary.simpleMessage("Logout"),
         "logout_question":
             MessageLookupByLibrary.simpleMessage("Do you want to log out?"),
+        "maghrib": MessageLookupByLibrary.simpleMessage("المغرب"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "mark": MessageLookupByLibrary.simpleMessage("Resume Reading"),
+        "mintue_1": MessageLookupByLibrary.simpleMessage("دقيقة"),
+        "mintue_2": MessageLookupByLibrary.simpleMessage("دقيقتين"),
+        "mintues": MessageLookupByLibrary.simpleMessage("دقائق"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "no_connection": MessageLookupByLibrary.simpleMessage("No Connection"),
@@ -110,6 +123,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "phone_lenght_hint_error": MessageLookupByLibrary.simpleMessage(
             "Please check the phone number"),
+        "prayer": MessageLookupByLibrary.simpleMessage("صلاة"),
         "prayer_times": MessageLookupByLibrary.simpleMessage("Prayer Times"),
         "previous": MessageLookupByLibrary.simpleMessage("Previous"),
         "privacy_and_policy":
@@ -138,6 +152,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "share_app":
             MessageLookupByLibrary.simpleMessage("Share and Earn Rewards"),
         "share_ayah": MessageLookupByLibrary.simpleMessage("Share"),
+        "shurooq": MessageLookupByLibrary.simpleMessage("الشروق"),
         "soon": MessageLookupByLibrary.simpleMessage("Coming Soon"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start Now"),
         "success_download":
@@ -149,6 +164,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("Tafsir"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("Visual Tafseer"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
+        "time_of_the_next_prayer":
+            MessageLookupByLibrary.simpleMessage("موعد الصلاة القادمة"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),
         "validate":
             MessageLookupByLibrary.simpleMessage("This field is required"),

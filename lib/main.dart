@@ -23,7 +23,9 @@ import 'package:muslim_app/features/profile/presentation/manager/image_cubit/ima
 import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
+import 'package:muslim_app/features/salat/data/repo/salat_repo_impl.dart';
 import 'package:muslim_app/features/salat/domain/entities/salat_entity.dart';
+import 'package:muslim_app/features/salat/presentation/manager/salat_cubit/salat_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
@@ -106,6 +108,11 @@ void main() async {
           create: (context) => ProfileCubit(
             getIt.get<ProfileRepoImpl>(),
           ),
+        ),
+        BlocProvider(
+          create: (context) => SalatCubit(
+            getIt.get<SalatRepImpl>(),
+          )..getPrayers(),
         ),
       ],
       child: MyApp(startWidget: startWidget),

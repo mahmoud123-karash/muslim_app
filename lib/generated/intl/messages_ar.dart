@@ -24,12 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Kaaba": MessageLookupByLibrary.simpleMessage("الكعبة"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
+        "after": MessageLookupByLibrary.simpleMessage("بعد"),
         "age": MessageLookupByLibrary.simpleMessage("العمر"),
         "age_hint": MessageLookupByLibrary.simpleMessage("يرجي ادخال عمر صالح"),
         "al_juzs": MessageLookupByLibrary.simpleMessage("الأجزاء"),
         "al_surahs": MessageLookupByLibrary.simpleMessage("السور"),
+        "and": MessageLookupByLibrary.simpleMessage("و"),
         "arabic_language":
             MessageLookupByLibrary.simpleMessage("اللغة العربية"),
+        "asr": MessageLookupByLibrary.simpleMessage("العصر"),
         "aya_of_the_day": MessageLookupByLibrary.simpleMessage("آية اليوم"),
         "ayah_num": MessageLookupByLibrary.simpleMessage("الآية"),
         "azkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
@@ -50,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "delete_account_question":
             MessageLookupByLibrary.simpleMessage("هل تريد حذف الحساب ؟"),
         "device_language": MessageLookupByLibrary.simpleMessage("لغة الجهاز"),
+        "dhuhr": MessageLookupByLibrary.simpleMessage("الظهر"),
         "download_waiting": MessageLookupByLibrary.simpleMessage(
             "يرجي الإنتظار لإكمال التنزيل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
@@ -57,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "من فضلك قم بتفعيل الايميل الخاص"),
         "english_language":
             MessageLookupByLibrary.simpleMessage("اللغة الإنجليزية"),
+        "fajr": MessageLookupByLibrary.simpleMessage("الفجر"),
         "favorite_azkar":
             MessageLookupByLibrary.simpleMessage("الأذكار المفضلة"),
         "female": MessageLookupByLibrary.simpleMessage("أنثي"),
@@ -70,6 +75,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من فضلك قم بإختيار الجنس"),
         "have_an_account": MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "hour_1": MessageLookupByLibrary.simpleMessage("ساعة"),
+        "hours": MessageLookupByLibrary.simpleMessage("ساعات"),
+        "hours_2": MessageLookupByLibrary.simpleMessage("ساعتين"),
+        "isha": MessageLookupByLibrary.simpleMessage("العشاء"),
         "juz": MessageLookupByLibrary.simpleMessage("الجزء"),
         "language": MessageLookupByLibrary.simpleMessage("لغة التطبيق"),
         "last_listen": MessageLookupByLibrary.simpleMessage("آخر إستماع"),
@@ -81,9 +90,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout_ok": MessageLookupByLibrary.simpleMessage("خروج"),
         "logout_question":
             MessageLookupByLibrary.simpleMessage("هل تريد تسجبل الخروج؟"),
+        "maghrib": MessageLookupByLibrary.simpleMessage("المغرب"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "mark":
             MessageLookupByLibrary.simpleMessage("متابعة القراءة من حيث توقفت"),
+        "mintue_1": MessageLookupByLibrary.simpleMessage("دقيقة"),
+        "mintue_2": MessageLookupByLibrary.simpleMessage("دقيقتين"),
+        "mintues": MessageLookupByLibrary.simpleMessage("دقائق"),
         "name": MessageLookupByLibrary.simpleMessage("الإسم"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
@@ -105,6 +118,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "phone_lenght_hint_error":
             MessageLookupByLibrary.simpleMessage("من فضلك تأكد من رقم الهاتف"),
+        "prayer": MessageLookupByLibrary.simpleMessage("صلاة"),
         "prayer_times": MessageLookupByLibrary.simpleMessage("مواقيت الصلاة"),
         "previous": MessageLookupByLibrary.simpleMessage("السابق"),
         "privacy_and_policy":
@@ -130,6 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
         "share_ayah": MessageLookupByLibrary.simpleMessage("مشاركة"),
+        "shurooq": MessageLookupByLibrary.simpleMessage("الشروق"),
         "soon": MessageLookupByLibrary.simpleMessage("قريبًا"),
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "success_download":
@@ -141,6 +156,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("تفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
+        "time_of_the_next_prayer":
+            MessageLookupByLibrary.simpleMessage("موعد الصلاة القادمة"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "validate": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك"),
