@@ -6,9 +6,14 @@ class TafseerVideoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      title: Text(S.of(context).tafsser_video),
-      centerTitle: true,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(S.of(context).tafsser_video),
+        centerTitle: true,
+      ),
+      body: const Column(
+        children: [],
+      ),
     );
   }
 }

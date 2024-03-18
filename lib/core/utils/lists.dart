@@ -168,3 +168,11 @@ List<String> salatNames(context) => [
       S.of(context).maghrib,
       S.of(context).isha,
     ];
+
+List<String> salatImags = [
+  'assets/svg/fajr.svg',
+  'assets/svg/dhar.svg',
+  'assets/svg/asr.svg',
+  'assets/svg/maghrib.svg',
+  'assets/svg/isha.svg',
+];

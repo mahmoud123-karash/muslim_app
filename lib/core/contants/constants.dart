@@ -19,7 +19,6 @@ String appLink = Platform.isIOS
     : 'https://play.google.com/store/apps/details?id=com.tamrini1.com';
 
 String kufiFamily = 'kufi';
-String uthmanicFamily = 'uthmanic';
 String uthmanic2Family = 'uthmanic2';
 String naskhFamily = 'naskh';
 

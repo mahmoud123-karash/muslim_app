@@ -94,10 +94,6 @@ flutter:
         - asset: assets/fonts/cairo/Cairo-Medium.ttf
         - asset: assets/fonts/cairo/Cairo-Regular.ttf
 
-    - family: uthmanic
-      fonts:
-        - asset: assets/fonts/UthmanTN1_Ver10.otf
-
     - family: uthmanic2
       fonts:
         - asset: assets/fonts/UthmanicHafs_V20.ttf

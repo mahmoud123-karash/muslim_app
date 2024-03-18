@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/salat/data/models/prayer_model/prayer_model.dart';
@@ -19,11 +20,11 @@ class NextSalahColumWidget extends StatelessWidget {
         const SizedBox(
           height: 15,
         ),
-        Image.asset(
-          fit: BoxFit.cover,
+        SvgPicture.asset(
           model.icon,
-          height: 60,
-          width: 60,
+          width: 50,
+          height: 50,
+          colorFilter: ColorFilter.mode(blackColor, BlendMode.srcIn),
         ),
         const SizedBox(
           height: 10,
@@ -75,7 +76,9 @@ String getHours(int hours, BuildContext context) {
 }
 
 String getMintues(int mintues, BuildContext context) {
-  if (mintues == 1) {
+  if (mintues == 0) {
+    return '';
+  } else if (mintues == 1) {
     return S.of(context).mintue_1;
   } else if (mintues == 2) {
     return S.of(context).mintue_2;

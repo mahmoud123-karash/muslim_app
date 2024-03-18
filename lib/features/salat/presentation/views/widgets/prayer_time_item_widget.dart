@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/features/salat/data/models/prayer_model/prayer_model.dart';
 import 'package:muslim_app/features/salat/presentation/views/widgets/text_salah_widget.dart';
 import '../../../../../core/contants/constants.dart';
@@ -28,10 +29,12 @@ class PrayerTimeItemWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: [
-              Image.asset(
+              SvgPicture.asset(
                 model.icon,
-                height: 40,
-                width: 40,
+                width: 35,
+                height: 35,
+                colorFilter: ColorFilter.mode(blackColor, BlendMode.srcIn),
+                fit: BoxFit.scaleDown,
               ),
               const SizedBox(
                 width: 7,
