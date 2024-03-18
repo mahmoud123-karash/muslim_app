@@ -24,22 +24,29 @@ class _PrayerTimesContentWidgetState extends State<PrayerTimesContentWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const NextsalahColumBuilerWidget(),
-        const SizedBox(
-          height: 30,
+    var height = MediaQuery.of(context).size.height;
+    return CustomScrollView(
+      slivers: [
+        const SliverToBoxAdapter(
+          child: NextsalahColumBuilerWidget(),
         ),
-        Expanded(
-          child: PageView.builder(
-            //  physics: const NeverScrollableScrollPhysics(),
-            itemCount: widget.prayers.length,
-            controller: controller,
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) => PageViewItemWidget(
-              controller: controller,
-              prayer: widget.prayers[index],
-              index: index,
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: SizedBox(
+              height: height / 1.9,
+              child: PageView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: widget.prayers.length,
+                controller: controller,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) => PageViewItemWidget(
+                  controller: controller,
+                  prayer: widget.prayers[index],
+                  index: index,
+                ),
+              ),
             ),
           ),
         ),

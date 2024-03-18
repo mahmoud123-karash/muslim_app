@@ -144,7 +144,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
         "share_ayah": MessageLookupByLibrary.simpleMessage("مشاركة"),
-        "shurooq": MessageLookupByLibrary.simpleMessage("الشروق"),
         "soon": MessageLookupByLibrary.simpleMessage("قريبًا"),
         "start_now": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "success_download":

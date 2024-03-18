@@ -32,6 +32,8 @@ class _PrayerTimesListViewWidgetState extends State<PrayerTimesListViewWidget> {
     return Padding(
       padding: const EdgeInsets.only(left: 12, right: 12, top: 5),
       child: ListView.separated(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         separatorBuilder: (context, index) => const SizedBox(
           height: 10,
         ),

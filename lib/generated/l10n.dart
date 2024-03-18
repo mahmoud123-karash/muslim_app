@@ -1040,160 +1040,150 @@ class S {
     );
   }
 
-  /// `الفجر`
+  /// `Fajr`
   String get fajr {
     return Intl.message(
-      'الفجر',
+      'Fajr',
       name: 'fajr',
       desc: '',
       args: [],
     );
   }
 
-  /// `الشروق`
-  String get shurooq {
-    return Intl.message(
-      'الشروق',
-      name: 'shurooq',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `الظهر`
+  /// `Dhuhr`
   String get dhuhr {
     return Intl.message(
-      'الظهر',
+      'Dhuhr',
       name: 'dhuhr',
       desc: '',
       args: [],
     );
   }
 
-  /// `العصر`
+  /// `Asr`
   String get asr {
     return Intl.message(
-      'العصر',
+      'Asr',
       name: 'asr',
       desc: '',
       args: [],
     );
   }
 
-  /// `المغرب`
+  /// `Maghrib`
   String get maghrib {
     return Intl.message(
-      'المغرب',
+      'Maghrib',
       name: 'maghrib',
       desc: '',
       args: [],
     );
   }
 
-  /// `العشاء`
+  /// `Isha`
   String get isha {
     return Intl.message(
-      'العشاء',
+      'Isha',
       name: 'isha',
       desc: '',
       args: [],
     );
   }
 
-  /// `موعد الصلاة القادمة`
+  /// `Time of the Next Prayer`
   String get time_of_the_next_prayer {
     return Intl.message(
-      'موعد الصلاة القادمة',
+      'Time of the Next Prayer',
       name: 'time_of_the_next_prayer',
       desc: '',
       args: [],
     );
   }
 
-  /// `صلاة`
+  /// `Prayer`
   String get prayer {
     return Intl.message(
-      'صلاة',
+      'Prayer',
       name: 'prayer',
       desc: '',
       args: [],
     );
   }
 
-  /// `بعد`
+  /// `After`
   String get after {
     return Intl.message(
-      'بعد',
+      'After',
       name: 'after',
       desc: '',
       args: [],
     );
   }
 
-  /// `ساعات`
+  /// `hours`
   String get hours {
     return Intl.message(
-      'ساعات',
+      'hours',
       name: 'hours',
       desc: '',
       args: [],
     );
   }
 
-  /// `ساعة`
+  /// `hour`
   String get hour_1 {
     return Intl.message(
-      'ساعة',
+      'hour',
       name: 'hour_1',
       desc: '',
       args: [],
     );
   }
 
-  /// `ساعتين`
+  /// `hours`
   String get hours_2 {
     return Intl.message(
-      'ساعتين',
+      'hours',
       name: 'hours_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `دقائق`
+  /// `minutes`
   String get mintues {
     return Intl.message(
-      'دقائق',
+      'minutes',
       name: 'mintues',
       desc: '',
       args: [],
     );
   }
 
-  /// `دقيقة`
+  /// `minute`
   String get mintue_1 {
     return Intl.message(
-      'دقيقة',
+      'minute',
       name: 'mintue_1',
       desc: '',
       args: [],
     );
   }
 
-  /// `دقيقتين`
+  /// `minutes`
   String get mintue_2 {
     return Intl.message(
-      'دقيقتين',
+      'minutes',
       name: 'mintue_2',
       desc: '',
       args: [],
     );
   }
 
-  /// `و`
+  /// `and`
   String get and {
     return Intl.message(
-      'و',
+      'and',
       name: 'and',
       desc: '',
       args: [],

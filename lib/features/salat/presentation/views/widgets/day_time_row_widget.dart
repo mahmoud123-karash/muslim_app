@@ -8,9 +8,11 @@ class DayTimeRowWidget extends StatelessWidget {
       {super.key,
       required this.dateTime,
       required this.hijri,
-      required this.controller});
+      required this.controller,
+      required this.dayNum});
   final String dateTime, hijri;
   final PageController controller;
+  final int dayNum;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class DayTimeRowWidget extends StatelessWidget {
             isEnglish ? dateTime : hijri,
             style: TextStyles.style15.copyWith(
               fontWeight: FontWeight.bold,
-              color: appColor,
+              color: DateTime.now().day == dayNum ? secondColor : appColor,
             ),
           ),
           const Spacer(),

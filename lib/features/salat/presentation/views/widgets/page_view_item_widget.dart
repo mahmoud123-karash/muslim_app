@@ -21,16 +21,15 @@ class PageViewItemWidget extends StatelessWidget {
         DayTimeRowWidget(
           dateTime: prayer.dateTime,
           hijri: prayer.jihri,
+          dayNum: index + 1,
           controller: controller,
         ),
         const SizedBox(
           height: 10,
         ),
-        Expanded(
-          child: PrayerTimesListViewWidget(
-            day: prayer,
-            dayNum: index + 1,
-          ),
+        PrayerTimesListViewWidget(
+          day: prayer,
+          dayNum: index + 1,
         ),
       ],
     );
