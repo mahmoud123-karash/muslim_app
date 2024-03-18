@@ -20,6 +20,8 @@ class SalatRemoteDataSourceImpl extends SalatRemoteDataSource {
     required double latitude,
     required double longitude,
   }) async {
+    var box = Hive.box<SalatEntity>(salatBox);
+    await box.clear();
     List<SalatModel> list = [];
     List result =
         await dioHelper.getSalatData(latitude: latitude, longitude: longitude);
@@ -28,7 +30,6 @@ class SalatRemoteDataSourceImpl extends SalatRemoteDataSource {
       SalatModel model = SalatModel.fromJson(element);
       list.add(model);
     }
-    var box = Hive.box<SalatEntity>(salatBox);
     await box.addAll(list);
     return list;
   }

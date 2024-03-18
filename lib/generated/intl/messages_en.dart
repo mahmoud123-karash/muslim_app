@@ -165,6 +165,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "time_of_the_next_prayer":
             MessageLookupByLibrary.simpleMessage("Time of the Next Prayer"),
+        "try_again": MessageLookupByLibrary.simpleMessage("Try again"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),
         "validate":
             MessageLookupByLibrary.simpleMessage("This field is required"),

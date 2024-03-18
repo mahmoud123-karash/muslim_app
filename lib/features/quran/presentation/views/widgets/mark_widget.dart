@@ -36,6 +36,9 @@ class MarkWidget extends StatelessWidget {
                     color: whiteColor,
                   ),
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 Row(
                   children: [
                     const Icon(
@@ -48,7 +51,7 @@ class MarkWidget extends StatelessWidget {
                     Text(
                       "${S.of(context).page} ${isEnglish ? mark + 1 : getArabicNumber(mark + 1)}",
                       style: const TextStyle(
-                        fontSize: 17,
+                        fontSize: 15,
                         fontWeight: FontWeight.w600,
                         color: Colors.amber,
                       ),
@@ -69,15 +72,16 @@ class MarkWidget extends StatelessWidget {
                         ),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
+                            horizontal: 8,
                             vertical: 8,
                           ),
                           child: Text(
                             S.of(context).follow_reading,
                             style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                                color: Colors.black),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                       ),

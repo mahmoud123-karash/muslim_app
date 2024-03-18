@@ -157,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "time_of_the_next_prayer":
             MessageLookupByLibrary.simpleMessage("موعد الصلاة القادمة"),
+        "try_again": MessageLookupByLibrary.simpleMessage("حاول مرة ثانية"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "validate": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك"),

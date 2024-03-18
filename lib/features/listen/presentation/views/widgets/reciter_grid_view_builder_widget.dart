@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/features/listen/presentation/manager/reciter_cubit/reciter_cubit.dart';
 import 'package:muslim_app/features/listen/presentation/manager/reciter_cubit/reciter_states.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/loading_widget.dart';
 import 'package:muslim_app/features/listen/presentation/views/widgets/reciter_grid_view_widget.dart';
 
 class ReciterGridViewBuilderWidget extends StatelessWidget {
@@ -26,7 +25,9 @@ class ReciterGridViewBuilderWidget extends StatelessWidget {
             ),
           );
         } else {
-          return const LoadingWidget();
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
         }
       },
     );
