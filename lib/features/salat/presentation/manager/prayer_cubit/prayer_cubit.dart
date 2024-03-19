@@ -27,11 +27,31 @@ class PrayerCubit extends Cubit<PrayerStates> {
       );
       list.add(model);
     }
-    if (day == now.day) {
-      nextPrayer =
-          list.where((element) => element.dateTime.isAfter(now)).toList().first;
+    if (day != now.day && day != now.day + 1) {
+      nextPrayer = null;
+    } else {
+      if (day == now.day) {
+        List<PrayerModel> models =
+            list.where((element) => element.dateTime.isAfter(now)).toList();
+        nextPrayer = models.isEmpty ? null : models.first;
+      } else {
+        if (nextPrayer == null) {
+          List<PrayerModel> models =
+              list.where((element) => element.dateTime.isAfter(now)).toList();
+          nextPrayer = models.isEmpty ? null : models.first;
+        } else {
+          nextPrayer = null;
+        }
+      }
     }
+
     emit(SuccessGetNexPrayerState());
     return list;
+  }
+
+  int day = DateTime.now().day;
+  void getDatNum(int num) {
+    day = num;
+    emit(GetDayNumState());
   }
 }

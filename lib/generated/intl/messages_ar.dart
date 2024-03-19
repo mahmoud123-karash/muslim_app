@@ -24,6 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Kaaba": MessageLookupByLibrary.simpleMessage("الكعبة"),
         "about_app": MessageLookupByLibrary.simpleMessage("عن التطبيق"),
+        "add": MessageLookupByLibrary.simpleMessage("إضافة"),
+        "add_new_tsfseer":
+            MessageLookupByLibrary.simpleMessage("إضافة تفسير جديد"),
+        "add_success": MessageLookupByLibrary.simpleMessage("تم الإضافة بنجاح"),
         "after": MessageLookupByLibrary.simpleMessage("بعد"),
         "age": MessageLookupByLibrary.simpleMessage("العمر"),
         "age_hint": MessageLookupByLibrary.simpleMessage("يرجي ادخال عمر صالح"),
@@ -98,12 +102,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "mintue_2": MessageLookupByLibrary.simpleMessage("دقيقتين"),
         "mintues": MessageLookupByLibrary.simpleMessage("دقائق"),
         "name": MessageLookupByLibrary.simpleMessage("الإسم"),
+        "name_of_the_pserson":
+            MessageLookupByLibrary.simpleMessage("إسم المفسر"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
         "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
+        "notification": MessageLookupByLibrary.simpleMessage("الإشعار"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "num_of_the_ayahs": MessageLookupByLibrary.simpleMessage("عدد الآيات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(
@@ -132,6 +139,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "من فضلك قم بتسجيل الدخول,ثم حاول مرة أخري لتأكيد الحساب"),
         "real_nourth": MessageLookupByLibrary.simpleMessage("الشمال الحقيقي"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "remove_sucess": MessageLookupByLibrary.simpleMessage("تم الحذف"),
         "remove_the_book_mark":
             MessageLookupByLibrary.simpleMessage("تم حذف العلامة"),
         "reset": MessageLookupByLibrary.simpleMessage("إعادة تعيين"),
@@ -140,6 +148,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("البحث"),
         "search_hint_enter": MessageLookupByLibrary.simpleMessage(
             "أدخل اسم الآية التى تريد البحث عنها..."),
+        "send": MessageLookupByLibrary.simpleMessage("إرسال"),
+        "send_new_notification":
+            MessageLookupByLibrary.simpleMessage("إرسال إشعار جديد"),
+        "send_success":
+            MessageLookupByLibrary.simpleMessage("تم الإرسال بنجاح"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
         "share": MessageLookupByLibrary.simpleMessage("مشاركة"),
         "share_app": MessageLookupByLibrary.simpleMessage("شارك تؤجر"),
@@ -152,6 +165,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تم تسجبل الخروج"),
         "success_update":
             MessageLookupByLibrary.simpleMessage("تم حفظ التغييرات"),
+        "tafseer_name": MessageLookupByLibrary.simpleMessage("عنوان التفسير"),
+        "tafseer_vedio": MessageLookupByLibrary.simpleMessage("رابط التفسير"),
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("تفسير"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("التفسير المرئي"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),

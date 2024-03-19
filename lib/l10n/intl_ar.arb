@@ -113,7 +113,18 @@
     "mintue_1":"دقيقة",
     "mintue_2":"دقيقتين",
     "and":"و",
-    "try_again":"حاول مرة ثانية"
+    "try_again":"حاول مرة ثانية",
+    "add_new_tsfseer":"إضافة تفسير جديد",
+    "send_new_notification":"إرسال إشعار جديد",
+    "add_success":"تم الإضافة بنجاح",
+    "remove_sucess":"تم الحذف",
+    "send_success":"تم الإرسال بنجاح",
+    "tafseer_name":"عنوان التفسير",
+    "name_of_the_pserson":"إسم المفسر",
+    "tafseer_vedio":"رابط التفسير",
+    "notification":"الإشعار",
+    "send":"إرسال",
+    "add":"إضافة"
 
 
     

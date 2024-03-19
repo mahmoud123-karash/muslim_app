@@ -6,8 +6,11 @@ import '../../../../../core/contants/constants.dart';
 import 'package:intl/intl.dart';
 
 class PrayerTimeItemWidget extends StatelessWidget {
-  const PrayerTimeItemWidget(
-      {super.key, required this.model, required this.nextPrayer});
+  const PrayerTimeItemWidget({
+    super.key,
+    required this.model,
+    required this.nextPrayer,
+  });
   final PrayerModel model;
   final PrayerModel? nextPrayer;
 

@@ -138,3 +138,8 @@ void saveSurahName(name) => CacheHelper.saveData(
       key: 'sName',
       value: name,
     );
+
+void saveMonth(name) => CacheHelper.saveData(
+      key: 'month',
+      value: name,
+    );

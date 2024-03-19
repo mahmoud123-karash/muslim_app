@@ -24,6 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Kaaba": MessageLookupByLibrary.simpleMessage("Kaaba"),
         "about_app": MessageLookupByLibrary.simpleMessage("About the App"),
+        "add": MessageLookupByLibrary.simpleMessage("إضافة"),
+        "add_new_tsfseer":
+            MessageLookupByLibrary.simpleMessage("إضافة تفسير جديد"),
+        "add_success": MessageLookupByLibrary.simpleMessage("تم الإضافة بنجاح"),
         "after": MessageLookupByLibrary.simpleMessage("After"),
         "age": MessageLookupByLibrary.simpleMessage("Age"),
         "age_hint":
@@ -102,12 +106,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "mintue_2": MessageLookupByLibrary.simpleMessage("minutes"),
         "mintues": MessageLookupByLibrary.simpleMessage("minutes"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "name_of_the_pserson":
+            MessageLookupByLibrary.simpleMessage("إسم المفسر"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "no_connection": MessageLookupByLibrary.simpleMessage("No Connection"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
         "no_results": MessageLookupByLibrary.simpleMessage("No Results"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("No Tafsir"),
+        "notification": MessageLookupByLibrary.simpleMessage("الإشعار"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "num_of_the_ayahs":
             MessageLookupByLibrary.simpleMessage("Number of Verses"),
@@ -137,6 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please log in again to confirm the account"),
         "real_nourth": MessageLookupByLibrary.simpleMessage("True North"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "remove_sucess": MessageLookupByLibrary.simpleMessage("تم الحذف"),
         "remove_the_book_mark":
             MessageLookupByLibrary.simpleMessage("Bookmark Removed"),
         "reset": MessageLookupByLibrary.simpleMessage("Reset"),
@@ -147,6 +155,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "search_hint_enter": MessageLookupByLibrary.simpleMessage(
             "Enter the verse name you want to search for..."),
+        "send": MessageLookupByLibrary.simpleMessage("إرسال"),
+        "send_new_notification":
+            MessageLookupByLibrary.simpleMessage("إرسال إشعار جديد"),
+        "send_success":
+            MessageLookupByLibrary.simpleMessage("تم الإرسال بنجاح"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "share_app":
@@ -160,6 +173,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Logged out successfully"),
         "success_update":
             MessageLookupByLibrary.simpleMessage("Changes saved successfully"),
+        "tafseer_name": MessageLookupByLibrary.simpleMessage("عنوان التفسير"),
+        "tafseer_vedio": MessageLookupByLibrary.simpleMessage("رابط التفسير"),
         "tafsser_ayah": MessageLookupByLibrary.simpleMessage("Tafsir"),
         "tafsser_video": MessageLookupByLibrary.simpleMessage("Visual Tafseer"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),

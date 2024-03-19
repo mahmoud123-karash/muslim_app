@@ -1199,6 +1199,116 @@ class S {
       args: [],
     );
   }
+
+  /// `إضافة تفسير جديد`
+  String get add_new_tsfseer {
+    return Intl.message(
+      'إضافة تفسير جديد',
+      name: 'add_new_tsfseer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إرسال إشعار جديد`
+  String get send_new_notification {
+    return Intl.message(
+      'إرسال إشعار جديد',
+      name: 'send_new_notification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم الإضافة بنجاح`
+  String get add_success {
+    return Intl.message(
+      'تم الإضافة بنجاح',
+      name: 'add_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم الحذف`
+  String get remove_sucess {
+    return Intl.message(
+      'تم الحذف',
+      name: 'remove_sucess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم الإرسال بنجاح`
+  String get send_success {
+    return Intl.message(
+      'تم الإرسال بنجاح',
+      name: 'send_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عنوان التفسير`
+  String get tafseer_name {
+    return Intl.message(
+      'عنوان التفسير',
+      name: 'tafseer_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `رابط التفسير`
+  String get tafseer_vedio {
+    return Intl.message(
+      'رابط التفسير',
+      name: 'tafseer_vedio',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `الإشعار`
+  String get notification {
+    return Intl.message(
+      'الإشعار',
+      name: 'notification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إرسال`
+  String get send {
+    return Intl.message(
+      'إرسال',
+      name: 'send',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إضافة`
+  String get add {
+    return Intl.message(
+      'إضافة',
+      name: 'add',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `إسم المفسر`
+  String get name_of_the_pserson {
+    return Intl.message(
+      'إسم المفسر',
+      name: 'name_of_the_pserson',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
