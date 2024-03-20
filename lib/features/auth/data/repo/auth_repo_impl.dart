@@ -56,7 +56,7 @@ class AuthRepoImpl extends AuthRepo {
         email: email,
         password: password,
       );
-      if (!user.user!.emailVerified) {
+      if (user.user!.emailVerified) {
         UserModel model = await userRemoteDataSource.get(uid: user.user!.uid);
         saveEmail(model.email);
         saveUid(model.uid);

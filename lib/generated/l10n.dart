@@ -710,10 +710,10 @@ class S {
     );
   }
 
-  /// `Recitation`
+  /// `Listen`
   String get listen_ayah {
     return Intl.message(
-      'Recitation',
+      'Listen',
       name: 'listen_ayah',
       desc: '',
       args: [],
@@ -1200,170 +1200,170 @@ class S {
     );
   }
 
-  /// `إضافة تفسير جديد`
+  /// `Add New Tafsir`
   String get add_new_tsfseer {
     return Intl.message(
-      'إضافة تفسير جديد',
+      'Add New Tafsir',
       name: 'add_new_tsfseer',
       desc: '',
       args: [],
     );
   }
 
-  /// `إرسال إشعار جديد`
+  /// `Send New Notification`
   String get send_new_notification {
     return Intl.message(
-      'إرسال إشعار جديد',
+      'Send New Notification',
       name: 'send_new_notification',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم الإضافة بنجاح`
+  /// `Added successfully`
   String get add_success {
     return Intl.message(
-      'تم الإضافة بنجاح',
+      'Added successfully',
       name: 'add_success',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم الحذف`
+  /// `Removed successfully`
   String get remove_sucess {
     return Intl.message(
-      'تم الحذف',
+      'Removed successfully',
       name: 'remove_sucess',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم الإرسال بنجاح`
+  /// `Sent successfully`
   String get send_success {
     return Intl.message(
-      'تم الإرسال بنجاح',
+      'Sent successfully',
       name: 'send_success',
       desc: '',
       args: [],
     );
   }
 
-  /// `عنوان التفسير`
+  /// `Tafsir Title`
   String get tafseer_name {
     return Intl.message(
-      'عنوان التفسير',
+      'Tafsir Title',
       name: 'tafseer_name',
       desc: '',
       args: [],
     );
   }
 
-  /// `رابط التفسير`
+  /// `Tafsir Video Link`
   String get tafseer_vedio {
     return Intl.message(
-      'رابط التفسير',
+      'Tafsir Video Link',
       name: 'tafseer_vedio',
       desc: '',
       args: [],
     );
   }
 
-  /// `إرسال`
+  /// `Send`
   String get send {
     return Intl.message(
-      'إرسال',
+      'Send',
       name: 'send',
       desc: '',
       args: [],
     );
   }
 
-  /// `إضافة`
+  /// `Add`
   String get add {
     return Intl.message(
-      'إضافة',
+      'Add',
       name: 'add',
       desc: '',
       args: [],
     );
   }
 
-  /// `إسم المفسر`
+  /// `Name of the Interpreter`
   String get name_of_the_pserson {
     return Intl.message(
-      'إسم المفسر',
+      'Name of the Interpreter',
       name: 'name_of_the_pserson',
       desc: '',
       args: [],
     );
   }
 
-  /// `من فضلك أدخل رابط صالح`
+  /// `Please enter a valid link`
   String get video_hint_message {
     return Intl.message(
-      'من فضلك أدخل رابط صالح',
+      'Please enter a valid link',
       name: 'video_hint_message',
       desc: '',
       args: [],
     );
   }
 
-  /// `المزيد من الفيدوهات`
+  /// `More Videos`
   String get more_videos {
     return Intl.message(
-      'المزيد من الفيدوهات',
+      'More Videos',
       name: 'more_videos',
       desc: '',
       args: [],
     );
   }
 
-  /// `هل تريد حذف هذا التفسير`
+  /// `Do you want to delete this Tafsir?`
   String get delete_tafseer_question {
     return Intl.message(
-      'هل تريد حذف هذا التفسير',
+      'Do you want to delete this Tafsir?',
       name: 'delete_tafseer_question',
       desc: '',
       args: [],
     );
   }
 
-  /// `تعديل`
+  /// `Edit`
   String get edit {
     return Intl.message(
-      'تعديل',
+      'Edit',
       name: 'edit',
       desc: '',
       args: [],
     );
   }
 
-  /// `تم الحذف بنجاح`
+  /// `Deleted successfully`
   String get success_delete {
     return Intl.message(
-      'تم الحذف بنجاح',
+      'Deleted successfully',
       name: 'success_delete',
       desc: '',
       args: [],
     );
   }
 
-  /// `عنوان الإشعار`
+  /// `Notification Title`
   String get notification_title {
     return Intl.message(
-      'عنوان الإشعار',
+      'Notification Title',
       name: 'notification_title',
       desc: '',
       args: [],
     );
   }
 
-  /// ` نص الإشعار`
+  /// `Notification Text`
   String get notification_text {
     return Intl.message(
-      ' نص الإشعار',
+      'Notification Text',
       name: 'notification_text',
       desc: '',
       args: [],

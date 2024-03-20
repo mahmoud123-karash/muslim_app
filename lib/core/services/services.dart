@@ -54,20 +54,6 @@ String getArabicNumber(int number) {
   return arabicNumber.convert(number);
 }
 
-void generateVerseOfDay(int ayahCount) {
-  int cacheDay = CacheHelper.getData(key: 'vDay') ?? 0;
-  DateTime now = DateTime.now();
-  int day = now.day;
-  if (day != cacheDay) {
-    Random random = Random();
-    int randomS = random.nextInt(114) + 1;
-    int randomV = random.nextInt(ayahCount) + 1;
-    saveSRandom(randomS);
-    saveVRandom(randomV);
-    saveVDay(day);
-  }
-}
-
 void generateZekrOfDay(List<Zekr> list) {
   int cacheDay = CacheHelper.getData(key: 'zDay') ?? 0;
   DateTime now = DateTime.now();

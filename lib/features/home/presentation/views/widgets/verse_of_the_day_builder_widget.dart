@@ -24,9 +24,10 @@ class VerseOfTheDayBuilderWidget extends StatelessWidget {
             surahName: isEnglish
                 ? list[randomSurah].englishName
                 : list[randomSurah].arabicName,
-            ayahNum:
-                isEnglish ? randomAyah.toString() : getArabicNumber(randomAyah),
-            ayahText: list[randomSurah].ayahs[randomAyah].text,
+            ayahNum: isEnglish
+                ? (randomAyah).toString()
+                : getArabicNumber(randomAyah),
+            ayahText: list[randomSurah].ayahs[randomAyah - 1].text,
           );
         } else {
           return Container();

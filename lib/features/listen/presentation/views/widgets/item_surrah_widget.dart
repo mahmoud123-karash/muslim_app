@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
@@ -86,12 +87,12 @@ class ItemSurahWidget extends StatelessWidget {
                     const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      surahName,
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: uthmanic2Family,
+                    SvgPicture.asset(
+                      'assets/svg/surah_name/00${index + 1}.svg',
+                      height: 45,
+                      colorFilter: ColorFilter.mode(
+                        appColor,
+                        BlendMode.srcIn,
                       ),
                     ),
                     const Spacer(),
