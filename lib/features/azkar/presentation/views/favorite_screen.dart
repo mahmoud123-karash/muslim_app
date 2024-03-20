@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/widgets/message_builder_widget.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/favorite_cubit.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/favorite_states.dart';
@@ -13,10 +14,7 @@ class FavoriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).favorite_azkar),
-        centerTitle: true,
-      ),
+      appBar: appAppBar(S.of(context).favorite_azkar),
       body: BlocBuilder<FavoriteCubit, FavoriteStates>(
         builder: (context, state) {
           if (state is SuccessGetFavorite) {

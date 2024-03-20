@@ -30,7 +30,7 @@ class _LanguageScreenState extends State<LanguageScreen> {
     String cachedLang = CacheHelper.getData(key: 'lang') ?? '';
     String currentLang = Platform.localeName.split('_')[0];
     return Scaffold(
-      appBar: myAppBar(
+      appBar: appAppBar(
         S.of(context).language,
         centerTitle: true,
       ),

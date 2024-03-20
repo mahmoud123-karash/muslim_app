@@ -13,9 +13,8 @@ class AzkarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).azkar),
-        centerTitle: true,
+      appBar: appAppBar(
+        S.of(context).azkar,
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 class NotificationScreen extends StatelessWidget {
@@ -7,9 +8,7 @@ class NotificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).notifications),
-      ),
+      appBar: appAppBar(S.of(context).notifications),
     );
   }
 }

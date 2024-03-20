@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
 import 'package:muslim_app/features/listen/domain/use_cases/download_use_case.dart';
 import 'package:muslim_app/features/listen/presentation/manager/audio_cubit/audio_cubit.dart';
@@ -26,11 +27,8 @@ class FilesAudioScreen extends StatelessWidget {
         getIt.get<DownloadUseCase>(),
       ),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            reciterName,
-          ),
-          centerTitle: true,
+        appBar: appAppBar(
+          reciterName,
           actions: [
             ReciterImageWidget(image: image),
           ],

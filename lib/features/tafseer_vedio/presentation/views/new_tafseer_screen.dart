@@ -44,10 +44,7 @@ class _NewTafseerScreenState extends State<NewTafseerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).add_new_tsfseer),
-        centerTitle: true,
-      ),
+      appBar: appAppBar(S.of(context).add_new_tsfseer),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10),
         child: CustomScrollView(

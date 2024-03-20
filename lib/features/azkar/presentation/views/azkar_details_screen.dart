@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/azkar/data/models/zeker_model.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_cubit.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_states.dart';
@@ -12,10 +13,7 @@ class AzkarDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        centerTitle: true,
-      ),
+      appBar: appAppBar(title),
       body: BlocBuilder<AzkarCubit, AzkarStates>(
         builder: (context, state) {
           if (state is SuccessLoadAzkar) {

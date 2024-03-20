@@ -50,10 +50,10 @@ void showSnackBar(context, message) =>
       ),
     );
 
-AppBar myAppBar(
+AppBar appAppBar(
   title, {
   List<Widget>? actions,
-  bool centerTitle = false,
+  bool centerTitle = true,
 }) =>
     AppBar(
       centerTitle: centerTitle,

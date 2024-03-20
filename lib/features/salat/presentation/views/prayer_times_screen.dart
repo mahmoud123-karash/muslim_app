@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/salat/presentation/manager/prayer_cubit/prayer_cubit.dart';
 import 'package:muslim_app/features/salat/presentation/manager/salat_cubit/salat_cubit.dart';
 import 'package:muslim_app/features/salat/presentation/views/widgets/prayers_times_content_builder_widget.dart';
@@ -13,10 +14,7 @@ class PrayersTimesScreen extends StatelessWidget {
     return BlocProvider(
       create: (context) => PrayerCubit(),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(S.of(context).prayer_times),
-          centerTitle: true,
-        ),
+        appBar: appAppBar(S.of(context).prayer_times),
         body: RefreshIndicator(
           onRefresh: () async {
             Future.delayed(const Duration(milliseconds: 250)).then(

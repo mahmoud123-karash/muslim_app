@@ -48,9 +48,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).profile),
-        centerTitle: true,
+      appBar: appAppBar(
+        S.of(context).profile,
         actions: const [
           // IconButton(
           //   onPressed: () {
