@@ -35,7 +35,7 @@ class _DetailsScreenState extends State<TafseerDeatilsScreen> {
       initialVideoId: videoId,
       flags: const YoutubePlayerFlags(
         mute: false,
-        autoPlay: false,
+        autoPlay: true,
         disableDragSeek: false,
         loop: false,
         isLive: false,
@@ -121,7 +121,7 @@ class _DetailsScreenState extends State<TafseerDeatilsScreen> {
               height: 30,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: Text(
                 S.of(context).more_videos,
                 style: TextStyles.style16Bold.copyWith(
@@ -142,7 +142,7 @@ class _DetailsScreenState extends State<TafseerDeatilsScreen> {
                         ? MessageBuilderWidget(
                             message: S.of(context).no_results)
                         : Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 5),
+                            padding: const EdgeInsets.symmetric(horizontal: 10),
                             child: TafseerListViewWidegt(
                               controller: ScrollController(),
                               isDetails: true,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/widgets/add_custom_buttom_widget.dart';
 import 'package:muslim_app/core/widgets/message_builder_widget.dart';
@@ -45,15 +47,17 @@ class _NotificationContentWidgetState extends State<NotificationContentWidget> {
 
   @override
   Widget build(BuildContext context) {
+    String email = CacheHelper.getData(key: 'email') ?? "";
     return Column(
       children: [
-        AddCustomButtonWidget(
-          icon: Ionicons.notifications_outline,
-          lable: S.of(context).send_new_notification,
-          onPressed: () {
-            navigateTo(context, const SendNotificationScreen());
-          },
-        ),
+        if (email == adminEmail)
+          AddCustomButtonWidget(
+            icon: Ionicons.notifications_outline,
+            lable: S.of(context).send_new_notification,
+            onPressed: () {
+              navigateTo(context, const SendNotificationScreen());
+            },
+          ),
         Expanded(
           child: widget.list.isEmpty
               ? MessageBuilderWidget(message: S.of(context).no_results)

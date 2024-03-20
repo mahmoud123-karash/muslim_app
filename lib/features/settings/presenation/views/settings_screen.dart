@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/services/messaging_service.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/shared/components.dart';
@@ -11,6 +12,7 @@ import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/p
 import 'package:muslim_app/features/profile/presentation/manager/profile_cubit/profile_states.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_states.dart';
+import 'package:muslim_app/features/settings/presenation/views/about_app_screen.dart';
 import 'package:muslim_app/features/settings/presenation/views/language_screen.dart';
 import 'package:muslim_app/features/settings/presenation/views/widgets/profile_container_widget.dart';
 import 'package:muslim_app/features/settings/presenation/views/widgets/settings_list_tile_widget.dart';
@@ -80,7 +82,12 @@ class SettingsScreen extends StatelessWidget {
               SettingsListTileWidget(
                 title: S.of(context).share_app,
                 icon: Ionicons.share_social_outline,
-                onTap: () {},
+                onTap: () {
+                  share(
+                    title: 'Muslim App',
+                    text: 'كل مايخص ديننا الحنيف ستجده هنا',
+                  );
+                },
               ),
               const SizedBox(
                 height: 12,
@@ -88,7 +95,10 @@ class SettingsScreen extends StatelessWidget {
               SettingsListTileWidget(
                 title: S.of(context).rate_app,
                 icon: Ionicons.star_outline,
-                onTap: () {},
+                onTap: () {
+                  Uri uri = Uri.parse(appLink);
+                  openUri(url: uri);
+                },
               ),
               const SizedBox(
                 height: 12,
@@ -96,7 +106,9 @@ class SettingsScreen extends StatelessWidget {
               SettingsListTileWidget(
                 title: S.of(context).about_app,
                 icon: Ionicons.information_circle_outline,
-                onTap: () {},
+                onTap: () {
+                  navigateTo(context, const AboutAppScreen());
+                },
               ),
               const SizedBox(
                 height: 12,
@@ -104,7 +116,13 @@ class SettingsScreen extends StatelessWidget {
               SettingsListTileWidget(
                 title: S.of(context).contact_us,
                 icon: Icons.email_outlined,
-                onTap: () {},
+                onTap: () {
+                  final Uri emailLaunchUri = Uri(
+                    scheme: 'mailto',
+                    path: 'elkhodaryehab@gmail.com',
+                  );
+                  openUri(url: emailLaunchUri);
+                },
               ),
               const SizedBox(
                 height: 12,

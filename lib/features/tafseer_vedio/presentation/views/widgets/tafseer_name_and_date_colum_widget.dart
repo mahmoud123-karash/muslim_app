@@ -11,7 +11,6 @@ class TafseerNameAndDateColumWidegt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-
     return SizedBox(
       height: 120,
       width: width / 2,
@@ -35,11 +34,15 @@ class TafseerNameAndDateColumWidegt extends StatelessWidget {
             maxLines: 1,
           ),
           const Spacer(),
-          Text(
-            DateFormat.yMMMEd().format(model.date.toDate()),
-            style: TextStyles.style12.copyWith(
-              color: secondColor,
-              fontWeight: FontWeight.bold,
+          Container(
+            constraints: BoxConstraints(maxWidth: width / 2 - 50),
+            child: Text(
+              DateFormat.yMMMEd().format(model.date.toDate()),
+              style: TextStyles.style12.copyWith(
+                color: secondColor,
+                fontWeight: FontWeight.bold,
+              ),
+              maxLines: 1,
             ),
           )
         ],

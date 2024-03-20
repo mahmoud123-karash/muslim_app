@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/widgets/add_custom_buttom_widget.dart';
 import 'package:muslim_app/core/widgets/message_builder_widget.dart';
@@ -52,6 +54,7 @@ class _TafseerContentWidgetState extends State<TafseerContentWidget> {
 
   @override
   Widget build(BuildContext context) {
+    String email = CacheHelper.getData(key: 'email') ?? "";
     return Column(
       children: [
         searchField(
@@ -66,12 +69,13 @@ class _TafseerContentWidgetState extends State<TafseerContentWidget> {
           },
           context: context,
         ),
-        AddCustomButtonWidget(
-          lable: S.of(context).add_new_tsfseer,
-          onPressed: () {
-            navigateTo(context, const NewTafseerScreen());
-          },
-        ),
+        if (email == adminEmail)
+          AddCustomButtonWidget(
+            lable: S.of(context).add_new_tsfseer,
+            onPressed: () {
+              navigateTo(context, const NewTafseerScreen());
+            },
+          ),
         Expanded(
           child: widget.list.isEmpty
               ? MessageBuilderWidget(message: S.of(context).no_results)

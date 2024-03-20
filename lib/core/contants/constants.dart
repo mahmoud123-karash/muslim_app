@@ -10,13 +10,14 @@ Color blackColor = Colors.black;
 Color greyColor = Colors.grey;
 
 var pageBuket = PageStorageBucket();
+String adminEmail = 'elkhodaryehab@gmail.com';
 
 String privacyUri =
     'https://www.privacypolicygenerator.info/live.php?token=MsmKdi4pne1dYTITIsaOPEXQh0zwVN1t';
 
 String appLink = Platform.isIOS
-    ? 'https://apps.apple.com/us/app/id1571336937'
-    : 'https://play.google.com/store/apps/details?id=com.tamrini1.com';
+    ? 'https://apps.apple.com/us/app/id'
+    : 'https://play.google.com/store/apps/details?id=com.example.muslim_app';
 
 String kufiFamily = 'kufi';
 String uthmanic2Family = 'uthmanic2';

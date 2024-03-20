@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/tafseer_vedio/data/models/tafseer_model/tafseer_model.dart';
@@ -17,6 +18,7 @@ class TafseerItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String email = CacheHelper.getData(key: 'email') ?? "";
     bool isEnglish = Intl.getCurrentLocale() == 'en';
     return InkWell(
       borderRadius: BorderRadius.circular(10),
@@ -58,23 +60,27 @@ class TafseerItemWidget extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            top: 0,
-            right: isEnglish ? null : 0,
-            left: !isEnglish ? null : 0,
-            child: DeleteIconButtonWidget(
-              uid: model.uid!,
-              tafseerTitle: model.tafseerTitle,
-            ),
-          ),
-          Positioned(
-            bottom: 0,
-            right: !isEnglish ? null : 0,
-            left: isEnglish ? null : 0,
-            child: EditIconButtonWidget(
-              model: model,
-            ),
-          ),
+          if (email == adminEmail)
+            if (!isDetails)
+              Positioned(
+                top: 0,
+                right: isEnglish ? null : 0,
+                left: !isEnglish ? null : 0,
+                child: DeleteIconButtonWidget(
+                  uid: model.uid!,
+                  tafseerTitle: model.tafseerTitle,
+                ),
+              ),
+          if (email == adminEmail)
+            if (!isDetails)
+              Positioned(
+                bottom: 0,
+                right: !isEnglish ? null : 0,
+                left: isEnglish ? null : 0,
+                child: EditIconButtonWidget(
+                  model: model,
+                ),
+              ),
         ],
       ),
     );
