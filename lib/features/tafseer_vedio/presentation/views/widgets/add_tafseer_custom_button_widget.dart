@@ -7,8 +7,10 @@ import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cu
 import 'package:muslim_app/generated/l10n.dart';
 
 class AddTafseerCustomButtonWidget extends StatelessWidget {
-  const AddTafseerCustomButtonWidget({super.key, required this.onPressed});
+  const AddTafseerCustomButtonWidget(
+      {super.key, required this.onPressed, required this.lable});
   final VoidCallback onPressed;
+  final String lable;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class AddTafseerCustomButtonWidget extends StatelessWidget {
           return const CircularProgressIndicator();
         } else {
           return CustomButtonWidget(
-            lable: S.of(context).add,
+            lable: lable,
             onPressed: onPressed,
           );
         }

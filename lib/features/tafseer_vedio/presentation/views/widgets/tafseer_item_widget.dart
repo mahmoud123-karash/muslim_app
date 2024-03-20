@@ -4,7 +4,9 @@ import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/tafseer_vedio/data/models/tafseer_model/tafseer_model.dart';
 import 'package:muslim_app/features/tafseer_vedio/presentation/views/tafseer_details_screen.dart';
 import 'package:muslim_app/features/tafseer_vedio/presentation/views/widgets/tafseer_name_and_date_colum_widget.dart';
-
+import 'package:intl/intl.dart';
+import 'delete_icon_button_widget.dart';
+import 'edit_icon_button_widget.dart';
 import 'youtube_manager.dart';
 
 class TafseerItemWidget extends StatelessWidget {
@@ -15,6 +17,7 @@ class TafseerItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return InkWell(
       borderRadius: BorderRadius.circular(10),
       onTap: () {
@@ -24,34 +27,55 @@ class TafseerItemWidget extends StatelessWidget {
           navigateTo(context, TafseerDeatilsScreen(model: model));
         }
       },
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: appColor.withOpacity(0.2),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: SizedBox(
-                  height: 120,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: YoutubeManager(
-                      youtubeUrl: model.vedioUri,
+      child: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: appColor.withOpacity(0.2),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: SizedBox(
+                      height: 120,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: YoutubeManager(
+                          youtubeUrl: model.vedioUri,
+                        ),
+                      ),
                     ),
                   ),
-                ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  TafseerNameAndDateColumWidegt(model: model),
+                ],
               ),
-              const SizedBox(
-                width: 15,
-              ),
-              TafseerNameAndDateColumWidegt(model: model),
-            ],
+            ),
           ),
-        ),
+          Positioned(
+            top: 0,
+            right: isEnglish ? null : 0,
+            left: !isEnglish ? null : 0,
+            child: DeleteIconButtonWidget(
+              uid: model.uid!,
+              tafseerTitle: model.tafseerTitle,
+            ),
+          ),
+          Positioned(
+            bottom: 0,
+            right: !isEnglish ? null : 0,
+            left: isEnglish ? null : 0,
+            child: EditIconButtonWidget(
+              model: model,
+            ),
+          ),
+        ],
       ),
     );
   }

@@ -1329,6 +1329,36 @@ class S {
       args: [],
     );
   }
+
+  /// `هل تريد حذف هذا التفسير`
+  String get delete_tafseer_question {
+    return Intl.message(
+      'هل تريد حذف هذا التفسير',
+      name: 'delete_tafseer_question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تعديل`
+  String get edit {
+    return Intl.message(
+      'تعديل',
+      name: 'edit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `تم الحذف بنجاح`
+  String get success_delete {
+    return Intl.message(
+      'تم الحذف بنجاح',
+      name: 'success_delete',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

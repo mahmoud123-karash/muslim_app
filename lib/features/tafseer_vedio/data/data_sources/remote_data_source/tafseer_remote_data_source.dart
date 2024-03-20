@@ -9,7 +9,10 @@ class TafseerRemoteDataSourceImpl extends TafseerRemoteDataSource {
   @override
   Future<List<TafseerVideoModel>> get() async {
     List<TafseerVideoModel> list = [];
-    var result = await FirebaseFirestore.instance.collection('tafseer').get();
+    var result = await FirebaseFirestore.instance
+        .collection('tafseer')
+        .orderBy('date', descending: true)
+        .get();
     for (var element in result.docs) {
       TafseerVideoModel model =
           TafseerVideoModel.formJson(element.data(), element.id);

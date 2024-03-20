@@ -22,6 +22,7 @@ class TafseerNameAndDateColumWidegt extends StatelessWidget {
             model.tafseerTitle,
             style: TextStyles.style14.copyWith(
               fontWeight: FontWeight.bold,
+              overflow: TextOverflow.ellipsis,
             ),
             maxLines: 2,
           ),

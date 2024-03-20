@@ -126,7 +126,10 @@
     "send":"إرسال",
     "add":"إضافة",
     "video_hint_message":"من فضلك أدخل رابط صالح",
-    "more_videos":"المزيد من الفيدوهات"
+    "more_videos":"المزيد من الفيدوهات",
+    "delete_tafseer_question":"هل تريد حذف هذا التفسير",
+    "edit":"تعديل",
+    "success_delete":"تم الحذف بنجاح"
 
 
     

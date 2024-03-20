@@ -59,11 +59,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Delete Account"),
         "delete_account_question": MessageLookupByLibrary.simpleMessage(
             "Do you want to delete the account?"),
+        "delete_tafseer_question":
+            MessageLookupByLibrary.simpleMessage("هل تريد حذف هذا التفسير"),
         "device_language":
             MessageLookupByLibrary.simpleMessage("Device Language"),
         "dhuhr": MessageLookupByLibrary.simpleMessage("Dhuhr"),
         "download_waiting": MessageLookupByLibrary.simpleMessage(
             "Please wait for the download to complete"),
+        "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_verify":
             MessageLookupByLibrary.simpleMessage("Please activate your email"),
@@ -169,6 +172,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "share_ayah": MessageLookupByLibrary.simpleMessage("Share"),
         "soon": MessageLookupByLibrary.simpleMessage("Coming Soon"),
         "start_now": MessageLookupByLibrary.simpleMessage("Start Now"),
+        "success_delete":
+            MessageLookupByLibrary.simpleMessage("تم الحذف بنجاح"),
         "success_download":
             MessageLookupByLibrary.simpleMessage("Download Successful"),
         "success_logout":
