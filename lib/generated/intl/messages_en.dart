@@ -105,6 +105,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "mintue_1": MessageLookupByLibrary.simpleMessage("minute"),
         "mintue_2": MessageLookupByLibrary.simpleMessage("minutes"),
         "mintues": MessageLookupByLibrary.simpleMessage("minutes"),
+        "more_videos":
+            MessageLookupByLibrary.simpleMessage("المزيد من الفيدوهات"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "name_of_the_pserson":
             MessageLookupByLibrary.simpleMessage("إسم المفسر"),
@@ -184,6 +186,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "update": MessageLookupByLibrary.simpleMessage("Update"),
         "validate":
             MessageLookupByLibrary.simpleMessage("This field is required"),
+        "video_hint_message":
+            MessageLookupByLibrary.simpleMessage("من فضلك أدخل رابط صالح"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome back"),
         "zakr_of_the_day":
             MessageLookupByLibrary.simpleMessage("Dua of the Day")

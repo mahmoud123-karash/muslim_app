@@ -17,6 +17,8 @@ import 'package:muslim_app/features/profile/data/repo/profile_repo_impl.dart';
 import 'package:muslim_app/features/salat/data/data_source/local_data_source/local_remote_data_source.dart';
 import 'package:muslim_app/features/salat/data/data_source/remote_data_source/salat_remote_data_source.dart';
 import 'package:muslim_app/features/salat/data/repo/salat_repo_impl.dart';
+import 'package:muslim_app/features/tafseer_vedio/data/data_sources/remote_data_source/tafseer_remote_data_source.dart';
+import 'package:muslim_app/features/tafseer_vedio/data/repo/tasfeer_repo_impl.dart';
 
 GetIt getIt = GetIt.instance;
 
@@ -79,6 +81,12 @@ void setLocator() {
         getIt.get<DioHelper>(),
       ),
       SalatLocalDataSourceImpl(),
+    ),
+  );
+
+  getIt.registerSingleton(
+    TafseerRepoImpl(
+      TafseerRemoteDataSourceImpl(),
     ),
   );
 }

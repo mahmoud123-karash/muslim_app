@@ -101,6 +101,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "mintue_1": MessageLookupByLibrary.simpleMessage("دقيقة"),
         "mintue_2": MessageLookupByLibrary.simpleMessage("دقيقتين"),
         "mintues": MessageLookupByLibrary.simpleMessage("دقائق"),
+        "more_videos":
+            MessageLookupByLibrary.simpleMessage("المزيد من الفيدوهات"),
         "name": MessageLookupByLibrary.simpleMessage("الإسم"),
         "name_of_the_pserson":
             MessageLookupByLibrary.simpleMessage("إسم المفسر"),
@@ -175,6 +177,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "try_again": MessageLookupByLibrary.simpleMessage("حاول مرة ثانية"),
         "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "validate": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+        "video_hint_message":
+            MessageLookupByLibrary.simpleMessage("من فضلك أدخل رابط صالح"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبا بك"),
         "zakr_of_the_day": MessageLookupByLibrary.simpleMessage("دعاء اليوم")
       };

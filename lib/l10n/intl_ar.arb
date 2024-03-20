@@ -124,7 +124,9 @@
     "tafseer_vedio":"رابط التفسير",
     "notification":"الإشعار",
     "send":"إرسال",
-    "add":"إضافة"
+    "add":"إضافة",
+    "video_hint_message":"من فضلك أدخل رابط صالح",
+    "more_videos":"المزيد من الفيدوهات"
 
 
     

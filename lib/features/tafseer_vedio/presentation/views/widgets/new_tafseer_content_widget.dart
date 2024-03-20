@@ -18,32 +18,35 @@ class NewtafseerContentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: formKey,
-      child: Column(
-        children: [
-          AddTextFieldWidget(
-            controller: personController,
-            autovalidateMode: autovalidateMode,
-            lable: S.of(context).name_of_the_pserson,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          AddTextFieldWidget(
-            controller: personController,
-            autovalidateMode: autovalidateMode,
-            lable: S.of(context).tafseer_name,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          AddTextFieldWidget(
-            controller: personController,
-            autovalidateMode: autovalidateMode,
-            lable: S.of(context).tafseer_vedio,
-          ),
-        ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+      child: Form(
+        key: formKey,
+        child: Column(
+          children: [
+            AddTextFieldWidget(
+              controller: personController,
+              autovalidateMode: autovalidateMode,
+              lable: S.of(context).name_of_the_pserson,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            AddTextFieldWidget(
+              controller: tafseerController,
+              autovalidateMode: autovalidateMode,
+              lable: S.of(context).tafseer_name,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            AddTextFieldWidget(
+              controller: vedioController,
+              autovalidateMode: autovalidateMode,
+              lable: S.of(context).tafseer_vedio,
+            ),
+          ],
+        ),
       ),
     );
   }

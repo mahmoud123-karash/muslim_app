@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
+import 'package:muslim_app/features/tafseer_vedio/data/models/tafseer_model/tafseer_model.dart';
+import 'package:intl/intl.dart';
 
 class TafseerNameAndDateColumWidegt extends StatelessWidget {
-  const TafseerNameAndDateColumWidegt({super.key});
+  const TafseerNameAndDateColumWidegt({super.key, required this.model});
+  final TafseerVideoModel model;
 
   @override
   Widget build(BuildContext context) {
@@ -16,24 +19,26 @@ class TafseerNameAndDateColumWidegt extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'mofjsogjdognsgshglsgslglghilggklsnklamavlkclzbphsjfianmshsifbuj',
+            model.tafseerTitle,
             style: TextStyles.style14.copyWith(
               fontWeight: FontWeight.bold,
             ),
             maxLines: 2,
           ),
           Text(
-            'mofjsogjdognsgshglsgslglghilggklsnklamavlkclzbphsjfianmshsifbuj',
-            style: TextStyles.style16Bold.copyWith(
+            model.personName,
+            style: TextStyles.style15.copyWith(
               color: appColor,
             ),
+            overflow: TextOverflow.ellipsis,
             maxLines: 1,
           ),
           const Spacer(),
           Text(
-            '10/12/2.24',
-            style: TextStyles.style15.copyWith(
+            DateFormat.yMMMEd().format(model.date.toDate()),
+            style: TextStyles.style12.copyWith(
               color: secondColor,
+              fontWeight: FontWeight.bold,
             ),
           )
         ],

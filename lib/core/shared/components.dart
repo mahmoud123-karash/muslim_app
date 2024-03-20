@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/utils/navigation_route.dart';
+import 'package:muslim_app/generated/l10n.dart';
 
 GlobalKey<NavigatorState> _navigationKey = GlobalKey<NavigatorState>();
 GlobalKey<NavigatorState> get navigationKey => _navigationKey;
@@ -58,4 +61,24 @@ AppBar myAppBar(
         title,
       ),
       actions: actions,
+    );
+
+Widget searchField({
+  required TextEditingController controller,
+  required Function(String) onChanged,
+  required BuildContext context,
+}) =>
+    Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: TextFormField(
+        onChanged: onChanged,
+        controller: controller,
+        decoration: InputDecoration(
+          prefixIcon: const Icon(
+            Ionicons.search_outline,
+          ),
+          hintText: S.of(context).search,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+        ),
+      ),
     );

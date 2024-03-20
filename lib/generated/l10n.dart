@@ -1309,6 +1309,26 @@ class S {
       args: [],
     );
   }
+
+  /// `من فضلك أدخل رابط صالح`
+  String get video_hint_message {
+    return Intl.message(
+      'من فضلك أدخل رابط صالح',
+      name: 'video_hint_message',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `المزيد من الفيدوهات`
+  String get more_videos {
+    return Intl.message(
+      'المزيد من الفيدوهات',
+      name: 'more_videos',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

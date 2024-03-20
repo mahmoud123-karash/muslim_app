@@ -18,7 +18,7 @@ class AddCustomButtonWidget extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(
-        vertical: 10,
+        vertical: 5,
         horizontal: 15,
       ),
       child: MaterialButton(

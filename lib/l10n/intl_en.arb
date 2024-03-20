@@ -124,7 +124,11 @@
     "notification":"الإشعار",
     "send":"إرسال",
     "add":"إضافة",
-    "name_of_the_pserson":"إسم المفسر"
+    "name_of_the_pserson":"إسم المفسر",
+    "video_hint_message":"من فضلك أدخل رابط صالح",
+    "more_videos":"المزيد من الفيدوهات"
+
+
 
 
 

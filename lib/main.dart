@@ -29,6 +29,8 @@ import 'package:muslim_app/features/salat/presentation/manager/salat_cubit/salat
 import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/logout_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
+import 'package:muslim_app/features/tafseer_vedio/data/repo/tasfeer_repo_impl.dart';
+import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cubit/video_cubit.dart';
 import 'package:muslim_app/firebase_options.dart';
 import 'core/services/permission_service.dart';
 import 'features/listen/domain/entites/reciter_entity.dart';
@@ -114,6 +116,11 @@ void main() async {
             getIt.get<SalatRepImpl>(),
           )..getPrayers(),
         ),
+        BlocProvider(
+          create: (context) => VideoCubit(
+            getIt.get<TafseerRepoImpl>(),
+          )..getData(),
+        )
       ],
       child: MyApp(startWidget: startWidget),
     ),
