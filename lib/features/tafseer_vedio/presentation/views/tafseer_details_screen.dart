@@ -144,6 +144,7 @@ class _DetailsScreenState extends State<TafseerDeatilsScreen> {
                         : Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 5),
                             child: TafseerListViewWidegt(
+                              controller: ScrollController(),
                               isDetails: true,
                               list: list,
                               length: 10,

@@ -7,14 +7,17 @@ class TafseerListViewWidegt extends StatelessWidget {
       {super.key,
       required this.list,
       required this.length,
-      required this.isDetails});
+      required this.isDetails,
+      required this.controller});
   final List<TafseerVideoModel> list;
   final int length;
   final bool isDetails;
+  final ScrollController controller;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      controller: controller,
       padding: const EdgeInsets.all(0),
       itemBuilder: (context, index) {
         if (index < length) {

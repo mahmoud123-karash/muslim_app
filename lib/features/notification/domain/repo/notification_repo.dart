@@ -5,5 +5,6 @@ abstract class NotificationRepo {
   Future<Either<String, List<NotificationModel>>> get();
   Future<Either<String, List<NotificationModel>>> send({
     required String text,
+    required String title,
   });
 }

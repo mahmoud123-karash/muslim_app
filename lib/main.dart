@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
+import 'package:muslim_app/core/services/messaging_service.dart';
 import 'package:muslim_app/core/styles/themes.dart';
 import 'package:muslim_app/core/shared/bloc_observer.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
@@ -49,6 +50,7 @@ void main() async {
 
   PermissionService.requestLocationPremissions();
   PermissionService.requestNotificationPremissions();
+  MessagingService.initializeAwesomeNotifications();
 
   setLocator();
   Hive.registerAdapter(ZekrAdapter());
@@ -126,7 +128,7 @@ void main() async {
         BlocProvider(
           create: (context) => NotificationCubit(
             getIt.get<NotificationRepoImpl>(),
-          ),
+          )..getData(),
         )
       ],
       child: MyApp(startWidget: startWidget),

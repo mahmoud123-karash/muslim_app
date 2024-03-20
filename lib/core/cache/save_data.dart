@@ -143,3 +143,8 @@ void saveMonth(name) => CacheHelper.saveData(
       key: 'month',
       value: name,
     );
+
+void saveSub(name) => CacheHelper.saveData(
+      key: 'sub',
+      value: name,
+    );

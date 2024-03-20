@@ -78,6 +78,7 @@ class _TafseerContentWidgetState extends State<TafseerContentWidget> {
               : Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TafseerListViewWidegt(
+                    controller: scrollController,
                     isDetails: false,
                     list:
                         searchController.text == '' ? widget.list : searchList,

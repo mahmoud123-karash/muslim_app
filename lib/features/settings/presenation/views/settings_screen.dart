@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
+import 'package:muslim_app/core/services/messaging_service.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/features/auth/data/models/user_model/user_model.dart';
@@ -40,10 +41,17 @@ class SettingsScreen extends StatelessWidget {
                   },
                 ),
               SwitchListTileWidget(
-                isEnabled: CacheHelper.getData(key: 'isnotify') ?? false,
+                isEnabled: CacheHelper.getData(key: 'sub') ?? false,
                 icon: Ionicons.notifications_outline,
                 lable: S.of(context).notifications,
-                onChanged: () {},
+                onChanged: () {
+                  bool isSub = CacheHelper.getData(key: 'sub') ?? false;
+                  if (isSub) {
+                    MessagingService.unSubscribeToTopic();
+                  } else {
+                    MessagingService.subscribeToTopic();
+                  }
+                },
               ),
               // const SizedBox(
               //   height: 12,

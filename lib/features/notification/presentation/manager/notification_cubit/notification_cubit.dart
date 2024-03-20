@@ -21,12 +21,14 @@ class NotificationCubit extends Cubit<NotificationStates> {
     );
   }
 
-  void addNewTafseer({
+  void sendNotification({
     required String text,
+    required String title,
   }) async {
     emit(LoadingGetNotificationssState());
     var result = await notificationRepo.send(
       text: text,
+      title: title,
     );
     result.fold(
       (message) {

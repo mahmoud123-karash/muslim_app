@@ -115,7 +115,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
         "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
-        "notification": MessageLookupByLibrary.simpleMessage("الإشعار"),
+        "notification_text":
+            MessageLookupByLibrary.simpleMessage(" نص الإشعار"),
+        "notification_title":
+            MessageLookupByLibrary.simpleMessage("عنوان الإشعار"),
         "notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
         "num_of_the_ayahs": MessageLookupByLibrary.simpleMessage("عدد الآيات"),
         "on_boarding_1": MessageLookupByLibrary.simpleMessage(

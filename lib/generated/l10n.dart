@@ -1270,16 +1270,6 @@ class S {
     );
   }
 
-  /// `الإشعار`
-  String get notification {
-    return Intl.message(
-      'الإشعار',
-      name: 'notification',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `إرسال`
   String get send {
     return Intl.message(
@@ -1355,6 +1345,26 @@ class S {
     return Intl.message(
       'تم الحذف بنجاح',
       name: 'success_delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `عنوان الإشعار`
+  String get notification_title {
+    return Intl.message(
+      'عنوان الإشعار',
+      name: 'notification_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` نص الإشعار`
+  String get notification_text {
+    return Intl.message(
+      ' نص الإشعار',
+      name: 'notification_text',
       desc: '',
       args: [],
     );

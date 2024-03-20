@@ -24,10 +24,12 @@ class NotificationRepoImpl extends NotificationRepo {
   @override
   Future<Either<String, List<NotificationModel>>> send({
     required String text,
+    required String title,
   }) async {
     try {
       NotificationModel model = NotificationModel(
         text: text,
+        title: title,
         date: Timestamp.now(),
       );
       fireStore.add(

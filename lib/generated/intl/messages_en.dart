@@ -119,7 +119,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
         "no_results": MessageLookupByLibrary.simpleMessage("No Results"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("No Tafsir"),
-        "notification": MessageLookupByLibrary.simpleMessage("الإشعار"),
+        "notification_text":
+            MessageLookupByLibrary.simpleMessage(" نص الإشعار"),
+        "notification_title":
+            MessageLookupByLibrary.simpleMessage("عنوان الإشعار"),
         "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "num_of_the_ayahs":
             MessageLookupByLibrary.simpleMessage("Number of Verses"),

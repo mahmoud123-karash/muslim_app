@@ -122,14 +122,15 @@
     "tafseer_name":"عنوان التفسير",
     "name_of_the_pserson":"إسم المفسر",
     "tafseer_vedio":"رابط التفسير",
-    "notification":"الإشعار",
     "send":"إرسال",
     "add":"إضافة",
     "video_hint_message":"من فضلك أدخل رابط صالح",
     "more_videos":"المزيد من الفيدوهات",
     "delete_tafseer_question":"هل تريد حذف هذا التفسير",
     "edit":"تعديل",
-    "success_delete":"تم الحذف بنجاح"
+    "success_delete":"تم الحذف بنجاح",
+    "notification_title":"عنوان الإشعار",
+    "notification_text":" نص الإشعار"
 
 
     
