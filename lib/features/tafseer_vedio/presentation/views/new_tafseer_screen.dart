@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/utils/regex.dart';
 import 'package:muslim_app/features/tafseer_vedio/data/models/tafseer_model/tafseer_model.dart';
-import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cubit/video_cubit.dart';
+import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_cubit.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 import 'widgets/add_tafseer_custom_button_widget.dart';

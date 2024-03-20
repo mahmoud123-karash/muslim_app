@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/widgets/custom_button_widget.dart';
-import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cubit/video_cubit.dart';
-import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cubit/video_states.dart';
+import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_cubit.dart';
+import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_states.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
 class AddTafseerCustomButtonWidget extends StatelessWidget {

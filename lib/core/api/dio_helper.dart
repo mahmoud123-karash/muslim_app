@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 
 class DioHelper {
@@ -33,5 +35,27 @@ class DioHelper {
       '$salatBaseUri${now.year}/${now.month}?latitude=$latitude&longitude=$longitude',
     );
     return reciters.data['data'];
+  }
+
+  var url = Uri.parse('https://fcm.googleapis.com/fcm/send');
+  var headersList = {
+    'Content-Type': 'application/json',
+    'Authorization':
+        'key=AAAA5dtd33w:APA91bGSX52vxRvxAadVccpfgR5T0gKCBJvO1uc9vZLKvTqWIZjkcDjZhBewxEXMRxZH6wBuiJL0hmAtuAlxuss80HlCxkrncdNcvDdo-LTU8PW34NA83v_TSeHne2AiOz8cRdqrNQ_H'
+  };
+
+  void sendNotification({
+    required String title,
+    required String body,
+    Map<String, dynamic>? data,
+  }) async {
+    var notificationBody = {
+      "to": '/topics/azkar',
+      "priority": "high",
+      "notification": {"title": title, "body": body, "sound": "default"},
+      'data': data,
+    };
+    dio.options.headers.addAll(headersList);
+    await dio.post(url.toString(), data: json.encode(notificationBody));
   }
 }

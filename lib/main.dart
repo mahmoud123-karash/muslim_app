@@ -17,6 +17,8 @@ import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/fa
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
 import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
+import 'package:muslim_app/features/notification/data/repo/notification_repo_impl.dart';
+import 'package:muslim_app/features/notification/presentation/manager/notification_cubit/notification_cubit.dart';
 import 'package:muslim_app/features/onboarding/presentation/views/onboarding_screen.dart';
 import 'package:muslim_app/features/profile/data/repo/profile_repo_impl.dart';
 import 'package:muslim_app/features/profile/presentation/manager/image_cubit/image_cubit.dart';
@@ -30,7 +32,7 @@ import 'package:muslim_app/features/settings/presenation/manager/logout_cubit/lo
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_states.dart';
 import 'package:muslim_app/features/tafseer_vedio/data/repo/tasfeer_repo_impl.dart';
-import 'package:muslim_app/features/tafseer_vedio/presentation/manager/prayer_cubit/video_cubit.dart';
+import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_cubit.dart';
 import 'package:muslim_app/firebase_options.dart';
 import 'core/services/permission_service.dart';
 import 'features/listen/domain/entites/reciter_entity.dart';
@@ -120,6 +122,11 @@ void main() async {
           create: (context) => VideoCubit(
             getIt.get<TafseerRepoImpl>(),
           )..getData(),
+        ),
+        BlocProvider(
+          create: (context) => NotificationCubit(
+            getIt.get<NotificationRepoImpl>(),
+          ),
         )
       ],
       child: MyApp(startWidget: startWidget),
