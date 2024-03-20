@@ -148,3 +148,8 @@ void saveSub(name) => CacheHelper.saveData(
       key: 'sub',
       value: name,
     );
+
+void saveLength(name) => CacheHelper.saveData(
+      key: 'length',
+      value: name,
+    );

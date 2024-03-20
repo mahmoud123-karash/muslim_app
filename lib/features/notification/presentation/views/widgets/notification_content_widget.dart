@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/components.dart';
@@ -27,6 +28,7 @@ class _NotificationContentWidgetState extends State<NotificationContentWidget> {
 
   @override
   void initState() {
+    saveLength(widget.list.length);
     scrollController.addListener(_loadMoreData);
     super.initState();
   }
