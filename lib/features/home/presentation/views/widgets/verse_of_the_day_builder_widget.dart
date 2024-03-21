@@ -13,8 +13,8 @@ class VerseOfTheDayBuilderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 1;
-    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 1;
+    int randomSurah = CacheHelper.getData(key: 'sRandom') ?? 0;
+    int randomAyah = CacheHelper.getData(key: 'vRandom') ?? 0;
     return BlocBuilder<QuranCubit, QuranStates>(
       builder: (context, state) {
         List<Surah> list = QuranCubit.get(context).surahs;
@@ -27,7 +27,7 @@ class VerseOfTheDayBuilderWidget extends StatelessWidget {
             ayahNum: isEnglish
                 ? (randomAyah).toString()
                 : getArabicNumber(randomAyah),
-            ayahText: list[randomSurah].ayahs[randomAyah - 1].text,
+            ayahText: list[randomSurah].ayahs[randomAyah].text,
           );
         } else {
           return Container();

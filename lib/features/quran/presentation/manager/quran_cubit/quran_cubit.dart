@@ -45,8 +45,8 @@ class QuranCubit extends Cubit<QuranStates> {
     int day = now.day;
     if (day != cacheDay) {
       Random random = Random();
-      int randomS = random.nextInt(114) + 1;
-      int randomV = random.nextInt(surahs[randomS].ayahs.length) + 1;
+      int randomS = random.nextInt(114);
+      int randomV = random.nextInt(surahs[randomS].ayahs.length);
       saveSRandom(randomS);
       saveVRandom(randomV);
       saveVDay(day);
