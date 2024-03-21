@@ -3,11 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 
 class AyahDetailsOptionsContainerWidget extends StatelessWidget {
-  const AyahDetailsOptionsContainerWidget(
-      {super.key,
-      required this.lable,
-      required this.icon,
-      required this.onPressed});
+  const AyahDetailsOptionsContainerWidget({
+    super.key,
+    required this.lable,
+    required this.icon,
+    required this.onPressed,
+  });
   final String lable;
   final IconData icon;
   final VoidCallback onPressed;

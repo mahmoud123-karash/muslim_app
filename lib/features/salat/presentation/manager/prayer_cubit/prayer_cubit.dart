@@ -34,7 +34,8 @@ class PrayerCubit extends Cubit<PrayerStates> {
       if (models.isNotEmpty) {
         nextPrayer = models.first;
       }
-    } else if (day == now.day + 1) {
+    }
+    if (nextPrayer == null && day == now.day + 1) {
       List<PrayerModel> models =
           list.where((element) => element.dateTime.isAfter(now)).toList();
       nextPrayer = models.isEmpty ? null : models.first;

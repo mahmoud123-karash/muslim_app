@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:muslim_app/core/services/messaging_service.dart';
 import 'package:muslim_app/features/salat/data/models/prayer_model/prayer_model.dart';
 import 'package:muslim_app/features/salat/presentation/views/widgets/text_salah_widget.dart';
 import '../../../../../core/contants/constants.dart';
@@ -18,7 +19,16 @@ class PrayerTimeItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(10),
-      onTap: () {},
+      onTap: () {
+        DateTime now = DateTime.now();
+        MessagingService.setNotification(
+          title: 'text noti',
+          body: DateFormat('hh:mm a').format(now),
+          id: 5,
+          hour: 23,
+          minute: 57,
+        );
+      },
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

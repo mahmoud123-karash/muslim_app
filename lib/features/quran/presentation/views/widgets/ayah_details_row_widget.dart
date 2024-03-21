@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/core/shared/components.dart';
+import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/ayah_cubit/ayah_states.dart';
@@ -47,6 +48,9 @@ class AyahDetailsRowWidget extends StatelessWidget {
                     if (cubit.isPaly) {
                       cubit.pauseAudio();
                     } else {
+                      if (PlayerCubit.get(context).isPaly) {
+                        PlayerCubit.get(context).stopAudio();
+                      }
                       cubit.playAudio(
                         uri: ayah.audio,
                         context: context,
