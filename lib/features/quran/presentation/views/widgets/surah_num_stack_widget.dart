@@ -29,9 +29,9 @@ class SurahNumStackWidget extends StatelessWidget {
         Transform.translate(
           offset: const Offset(0, 1),
           child: Text(
-            Intl.getCurrentLocale() == 'en'
-                ? surahNum.toString()
-                : getArabicNumber(surahNum),
+            Intl.getCurrentLocale() == 'ar'
+                ? getArabicNumber(surahNum)
+                : surahNum.toString(),
             style: TextStyles.style12.copyWith(
               fontFamily: kufiFamily,
               color: ManageCubit.get(context).isDark ? whiteColor : null,

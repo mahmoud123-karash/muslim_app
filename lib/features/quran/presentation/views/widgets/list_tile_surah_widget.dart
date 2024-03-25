@@ -28,16 +28,16 @@ class ListTileSurahWidget extends StatelessWidget {
         leading: SurahNumStackWidget(
           surahNum: surah.surahNumber,
         ),
-        title: Intl.getCurrentLocale() == 'en'
-            ? Text(QuranCubit.get(context).surahs[index].englishName)
-            : SvgPicture.asset(
+        title: Intl.getCurrentLocale() == 'ar'
+            ? SvgPicture.asset(
                 'assets/svg/surah_name/00${index + 1}.svg',
                 height: 40,
                 colorFilter: ColorFilter.mode(
                   secondColor,
                   BlendMode.srcIn,
                 ),
-              ),
+              )
+            : Text(QuranCubit.get(context).surahs[index].englishName),
         trailing: surah.revelationType == 'Meccan'
             ? SizedBox(
                 height: 30,

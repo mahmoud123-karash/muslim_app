@@ -26,19 +26,13 @@ class DrawerCustomItemWidget extends StatelessWidget {
           ),
           color: color,
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 25,
-            vertical: 8,
-          ),
-          child: Center(
-            child: Text(
-              text,
-              style: TextStyles.style15.copyWith(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: tColor,
-              ),
+        child: Center(
+          child: Text(
+            text,
+            style: TextStyles.style15.copyWith(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+              color: tColor,
             ),
           ),
         ),

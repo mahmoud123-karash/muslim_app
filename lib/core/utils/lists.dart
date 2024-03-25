@@ -146,6 +146,39 @@ List<String> juzEnglishNames = [
   "Juz Thirty"
 ];
 
+List<String> juzFrenchNames = [
+  "Juz Un",
+  "Juz Deux",
+  "Juz Trois",
+  "Juz Quatre",
+  "Juz Cinq",
+  "Juz Six",
+  "Juz Sept",
+  "Juz Huit",
+  "Juz Neuf",
+  "Juz Dix",
+  "Juz Onze",
+  "Juz Douze",
+  "Juz Treize",
+  "Juz Quatorze",
+  "Juz Quinze",
+  "Juz Seize",
+  "Juz Dix-Sept",
+  "Juz Dix-Huit",
+  "Juz Dix-Neuf",
+  "Juz Vingt",
+  "Juz Vingt et Un",
+  "Juz Vingt-Deux",
+  "Juz Vingt-Trois",
+  "Juz Vingt-Quatre",
+  "Juz Vingt-Cinq",
+  "Juz Vingt-Six",
+  "Juz Vingt-Sept",
+  "Juz Vingt-Huit",
+  "Juz Vingt-Neuf",
+  "Juz Trente"
+];
+
 List<String> salatNames(context) => [
       S.of(context).fajr,
       S.of(context).dhuhr,

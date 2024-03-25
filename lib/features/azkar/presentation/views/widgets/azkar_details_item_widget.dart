@@ -11,6 +11,7 @@ class AzkarDetailsItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
@@ -19,9 +20,8 @@ class AzkarDetailsItemWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          crossAxisAlignment: Intl.getCurrentLocale() == 'en'
-              ? CrossAxisAlignment.end
-              : CrossAxisAlignment.start,
+          crossAxisAlignment:
+              isArabic ? CrossAxisAlignment.start : CrossAxisAlignment.end,
           children: [
             Text(
               zekr.zekr,
@@ -29,9 +29,7 @@ class AzkarDetailsItemWidget extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: uthmanic2Family,
               ),
-              textAlign: Intl.getCurrentLocale() == 'en'
-                  ? TextAlign.end
-                  : TextAlign.start,
+              textAlign: isArabic ? TextAlign.start : TextAlign.end,
             ),
             if (zekr.description != '') const Divider(),
             if (zekr.description != '')
@@ -43,9 +41,7 @@ class AzkarDetailsItemWidget extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: secondColor,
                   ),
-                  textAlign: Intl.getCurrentLocale() == 'en'
-                      ? TextAlign.end
-                      : TextAlign.start,
+                  textAlign: isArabic ? TextAlign.start : TextAlign.end,
                 ),
               ),
             const Divider(),

@@ -15,6 +15,7 @@ class SearchItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var cubit = QuranCubit.get(context);
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return InkWell(
       borderRadius: BorderRadius.circular(8),
       onTap: () {
@@ -40,9 +41,9 @@ class SearchItemWidget extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    Intl.getCurrentLocale() == 'en'
-                        ? cubit.getSurahEnglishNameFromPage(ayah.page)
-                        : cubit.getSurahNameFromPage(ayah.page),
+                    isArabic
+                        ? cubit.getSurahNameFromPage(ayah.page)
+                        : cubit.getSurahEnglishNameFromPage(ayah.page),
                     style: TextStyles.style20Bold.copyWith(
                       fontFamily: uthmanic2Family,
                       color: secondColor,
@@ -50,7 +51,7 @@ class SearchItemWidget extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    "${S.of(context).ayah_num}: ${Intl.getCurrentLocale() == 'en' ? ayah.ayahNumber : getArabicNumber(ayah.ayahNumber)}",
+                    "${S.of(context).ayah_num}: ${isArabic ? getArabicNumber(ayah.ayahNumber) : ayah.ayahNumber}",
                     style: TextStyles.style14.copyWith(
                       fontFamily: kufiFamily,
                       fontWeight: FontWeight.bold,

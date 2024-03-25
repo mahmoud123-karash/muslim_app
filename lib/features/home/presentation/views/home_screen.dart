@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
@@ -22,9 +22,9 @@ class HomeScreen extends StatelessWidget {
             children: [
               const LocationHomeBuilderWidget(),
               HomeRowWidget(
-                lable: isEnglish
-                    ? DateSevice.dateFormatted
-                    : DateSevice.arJHijriDate,
+                lable: isArabic
+                    ? DateSevice.arJHijriDate
+                    : DateSevice.dateFormatted,
                 icon: Ionicons.calendar_outline,
               ),
               const SizedBox(

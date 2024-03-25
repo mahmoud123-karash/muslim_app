@@ -9,9 +9,8 @@ import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran
 import 'package:muslim_app/features/quran/presentation/views/quran_drawer_widget.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/quran_options_container_widget.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/quran_pages_widget.dart';
-
-import 'widgets/top_title_widget.dart';
 import 'package:intl/intl.dart';
+import 'widgets/top_title_widget.dart';
 
 class QuranScreen extends StatefulWidget {
   const QuranScreen({super.key});
@@ -62,7 +61,7 @@ class _QuranScreenState extends State<QuranScreen> {
                       savepageIndex(value);
                     },
                     itemCount: 604,
-                    reverse: Intl.getCurrentLocale() == 'en' ? true : false,
+                    reverse: Intl.getCurrentLocale() == 'ar' ? false : true,
                     padEnds: false,
                     scrollDirection: Axis.horizontal,
                     physics: isShown
@@ -76,11 +75,11 @@ class _QuranScreenState extends State<QuranScreen> {
                               alignment: Alignment.topCenter,
                               child: TopTitleWidget(
                                 pageIndex: index,
-                                surahName: Intl.getCurrentLocale() == 'en'
+                                surahName: Intl.getCurrentLocale() == 'ar'
                                     ? QuranCubit.get(context)
-                                        .getSurahEnglishNameFromPage(index)
+                                        .getSurahNameFromPage(index)
                                     : QuranCubit.get(context)
-                                        .getSurahNameFromPage(index),
+                                        .getSurahEnglishNameFromPage(index),
                                 juzNum: QuranCubit.get(context)
                                     .getJuzByPage(index)
                                     .juz,
@@ -98,7 +97,7 @@ class _QuranScreenState extends State<QuranScreen> {
                             child: Padding(
                               padding: const EdgeInsets.only(bottom: 15),
                               child: Text(
-                                '${Intl.getCurrentLocale() == 'en' ? index + 1 : getArabicNumber(index + 1)}',
+                                '${Intl.getCurrentLocale() == 'ar' ? getArabicNumber(index + 1) : index + 1}',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontFamily: 'naskh',

@@ -82,6 +82,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Follow without Registration"),
         "follow_reading": MessageLookupByLibrary.simpleMessage("Follow"),
         "forget": MessageLookupByLibrary.simpleMessage("Forgot Password"),
+        "frensh_language": MessageLookupByLibrary.simpleMessage("Frensh"),
         "from_real_nourth":
             MessageLookupByLibrary.simpleMessage("From True North"),
         "gender": MessageLookupByLibrary.simpleMessage("Gender"),

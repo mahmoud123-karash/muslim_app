@@ -15,7 +15,7 @@ class MarkWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -49,7 +49,7 @@ class MarkWidget extends StatelessWidget {
                       width: 5,
                     ),
                     Text(
-                      "${S.of(context).page} ${isEnglish ? mark + 1 : getArabicNumber(mark + 1)}",
+                      "${S.of(context).page} ${isArabic ? getArabicNumber(mark + 1) : mark + 1}",
                       style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w600,

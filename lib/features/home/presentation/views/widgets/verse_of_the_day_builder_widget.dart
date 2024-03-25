@@ -18,15 +18,15 @@ class VerseOfTheDayBuilderWidget extends StatelessWidget {
     return BlocBuilder<QuranCubit, QuranStates>(
       builder: (context, state) {
         List<Surah> list = QuranCubit.get(context).surahs;
-        bool isEnglish = Intl.getCurrentLocale() == 'en';
+        bool isArabic = Intl.getCurrentLocale() == 'ar';
         if (list.isNotEmpty) {
           return VerseOfTheDayContainerWidget(
-            surahName: isEnglish
-                ? list[randomSurah].englishName
-                : list[randomSurah].arabicName,
-            ayahNum: isEnglish
-                ? (randomAyah + 1).toString()
-                : getArabicNumber(randomAyah + 1),
+            surahName: isArabic
+                ? list[randomSurah].arabicName
+                : list[randomSurah].englishName,
+            ayahNum: isArabic
+                ? getArabicNumber(randomAyah + 1)
+                : (randomAyah + 1).toString(),
             ayahText: list[randomSurah].ayahs[randomAyah].text,
           );
         } else {

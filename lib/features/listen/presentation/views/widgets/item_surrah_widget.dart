@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_states.dart';
@@ -34,14 +35,14 @@ class ItemSurahWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return BlocBuilder<QuranCubit, QuranStates>(
       builder: (context, state) {
         List<Surah> list = QuranCubit.get(context).surahs;
         if (list.isNotEmpty) {
-          String surahName = isEnglish
-              ? list[surahNum - 1].englishName
-              : list[surahNum - 1].arabicName;
+          String surahName = isArabic
+              ? list[surahNum - 1].arabicName
+              : list[surahNum - 1].englishName;
           return GestureDetector(
             onTap: () async {
               if (AudioCubit.get(context).isDownloading) {
@@ -90,16 +91,26 @@ class ItemSurahWidget extends StatelessWidget {
                     const SizedBox(
                       width: 25,
                     ),
-                    SvgPicture.asset(
-                      'assets/svg/surah_name/00$surahNum.svg',
-                      height: 45,
-                      colorFilter: ColorFilter.mode(
-                        ManageCubit.get(context).isDark
-                            ? secondColor
-                            : appColor,
-                        BlendMode.srcIn,
-                      ),
-                    ),
+                    isArabic
+                        ? SvgPicture.asset(
+                            'assets/svg/surah_name/00$surahNum.svg',
+                            height: 45,
+                            colorFilter: ColorFilter.mode(
+                              ManageCubit.get(context).isDark
+                                  ? secondColor
+                                  : appColor,
+                              BlendMode.srcIn,
+                            ),
+                          )
+                        : Text(
+                            surahName,
+                            style: TextStyles.style15.copyWith(
+                              fontWeight: FontWeight.bold,
+                              color: ManageCubit.get(context).isDark
+                                  ? secondColor
+                                  : appColor,
+                            ),
+                          ),
                     const Spacer(),
                     ProgressDownloadBuilderWidget(
                       index: surahNum,

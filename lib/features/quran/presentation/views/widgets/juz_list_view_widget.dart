@@ -9,6 +9,8 @@ class JuzListViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15),
       child: ListView.separated(
@@ -16,9 +18,11 @@ class JuzListViewWidget extends StatelessWidget {
         key: const PageStorageKey<String>('pageOne'),
         itemCount: 30,
         itemBuilder: (context, index) => JuzItemWidget(
-          text: Intl.getCurrentLocale() == 'en'
-              ? juzEnglishNames[index]
-              : juzNames[index],
+          text: isArabic
+              ? juzNames[index]
+              : isEnglish
+                  ? juzEnglishNames[index]
+                  : juzFrenchNames[index],
           juzNumber: index + 1,
           pageController: pageController,
         ),

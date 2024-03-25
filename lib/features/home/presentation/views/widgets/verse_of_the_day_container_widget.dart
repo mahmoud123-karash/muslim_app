@@ -4,6 +4,7 @@ import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/home/presentation/views/widgets/share_ayat_widget.dart';
 
 import 'ayat_row_widget.dart';
+import 'package:intl/intl.dart';
 
 class VerseOfTheDayContainerWidget extends StatelessWidget {
   const VerseOfTheDayContainerWidget({
@@ -18,12 +19,13 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: secondColor.withOpacity(0.3),
+          color: secondColor.withOpacity(0.2),
         ),
         child: Padding(
           padding: const EdgeInsets.all(15.0),
@@ -43,7 +45,7 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
                   fontFamily: uthmanic2Family,
                   fontWeight: FontWeight.bold,
                 ),
-                textAlign: TextAlign.justify,
+                textAlign: isArabic ? TextAlign.start : TextAlign.end,
               ),
               const SizedBox(
                 height: 15,

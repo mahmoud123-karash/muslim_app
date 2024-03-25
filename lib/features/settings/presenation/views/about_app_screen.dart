@@ -11,7 +11,8 @@ class AboutAppScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isEnglih = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
+    bool isEnglish = Intl.getCurrentLocale() == 'en';
     return Scaffold(
       appBar: appAppBar(S.of(context).about_app),
       body: Padding(
@@ -31,7 +32,13 @@ class AboutAppScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.start,
-                TextSpan(children: isEnglih ? enChaliders : arChaliders),
+                TextSpan(
+                  children: isArabic
+                      ? arChaliders
+                      : isEnglish
+                          ? enChaliders
+                          : frChaliders,
+                ),
               ),
             ),
           ),

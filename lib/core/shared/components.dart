@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/utils/navigation_route.dart';
 import 'package:muslim_app/generated/l10n.dart';
-
-GlobalKey<NavigatorState> _navigationKey = GlobalKey<NavigatorState>();
-GlobalKey<NavigatorState> get navigationKey => _navigationKey;
 
 void navigateTo(context, route) => Navigator.push(
       context,

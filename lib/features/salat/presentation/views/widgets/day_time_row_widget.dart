@@ -16,7 +16,7 @@ class DayTimeRowWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: Row(
@@ -35,7 +35,7 @@ class DayTimeRowWidget extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            isEnglish ? dateTime : hijri,
+            isArabic ? hijri : dateTime,
             style: TextStyles.style15.copyWith(
               fontWeight: FontWeight.bold,
               color: DateTime.now().day == dayNum ? secondColor : appColor,

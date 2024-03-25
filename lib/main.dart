@@ -149,7 +149,7 @@ class MyApp extends StatelessWidget {
         return ScreenUtilInit(
           builder: (_, child) {
             bool isDark = ManageCubit.get(context).isDark;
-            String lang = ManageCubit.get(context).lang == 'ar' ? 'ar' : 'en';
+            String lang = ManageCubit.get(context).lang;
             return MaterialApp(
               locale: Locale(lang),
               debugShowCheckedModeBanner: false,

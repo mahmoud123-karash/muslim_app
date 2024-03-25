@@ -44,16 +44,14 @@ class _AyahDetailsDialogWidgetState extends State<AyahDetailsDialogWidget> {
 
   @override
   Widget build(BuildContext context) {
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
 
     return AlertDialog(
       title: DialogRowTitleWidget(
-        surahName: isEnglish ? widget.surahEnName : widget.surahName,
-        ayahNumber: isEnglish
-            ? widget.ayah.ayahNumber.toString()
-            : getArabicNumber(
-                widget.ayah.ayahNumber,
-              ),
+        surahName: isArabic ? widget.surahName : widget.surahEnName,
+        ayahNumber: isArabic
+            ? getArabicNumber(widget.ayah.ayahNumber)
+            : widget.ayah.ayahNumber.toString(),
         shareText: widget.ayah.text,
       ),
       content: SingleChildScrollView(

@@ -19,7 +19,7 @@ class TafseerItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String email = CacheHelper.getData(key: 'email') ?? "";
-    bool isEnglish = Intl.getCurrentLocale() == 'en';
+    bool isArabic = Intl.getCurrentLocale() == 'ar';
     return InkWell(
       borderRadius: BorderRadius.circular(10),
       onTap: () {
@@ -64,8 +64,8 @@ class TafseerItemWidget extends StatelessWidget {
             if (!isDetails)
               Positioned(
                 top: 0,
-                right: isEnglish ? null : 0,
-                left: !isEnglish ? null : 0,
+                right: isArabic ? 0 : null,
+                left: !isArabic ? 0 : null,
                 child: DeleteIconButtonWidget(
                   uid: model.uid!,
                   tafseerTitle: model.tafseerTitle,
@@ -75,8 +75,8 @@ class TafseerItemWidget extends StatelessWidget {
             if (!isDetails)
               Positioned(
                 bottom: 0,
-                right: !isEnglish ? null : 0,
-                left: isEnglish ? null : 0,
+                right: !isArabic ? 0 : null,
+                left: isArabic ? 0 : null,
                 child: EditIconButtonWidget(
                   model: model,
                 ),

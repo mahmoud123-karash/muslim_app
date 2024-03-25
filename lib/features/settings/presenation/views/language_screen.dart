@@ -43,13 +43,14 @@ class _LanguageScreenState extends State<LanguageScreen> {
                   height: 10,
                 ),
                 LanguageContainerWidget(
-                    lable: S.of(context).arabic_language,
-                    onTap: () {
-                      lang = 'ar';
-                      setState(() {});
-                    },
-                    isSelected: lang == 'ar',
-                    image: Assets.imagesLang),
+                  lable: S.of(context).arabic_language,
+                  onTap: () {
+                    lang = 'ar';
+                    setState(() {});
+                  },
+                  isSelected: lang == 'ar',
+                  image: Assets.imagesLang,
+                ),
                 LanguageContainerWidget(
                   lable: S.of(context).english_language,
                   onTap: () {
@@ -58,6 +59,15 @@ class _LanguageScreenState extends State<LanguageScreen> {
                   },
                   isSelected: lang == 'en',
                   image: Assets.imagesEn,
+                ),
+                LanguageContainerWidget(
+                  lable: S.of(context).frensh_language,
+                  onTap: () {
+                    lang = 'fr';
+                    setState(() {});
+                  },
+                  isSelected: lang == 'fr',
+                  image: Assets.imagesFr,
                 ),
                 LanguageContainerWidget(
                   lable: S.of(context).device_language,

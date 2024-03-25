@@ -31,7 +31,7 @@ class CustomButtonWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Text(
             lable,
-            style: TextStyles.style17.copyWith(
+            style: TextStyles.style15.copyWith(
               color: whiteColor,
               fontWeight: FontWeight.bold,
             ),

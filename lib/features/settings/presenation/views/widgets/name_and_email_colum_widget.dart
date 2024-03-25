@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 
 class NameAndEmailColumWidget extends StatelessWidget {
   const NameAndEmailColumWidget(
@@ -20,7 +21,7 @@ class NameAndEmailColumWidget extends StatelessWidget {
           child: Text(
             name,
             style: TextStyles.style15.copyWith(
-              color: appColor,
+              color: ManageCubit.get(context).isDark ? secondColor : appColor,
               fontWeight: FontWeight.bold,
             ),
             maxLines: 1,

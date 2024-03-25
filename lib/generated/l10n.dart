@@ -190,6 +190,16 @@ class S {
     );
   }
 
+  /// `Frensh`
+  String get frensh_language {
+    return Intl.message(
+      'Frensh',
+      name: 'frensh_language',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `English`
   String get english_language {
     return Intl.message(
@@ -1398,6 +1408,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
       Locale.fromSubtags(languageCode: 'ar'),
+      Locale.fromSubtags(languageCode: 'fr'),
     ];
   }
 

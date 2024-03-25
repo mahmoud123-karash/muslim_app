@@ -14,6 +14,7 @@ class OptionCustomButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = MediaQuery.of(context).size.width;
     return MaterialButton(
       height: 50,
       onPressed: onPressed,
@@ -27,11 +28,15 @@ class OptionCustomButtonWidget extends StatelessWidget {
           const SizedBox(
             width: 5,
           ),
-          Text(
-            lable,
-            style: TextStyles.style13.copyWith(
-              fontWeight: FontWeight.bold,
-              color: appColor,
+          Container(
+            constraints: BoxConstraints(maxWidth: width / 3.5),
+            child: Text(
+              lable,
+              style: TextStyles.style13.copyWith(
+                fontWeight: FontWeight.bold,
+                color: appColor,
+              ),
+              maxLines: 1,
             ),
           ),
         ],

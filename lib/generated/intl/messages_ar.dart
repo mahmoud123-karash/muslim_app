@@ -77,6 +77,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "follow": MessageLookupByLibrary.simpleMessage("المتابعه بدون تسجيل"),
         "follow_reading": MessageLookupByLibrary.simpleMessage("متابعة"),
         "forget": MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "frensh_language":
+            MessageLookupByLibrary.simpleMessage("اللغة الفرنسية"),
         "from_real_nourth":
             MessageLookupByLibrary.simpleMessage("من الشمال الحقيقي"),
         "gender": MessageLookupByLibrary.simpleMessage("الجنس"),

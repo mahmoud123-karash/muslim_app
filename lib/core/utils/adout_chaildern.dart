@@ -76,3 +76,42 @@ List<InlineSpan> enChaliders = [
         '8. Reminders and Notifications: The app provides notifications and reminders for the users.\n\n',
   ),
 ];
+
+List<InlineSpan> frChaliders = [
+  const TextSpan(
+    text:
+        'Muslim App est une application qui vise à fournir du contenu et des services liés à la religion islamique hanafite. L\'application comprend une variété de fonctionnalités et de services qui aident les utilisateurs à approfondir leur compréhension et leur engagement avec la communauté religieuse. Voici une description des fonctionnalités de l\'application :\n\n',
+  ),
+  const TextSpan(
+    text:
+        '1. Contenu religieux : L\'application propose diverses sources de contenu religieux tels que le Saint Coran, les invocations et les horaires de prière.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '2. Saint Coran : Il contient tous les chapitres du Coran avec la récitation audio pour chaque chapitre et l\'affichage de chaque verset.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '3. Horaires de prière : L\'application offre les horaires de prière pour différentes villes et régions.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '4. Liste des Azkar et Duas : L\'application comprend une bibliothèque d\'Azkar et de Duas utilisés dans les pratiques religieuses quotidiennes.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '5. Récitation du Coran : L\'application comprend une bibliothèque des meilleurs et plus célèbres récitants.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '6. Direction de la Qibla : L\'application inclut la direction de la Qibla avec la possibilité d\'identifier et de localiser la position actuelle de l\'utilisateur.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '7. Tafsir en vidéo : L\'application inclut des présentations vidéo d\'interprétations par des érudits renommés.\n\n',
+  ),
+  const TextSpan(
+    text:
+        '8. Rappels et notifications : L\'application fournit des notifications et des rappels aux utilisateurs.\n\n',
+  ),
+];

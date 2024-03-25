@@ -17,6 +17,10 @@ class Assets {
   /// assets/images/en.png
   static const String imagesEn = "assets/images/en.png";
 
+  /// Assets for imagesFr
+  /// assets/images/fr.png
+  static const String imagesFr = "assets/images/fr.png";
+
   /// Assets for imagesKaaba
   /// assets/images/kaaba.png
   static const String imagesKaaba = "assets/images/kaaba.png";
