@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:muslim_app/core/cache/save_data.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
@@ -8,7 +9,7 @@ import 'package:muslim_app/features/listen/presentation/manager/player_cubit/pla
 import 'package:muslim_app/features/listen/presentation/views/widgets/duration_row_widget.dart';
 import 'package:muslim_app/features/listen/presentation/views/widgets/image_widget.dart';
 import 'package:muslim_app/features/listen/presentation/views/widgets/name_text_widget.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/paly_and_skip_widget.dart';
+import 'package:muslim_app/features/listen/presentation/views/widgets/play_and_skip_widget.dart';
 import 'package:muslim_app/features/listen/presentation/views/widgets/slider_widget.dart';
 
 class PlayerScreen extends StatefulWidget {
@@ -108,11 +109,12 @@ class _PlayerScreenState extends State<PlayerScreen> {
               const SizedBox(
                 height: 25,
               ),
-              PalyAndSkipWidget(
+              PlayAndSkipWidget(
                 isplay: cubit.isPaly,
                 playTap: () {
                   if (cubit.isPaly) {
                     cubit.stopAudio();
+                    cachePosition(cubit.position.inSeconds);
                   } else {
                     cubit.playAudio(
                       id: widget.id,

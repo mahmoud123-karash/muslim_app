@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/shared/assets.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/paly_and_skip_widget.dart';
+import 'package:muslim_app/features/listen/presentation/views/widgets/play_and_skip_widget.dart';
 
 import 'home_audio_image_widget.dart';
 
@@ -81,7 +81,7 @@ class HomeAudioWidget extends StatelessWidget {
                       const SizedBox(
                         height: 5,
                       ),
-                      PalyAndSkipWidget(
+                      PlayAndSkipWidget(
                         isHome: true,
                         playTap: playTap,
                         skipNextTap: skipNextTap,

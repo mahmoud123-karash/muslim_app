@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/cache/shared_preference.dart';
 import 'package:muslim_app/features/listen/presentation/views/widgets/icon_download_audio_widget.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/paly_and_pause_icon_widget.dart';
+import 'package:muslim_app/features/listen/presentation/views/widgets/play_and_pause_icon_widget.dart';
 import '../../manager/audio_cubit/audio_cubit.dart';
 import '../../manager/audio_cubit/audio_states.dart';
 import 'progress_download_widget.dart';

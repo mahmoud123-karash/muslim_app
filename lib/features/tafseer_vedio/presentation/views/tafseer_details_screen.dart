@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/core/widgets/message_builder_widget.dart';
+import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/tafseer_vedio/data/models/tafseer_model/tafseer_model.dart';
 import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_cubit.dart';
 import 'package:muslim_app/features/tafseer_vedio/presentation/manager/video_cubit/video_states.dart';
@@ -55,6 +56,14 @@ class _DetailsScreenState extends State<TafseerDeatilsScreen> {
         videoMetaData = controller.metadata;
       });
     }
+  }
+
+  @override
+  void didChangeDependencies() {
+    if (PlayerCubit.get(context).isPaly) {
+      PlayerCubit.get(context).stopAudio();
+    }
+    super.didChangeDependencies();
   }
 
   @override

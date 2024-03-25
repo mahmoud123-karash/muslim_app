@@ -3,8 +3,8 @@ import 'play_button_widget.dart';
 import 'skip_widget.dart';
 import 'package:intl/intl.dart';
 
-class PalyAndSkipWidget extends StatelessWidget {
-  const PalyAndSkipWidget({
+class PlayAndSkipWidget extends StatelessWidget {
+  const PlayAndSkipWidget({
     super.key,
     required this.playTap,
     required this.skipNextTap,
