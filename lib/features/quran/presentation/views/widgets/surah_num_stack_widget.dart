@@ -3,6 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/services/services.dart';
 import 'package:intl/intl.dart';
+import 'package:muslim_app/core/styles/text_styles.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 
 class SurahNumStackWidget extends StatelessWidget {
   const SurahNumStackWidget({super.key, required this.surahNum});
@@ -30,10 +32,9 @@ class SurahNumStackWidget extends StatelessWidget {
             Intl.getCurrentLocale() == 'en'
                 ? surahNum.toString()
                 : getArabicNumber(surahNum),
-            style: TextStyle(
-              color: Theme.of(context).hintColor,
+            style: TextStyles.style12.copyWith(
               fontFamily: kufiFamily,
-              fontSize: 10,
+              color: ManageCubit.get(context).isDark ? whiteColor : null,
               fontWeight: FontWeight.bold,
               height: 2,
             ),

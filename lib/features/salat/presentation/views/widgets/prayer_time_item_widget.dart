@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/features/salat/data/models/prayer_model/prayer_model.dart';
 import 'package:muslim_app/features/salat/presentation/views/widgets/text_salah_widget.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import '../../../../../core/contants/constants.dart';
 import 'package:intl/intl.dart';
 
@@ -36,7 +37,10 @@ class PrayerTimeItemWidget extends StatelessWidget {
                 model.icon,
                 width: 35,
                 height: 35,
-                colorFilter: ColorFilter.mode(blackColor, BlendMode.srcIn),
+                colorFilter: ColorFilter.mode(
+                  ManageCubit.get(context).isDark ? whiteColor : blackColor,
+                  BlendMode.srcIn,
+                ),
                 fit: BoxFit.scaleDown,
               ),
               const SizedBox(

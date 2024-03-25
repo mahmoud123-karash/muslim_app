@@ -18,6 +18,7 @@ import 'package:muslim_app/features/settings/presenation/views/widgets/profile_c
 import 'package:muslim_app/features/settings/presenation/views/widgets/settings_list_tile_widget.dart';
 import 'package:muslim_app/generated/l10n.dart';
 
+import '../manager/manage_cubit/manage_cubit.dart';
 import 'widgets/logout_dialog_widget.dart';
 import 'widgets/switch_list_tile_widget.dart';
 
@@ -55,17 +56,17 @@ class SettingsScreen extends StatelessWidget {
                   }
                 },
               ),
-              // const SizedBox(
-              //   height: 12,
-              // ),
-              // SwitchListTileWidget(
-              //   isEnabled: CacheHelper.getData(key: 'isdark') ?? false,
-              //   icon: Icons.light_mode_outlined,
-              //   lable: S.of(context).theme,
-              //   onChanged: () {
-              //     ManageCubit.get(context).changeAppTheme();
-              //   },
-              // ),
+              const SizedBox(
+                height: 12,
+              ),
+              SwitchListTileWidget(
+                isEnabled: CacheHelper.getData(key: 'isdark') ?? false,
+                icon: Icons.light_mode_outlined,
+                lable: S.of(context).theme,
+                onChanged: () {
+                  ManageCubit.get(context).changeAppTheme();
+                },
+              ),
               const SizedBox(
                 height: 12,
               ),

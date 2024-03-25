@@ -12,7 +12,7 @@ class NotificationItemWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
-        color: secondColor.withOpacity(0.4),
+        color: secondColor.withOpacity(0.5),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -20,7 +20,6 @@ class NotificationItemWidget extends StatelessWidget {
           model.text,
           style: TextStyles.style16Bold.copyWith(
             fontWeight: FontWeight.bold,
-            color: appColor,
           ),
         ),
       ),

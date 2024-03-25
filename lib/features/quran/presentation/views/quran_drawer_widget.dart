@@ -36,7 +36,7 @@ class _MosafDrawerWidgetState extends State<QuranDrawerWidget> {
         child: Column(
           children: [
             Container(
-              color: Colors.white,
+              color: Theme.of(context).scaffoldBackgroundColor,
               child: Column(
                 children: [
                   const SizedBox(

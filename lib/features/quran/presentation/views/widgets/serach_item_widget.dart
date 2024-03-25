@@ -66,7 +66,6 @@ class SearchItemWidget extends StatelessWidget {
                 ayah.text,
                 style: TextStyles.style20.copyWith(
                   fontFamily: uthmanic2Family,
-                  color: appColor,
                 ),
                 textAlign: TextAlign.justify,
               )

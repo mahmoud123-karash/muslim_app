@@ -7,6 +7,7 @@ import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_cubit.dart';
 import 'package:muslim_app/features/quran/presentation/manager/quran_cubit/quran_states.dart';
 import 'package:muslim_app/features/quran/presentation/views/widgets/surah_num_stack_widget.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/generated/l10n.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:intl/intl.dart';
@@ -93,7 +94,9 @@ class ItemSurahWidget extends StatelessWidget {
                       'assets/svg/surah_name/00$surahNum.svg',
                       height: 45,
                       colorFilter: ColorFilter.mode(
-                        appColor,
+                        ManageCubit.get(context).isDark
+                            ? secondColor
+                            : appColor,
                         BlendMode.srcIn,
                       ),
                     ),

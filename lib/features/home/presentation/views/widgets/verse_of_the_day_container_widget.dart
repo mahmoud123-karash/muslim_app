@@ -23,7 +23,7 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: secondColor.withOpacity(0.2),
+          color: secondColor.withOpacity(0.3),
         ),
         child: Padding(
           padding: const EdgeInsets.all(15.0),
@@ -42,7 +42,6 @@ class VerseOfTheDayContainerWidget extends StatelessWidget {
                 style: TextStyles.style20.copyWith(
                   fontFamily: uthmanic2Family,
                   fontWeight: FontWeight.bold,
-                  color: blackColor.withOpacity(0.8),
                 ),
                 textAlign: TextAlign.justify,
               ),

@@ -126,7 +126,7 @@ ThemeData lightTheme = ThemeData(
 
 ThemeData darkTheme = ThemeData(
   drawerTheme: DrawerThemeData(
-    backgroundColor: appColor,
+    backgroundColor: darkColor,
   ),
   primaryColor: appColor,
   primarySwatch: mainColor,
@@ -135,12 +135,12 @@ ThemeData darkTheme = ThemeData(
   ),
   appBarTheme: AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
-      statusBarColor: appColor.withOpacity(0.0),
+      statusBarColor: darkColor,
       statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: blackColor,
+      systemNavigationBarColor: darkColor,
       systemNavigationBarIconBrightness: Brightness.light,
     ),
-    backgroundColor: appColor.withOpacity(0.0),
+    backgroundColor: darkColor,
     iconTheme: const IconThemeData(
       color: Colors.white,
     ),
@@ -190,7 +190,7 @@ ThemeData darkTheme = ThemeData(
       fontWeight: FontWeight.bold,
       fontFamily: "cairo",
     ),
-    tileColor: appColor.withOpacity(0.5),
+    tileColor: secondColor.withOpacity(0.4),
     iconColor: whiteColor,
   ),
   inputDecorationTheme: InputDecorationTheme(
@@ -222,7 +222,7 @@ ThemeData darkTheme = ThemeData(
   ),
   dividerColor: whiteColor,
   dialogTheme: DialogTheme(
-    backgroundColor: Colors.grey[700],
+    backgroundColor: darkColor,
     titleTextStyle: const TextStyle(
       color: Colors.white,
       fontSize: 20,
@@ -244,7 +244,7 @@ ThemeData darkTheme = ThemeData(
   fontFamily: 'cairo',
   iconTheme: const IconThemeData(color: Colors.white),
   indicatorColor: Colors.white,
-  scaffoldBackgroundColor: appColor.withOpacity(0.1),
+  scaffoldBackgroundColor: darkColor,
   cardColor: appColor,
   secondaryHeaderColor: appColor,
   canvasColor: appColor,

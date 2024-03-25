@@ -5,6 +5,7 @@ import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 import 'package:muslim_app/features/listen/presentation/views/surah_list_screen.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 
 class ReciterListTileItemWidget extends StatelessWidget {
   const ReciterListTileItemWidget({super.key, required this.reciter});
@@ -36,6 +37,7 @@ class ReciterListTileItemWidget extends StatelessWidget {
         style: TextStyles.style17.copyWith(
           fontWeight: FontWeight.bold,
           fontFamily: uthmanic2Family,
+          color: ManageCubit.get(context).isDark ? whiteColor : null,
         ),
       ),
       trailing: Image.asset(

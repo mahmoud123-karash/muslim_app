@@ -33,8 +33,9 @@ class _QuranScreenState extends State<QuranScreen> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
+    bool isDark = CacheHelper.getData(key: 'isdark') ?? false;
     return Scaffold(
-      backgroundColor: const Color(0xffFAF5ED),
+      backgroundColor: isDark ? null : const Color(0xffFAF5ED),
       key: QuranCubit.get(context).quranKey,
       drawer: QuranDrawerWidget(
         pageController: pageController,

@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/styles/text_styles.dart';
 import 'package:muslim_app/features/salat/data/models/prayer_model/prayer_model.dart';
+import 'package:muslim_app/features/settings/presenation/manager/manage_cubit/manage_cubit.dart';
 import 'package:muslim_app/generated/l10n.dart';
 import 'package:intl/intl.dart';
 
@@ -24,7 +25,10 @@ class NextSalahColumWidget extends StatelessWidget {
           model.icon,
           width: 50,
           height: 50,
-          colorFilter: ColorFilter.mode(blackColor, BlendMode.srcIn),
+          colorFilter: ColorFilter.mode(
+            ManageCubit.get(context).isDark ? whiteColor : blackColor,
+            BlendMode.srcIn,
+          ),
         ),
         const SizedBox(
           height: 10,

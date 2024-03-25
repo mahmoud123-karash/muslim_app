@@ -19,22 +19,17 @@ class AboutAppScreen extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: secondColor.withOpacity(0.2),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey.withOpacity(0.5),
-                spreadRadius: 5,
-                blurRadius: 7,
-                offset: const Offset(0, 3),
-              ),
-            ],
+            color: appColor.withOpacity(0.2),
           ),
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               child: Text.rich(
-                style: TextStyles.style15.copyWith(color: appColor),
+                style: TextStyles.style15.copyWith(
+                  color: secondColor,
+                  fontWeight: FontWeight.bold,
+                ),
                 textAlign: TextAlign.start,
                 TextSpan(children: isEnglih ? enChaliders : arChaliders),
               ),

@@ -28,7 +28,7 @@ class JuzItemWidget extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: secondColor.withOpacity(0.7),
+            color: secondColor.withOpacity(0.4),
           ),
           child: Center(
             child: Padding(
@@ -37,7 +37,7 @@ class JuzItemWidget extends StatelessWidget {
                 text,
                 style: TextStyles.style15.copyWith(
                   fontWeight: FontWeight.bold,
-                  color: appColor,
+                  color: whiteColor,
                 ),
               ),
             ),
