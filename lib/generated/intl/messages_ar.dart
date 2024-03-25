@@ -68,6 +68,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "من فضلك قم بتفعيل الايميل الخاص"),
         "english_language":
             MessageLookupByLibrary.simpleMessage("اللغة الإنجليزية"),
+        "enter_reciter_name":
+            MessageLookupByLibrary.simpleMessage("أدخل إسم القارئ"),
         "fajr": MessageLookupByLibrary.simpleMessage("الفجر"),
         "favorite_azkar":
             MessageLookupByLibrary.simpleMessage("الأذكار المفضلة"),
@@ -113,6 +115,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "no_connection": MessageLookupByLibrary.simpleMessage("لا يوجد اتصال"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("لا يوجد أذكار مفضلة"),
+        "no_reciter_with_name":
+            MessageLookupByLibrary.simpleMessage("لا يوجد قارئ بهذا الإسم"),
         "no_results": MessageLookupByLibrary.simpleMessage("لا يوجد نتائج"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("لا يوجد تفسير"),
         "notification_text":

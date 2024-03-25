@@ -7,10 +7,8 @@ import 'package:muslim_app/features/auth/domain/use_cases/register_use_case.dart
 import 'package:muslim_app/features/azkar/data/data_sources/local_data_source/azkar_local_data_source.dart';
 import 'package:muslim_app/features/azkar/data/data_sources/local_data_source/favorite_local_data_source.dart';
 import 'package:muslim_app/features/azkar/data/repo/azkar_repo_impl.dart';
-import 'package:muslim_app/features/listen/data/data_source/audio_remote_data_source.dart';
-import 'package:muslim_app/features/listen/data/data_source/reciter_local_data_source.dart';
-import 'package:muslim_app/features/listen/data/data_source/reciter_remote_data_source.dart';
-import 'package:muslim_app/features/listen/data/repo/audio_repo_imol.dart';
+import 'package:muslim_app/features/listen/data/data_source/local_data_source/reciter_local_data_source.dart';
+import 'package:muslim_app/features/listen/data/data_source/remote_data_source/reciter_remote_data_source.dart';
 import 'package:muslim_app/features/listen/data/repo/reciter_repo_impl.dart';
 import 'package:muslim_app/features/listen/domain/use_cases/download_use_case.dart';
 import 'package:muslim_app/features/notification/data/data_sources/remote_data_source/notification_remote_data_source.dart';
@@ -58,17 +56,8 @@ void setLocator() {
     ),
   );
 
-  getIt.registerSingleton<AudioRepoImpl>(
-    AudioRepoImpl(
-      AudioRemoteDataSourceImpl(
-        getIt.get<DioHelper>(),
-      ),
-    ),
-  );
-
   getIt.registerSingleton<DownloadUseCase>(
     DownloadUseCase(
-      getIt.get<AudioRepoImpl>(),
       getIt.get<DioHelper>(),
     ),
   );

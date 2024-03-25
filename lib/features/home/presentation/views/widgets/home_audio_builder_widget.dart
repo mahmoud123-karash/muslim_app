@@ -24,28 +24,24 @@ class _HomeAudioBuilderWidgetState extends State<HomeAudioBuilderWidget> {
   int? id;
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: GestureDetector(
         onTap: () {
           navigateTo(
-              context,
-              PlayerScreen(
-                id: id!,
-                index: index!,
-                isHome: true,
-              ));
+            context,
+            PlayerScreen(
+              id: id!,
+              index: index!,
+              isHome: true,
+            ),
+          );
         },
         child: BlocBuilder<PlayerCubit, PlayerStates>(
           builder: (context, state) {
-            String sName = CacheHelper.getData(key: 'sName') ?? '';
-            String image = CacheHelper.getData(key: 'rImage') ?? '';
+            String surahName = CacheHelper.getData(key: 'sName') ?? '';
+            String reciterName = CacheHelper.getData(key: 'rName') ?? '';
             id = CacheHelper.getData(key: 'rindex') ?? 50;
             index = CacheHelper.getData(key: 'sindex') ?? 150;
             int cachedPoeition = CacheHelper.getData(key: 'position') ?? 0;
@@ -92,8 +88,8 @@ class _HomeAudioBuilderWidgetState extends State<HomeAudioBuilderWidget> {
                           );
                         },
                         isplay: cubit.isPaly,
-                        image: image,
-                        stext: sName,
+                        surahName: surahName,
+                        reciterName: reciterName,
                       ),
                     ],
                   )

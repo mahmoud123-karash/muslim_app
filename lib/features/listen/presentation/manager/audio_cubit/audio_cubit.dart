@@ -32,16 +32,19 @@ class AudioCubit extends Cubit<AudioStates> {
 
   bool isDownloading = false;
   double progress = 0.0;
+
   void downloadAudio({
-    required int surahIndex,
-    required int id,
+    required int surahNum,
+    required int reciterId,
+    required String url,
     required BuildContext context,
   }) async {
     isDownloading = true;
     emit(LoadingDownloadAudioState());
     var result = await downloadUseCase.download(
-      id: id,
-      surahIndex: surahIndex,
+      reciterId: reciterId,
+      url: url,
+      surahNum: surahNum,
       onReceiveProgress: (count, total) {
         progress = (count / total);
         emit(LoadingDownloadAudioState());

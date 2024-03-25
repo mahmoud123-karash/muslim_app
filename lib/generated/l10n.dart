@@ -1369,6 +1369,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter Reciter Name`
+  String get enter_reciter_name {
+    return Intl.message(
+      'Enter Reciter Name',
+      name: 'enter_reciter_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Reciter with this name`
+  String get no_reciter_with_name {
+    return Intl.message(
+      'No Reciter with this name',
+      name: 'no_reciter_with_name',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -16,6 +16,7 @@ import 'package:muslim_app/features/azkar/data/repo/azkar_repo_impl.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/azkar_cubit/azkar_cubit.dart';
 import 'package:muslim_app/features/azkar/presentation/manager/favorite_cubit/favorite_cubit.dart';
 import 'package:muslim_app/features/home/presentation/manager/location_cubit/location_cubit.dart';
+import 'package:muslim_app/features/listen/data/models/reciter_model/moshaf.dart';
 import 'package:muslim_app/features/listen/presentation/manager/player_cubit/player_cubit.dart';
 import 'package:muslim_app/features/nav_bar/presentation/views/navbar_screen.dart';
 import 'package:muslim_app/features/notification/data/repo/notification_repo_impl.dart';
@@ -56,6 +57,7 @@ void main() async {
   Hive.registerAdapter(ZekrAdapter());
   await Hive.openBox<Zekr>(azkarBox);
   Hive.registerAdapter(ReciterEntityAdapter());
+  Hive.registerAdapter(MoshafAdapter());
   await Hive.openBox<ReciterEntity>(reciterBox);
   Hive.registerAdapter(UserModelAdapter());
   await Hive.openBox<UserModel>(userBox);

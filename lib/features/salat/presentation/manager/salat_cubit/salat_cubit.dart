@@ -1,6 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:muslim_app/core/services/location_service.dart';
-import 'package:muslim_app/core/services/next_prayer.dart';
 import 'package:muslim_app/features/salat/domain/repo/salat_repo.dart';
 import 'salat_states.dart';
 
@@ -20,7 +19,7 @@ class SalatCubit extends Cubit<SalatStates> {
             emit(ErrorGetPrayersState(failure.message));
           },
           (list) {
-            setNextPrayerNotification(list);
+            // setNextPrayerNotification(list);
             emit(SuccessGetPrayersState(list));
           },
         );
@@ -34,7 +33,7 @@ class SalatCubit extends Cubit<SalatStates> {
           emit(ErrorGetPrayersState(failure.message));
         },
         (list) {
-          setNextPrayerNotification(list);
+          // setNextPrayerNotification(list);
           emit(SuccessGetPrayersState(list));
         },
       );

@@ -4,21 +4,20 @@ import 'package:muslim_app/core/shared/components.dart';
 import 'package:muslim_app/core/utils/get_it.dart';
 import 'package:muslim_app/features/listen/domain/use_cases/download_use_case.dart';
 import 'package:muslim_app/features/listen/presentation/manager/audio_cubit/audio_cubit.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/list_view_builder_widget.dart';
-import 'package:muslim_app/features/listen/presentation/views/widgets/reciter_image_widget.dart';
+import 'package:muslim_app/features/listen/presentation/views/widgets/list_view_surah_widget.dart';
 
-class FilesAudioScreen extends StatelessWidget {
-  const FilesAudioScreen({
+class SurahListScreen extends StatelessWidget {
+  const SurahListScreen({
     super.key,
     required this.id,
     required this.reciterName,
-    required this.image,
-    required this.style,
+    required this.server,
+    required this.surahList,
   });
   final int id;
   final String reciterName;
-  final String image;
-  final String style;
+  final String server;
+  final List<String> surahList;
 
   @override
   Widget build(BuildContext context) {
@@ -27,16 +26,12 @@ class FilesAudioScreen extends StatelessWidget {
         getIt.get<DownloadUseCase>(),
       ),
       child: Scaffold(
-        appBar: appAppBar(
-          reciterName,
-          actions: [
-            ReciterImageWidget(image: image),
-          ],
-        ),
-        body: ListViewBuilderWidget(
-          image: image,
+        appBar: appAppBar(reciterName),
+        body: ListViewSurahWidget(
           name: reciterName,
           id: id,
+          server: server,
+          surahList: surahList,
         ),
       ),
     );

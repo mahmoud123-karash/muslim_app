@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/core/services/services.dart';
-import 'package:muslim_app/features/quran/data/models/surah_model.dart';
 import 'package:intl/intl.dart';
 
 class SurahNumStackWidget extends StatelessWidget {
-  const SurahNumStackWidget({super.key, required this.surah});
-  final Surah surah;
+  const SurahNumStackWidget({super.key, required this.surahNum});
+  final int surahNum;
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +28,8 @@ class SurahNumStackWidget extends StatelessWidget {
           offset: const Offset(0, 1),
           child: Text(
             Intl.getCurrentLocale() == 'en'
-                ? surah.surahNumber.toString()
-                : getArabicNumber(surah.surahNumber),
+                ? surahNum.toString()
+                : getArabicNumber(surahNum),
             style: TextStyle(
               color: Theme.of(context).hintColor,
               fontFamily: kufiFamily,

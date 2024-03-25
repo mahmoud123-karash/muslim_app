@@ -27,12 +27,10 @@ class PlayerScreen extends StatefulWidget {
 }
 
 class _PlayerScreenState extends State<PlayerScreen> {
-  String? image;
   String? rName;
   String? sName;
   @override
   void initState() {
-    image = CacheHelper.getData(key: 'rImage') ?? '';
     rName = CacheHelper.getData(key: 'rName') ?? '';
     sName = CacheHelper.getData(key: 'sName') ?? '';
     int cachedPosition = CacheHelper.getData(key: 'position') ?? 0;
@@ -77,9 +75,9 @@ class _PlayerScreenState extends State<PlayerScreen> {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ImageWidget(image: image!),
+              const ImageWidget(),
               const SizedBox(
-                height: 40,
+                height: 50,
               ),
               NameTextWidget(name: sName!),
               NameTextWidget(name: rName!),

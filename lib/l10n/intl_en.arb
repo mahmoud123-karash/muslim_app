@@ -130,7 +130,11 @@
     "edit": "Edit",
     "success_delete": "Deleted successfully",
     "notification_title": "Notification Title",
-    "notification_text": "Notification Text"
+    "notification_text": "Notification Text",
+    "enter_reciter_name":"Enter Reciter Name",
+    "no_reciter_with_name":"No Reciter with this name"
+
+
 
 
 

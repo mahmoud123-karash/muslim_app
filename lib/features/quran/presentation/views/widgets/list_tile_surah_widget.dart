@@ -26,7 +26,7 @@ class ListTileSurahWidget extends StatelessWidget {
           pageController.jumpToPage(surah.ayahs.first.page - 1);
         },
         leading: SurahNumStackWidget(
-          surah: surah,
+          surahNum: surah.surahNumber,
         ),
         title: Intl.getCurrentLocale() == 'en'
             ? Text(QuranCubit.get(context).surahs[index].englishName)

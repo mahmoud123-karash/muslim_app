@@ -1,38 +1,47 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'reciter_entity.dart';
+part of 'moshaf.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class ReciterEntityAdapter extends TypeAdapter<ReciterEntity> {
+class MoshafAdapter extends TypeAdapter<Moshaf> {
   @override
-  final int typeId = 1;
+  final int typeId = 4;
 
   @override
-  ReciterEntity read(BinaryReader reader) {
+  Moshaf read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return ReciterEntity(
-      reciterId: fields[0] as int,
-      reciterName: fields[1] as String,
-      rewaya: fields[2] as Moshaf?,
+    return Moshaf(
+      id: fields[0] as int?,
+      name: fields[1] as String?,
+      server: fields[2] as String?,
+      surahTotal: fields[3] as int?,
+      moshafType: fields[4] as int?,
+      surahList: fields[5] as String?,
     );
   }
 
   @override
-  void write(BinaryWriter writer, ReciterEntity obj) {
+  void write(BinaryWriter writer, Moshaf obj) {
     writer
-      ..writeByte(3)
+      ..writeByte(6)
       ..writeByte(0)
-      ..write(obj.reciterId)
+      ..write(obj.id)
       ..writeByte(1)
-      ..write(obj.reciterName)
+      ..write(obj.name)
       ..writeByte(2)
-      ..write(obj.rewaya);
+      ..write(obj.server)
+      ..writeByte(3)
+      ..write(obj.surahTotal)
+      ..writeByte(4)
+      ..write(obj.moshafType)
+      ..writeByte(5)
+      ..write(obj.surahList);
   }
 
   @override
@@ -41,7 +50,7 @@ class ReciterEntityAdapter extends TypeAdapter<ReciterEntity> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is ReciterEntityAdapter &&
+      other is MoshafAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }

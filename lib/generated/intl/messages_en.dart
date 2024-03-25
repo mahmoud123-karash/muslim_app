@@ -72,6 +72,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email_verify":
             MessageLookupByLibrary.simpleMessage("Please activate your email"),
         "english_language": MessageLookupByLibrary.simpleMessage("English"),
+        "enter_reciter_name":
+            MessageLookupByLibrary.simpleMessage("Enter Reciter Name"),
         "fajr": MessageLookupByLibrary.simpleMessage("Fajr"),
         "favorite_azkar":
             MessageLookupByLibrary.simpleMessage("Favorite Adhkar"),
@@ -117,6 +119,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "no_connection": MessageLookupByLibrary.simpleMessage("No Connection"),
         "no_favorite_azkar":
             MessageLookupByLibrary.simpleMessage("No favorite Adhkar"),
+        "no_reciter_with_name":
+            MessageLookupByLibrary.simpleMessage("No Reciter with this name"),
         "no_results": MessageLookupByLibrary.simpleMessage("No Results"),
         "no_tafseer": MessageLookupByLibrary.simpleMessage("No Tafsir"),
         "notification_text":

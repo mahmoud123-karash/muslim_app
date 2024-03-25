@@ -14,15 +14,14 @@ class HomeAudioWidget extends StatelessWidget {
     required this.skipNextTap,
     required this.skipPreviousTap,
     required this.isplay,
-    required this.image,
-    required this.stext,
+    required this.surahName,
+    required this.reciterName,
   });
   final VoidCallback playTap;
   final VoidCallback skipNextTap;
   final VoidCallback skipPreviousTap;
   final bool isplay;
-  final String image;
-  final String stext;
+  final String surahName, reciterName;
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +36,7 @@ class HomeAudioWidget extends StatelessWidget {
         ),
       ),
       child: Stack(
+        alignment: Alignment.bottomCenter,
         children: [
           Container(
             decoration: BoxDecoration(
@@ -44,13 +44,13 @@ class HomeAudioWidget extends StatelessWidget {
               color: blackColor.withOpacity(0.7),
             ),
             width: width,
-            height: 120,
+            height: 150,
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                HomeAudioImageWidget(image: image),
+                const HomeAudioImageWidget(),
                 const SizedBox(
                   width: 5,
                 ),
@@ -60,12 +60,26 @@ class HomeAudioWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        stext,
+                        surahName,
                         style: TextStyles.style20.copyWith(
                           fontWeight: FontWeight.bold,
                           color: whiteColor,
                           fontFamily: uthmanic2Family,
                         ),
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        reciterName,
+                        style: TextStyles.style16Bold.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: secondColor,
+                          fontFamily: uthmanic2Family,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 5,
                       ),
                       PalyAndSkipWidget(
                         isHome: true,

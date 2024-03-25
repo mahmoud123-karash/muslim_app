@@ -130,7 +130,9 @@
     "edit":"تعديل",
     "success_delete":"تم الحذف بنجاح",
     "notification_title":"عنوان الإشعار",
-    "notification_text":" نص الإشعار"
+    "notification_text":" نص الإشعار",
+    "enter_reciter_name":"أدخل إسم القارئ",
+    "no_reciter_with_name":"لا يوجد قارئ بهذا الإسم"
 
 
     

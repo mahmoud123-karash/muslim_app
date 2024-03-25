@@ -20,18 +20,15 @@ import '../../../../../core/contants/constants.dart';
 class ItemSurahWidget extends StatelessWidget {
   const ItemSurahWidget({
     super.key,
-    required this.index,
-    required this.image,
     required this.name,
-    required this.cacheUrl,
     required this.isPlay,
     required this.id,
+    required this.surahNum,
+    required this.url,
   });
-  final int index;
-  final String image;
-  final String name;
+  final int surahNum;
+  final String name, url;
   final int id;
-  final String cacheUrl;
   final bool isPlay;
 
   @override
@@ -41,34 +38,39 @@ class ItemSurahWidget extends StatelessWidget {
       builder: (context, state) {
         List<Surah> list = QuranCubit.get(context).surahs;
         if (list.isNotEmpty) {
-          String surahName =
-              isEnglish ? list[index].englishName : list[index].arabicName;
+          String surahName = isEnglish
+              ? list[surahNum - 1].englishName
+              : list[surahNum - 1].arabicName;
           return GestureDetector(
             onTap: () async {
-              AudioCubit.get(context).index = index;
-              if (await File(
-                '${(await getTemporaryDirectory()).path}$index $id',
-              ).exists()) {
-                if (AudioCubit.get(context).isDownloading) {
-                  showSnackBar(context, S.of(context).download_waiting);
-                } else {
-                  saveReciterImage(image);
-                  saveReciterName(name);
-                  saveSurahName(surahName);
-                  navigateTo(
-                    context,
-                    PlayerScreen(isHome: false, id: id, index: index),
-                  );
-                }
+              if (AudioCubit.get(context).isDownloading) {
+                showSnackBar(context, S.of(context).download_waiting);
               } else {
-                if (await InternetConnectionChecker().hasConnection) {
-                  AudioCubit.get(context).downloadAudio(
-                    surahIndex: index,
-                    id: id,
-                    context: context,
-                  );
+                AudioCubit.get(context).index = surahNum;
+                if (await File(
+                  '${(await getTemporaryDirectory()).path}$surahNum $id',
+                ).exists()) {
+                  if (AudioCubit.get(context).isDownloading) {
+                    showSnackBar(context, S.of(context).download_waiting);
+                  } else {
+                    saveReciterName(name);
+                    saveSurahName(surahName);
+                    navigateTo(
+                      context,
+                      PlayerScreen(isHome: false, id: id, index: surahNum),
+                    );
+                  }
                 } else {
-                  showSnackBar(context, S.of(context).no_connection);
+                  if (await InternetConnectionChecker().hasConnection) {
+                    AudioCubit.get(context).downloadAudio(
+                      url: url,
+                      surahNum: surahNum,
+                      reciterId: id,
+                      context: context,
+                    );
+                  } else {
+                    showSnackBar(context, S.of(context).no_connection);
+                  }
                 }
               }
             },
@@ -82,13 +84,13 @@ class ItemSurahWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     SurahNumStackWidget(
-                      surah: list[index],
+                      surahNum: surahNum,
                     ),
                     const SizedBox(
                       width: 25,
                     ),
                     SvgPicture.asset(
-                      'assets/svg/surah_name/00${index + 1}.svg',
+                      'assets/svg/surah_name/00$surahNum.svg',
                       height: 45,
                       colorFilter: ColorFilter.mode(
                         appColor,
@@ -97,7 +99,7 @@ class ItemSurahWidget extends StatelessWidget {
                     ),
                     const Spacer(),
                     ProgressDownloadBuilderWidget(
-                      index: index,
+                      index: surahNum,
                       isPlay: isPlay,
                       id: id,
                     ),

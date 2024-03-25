@@ -67,6 +67,7 @@ Widget searchField({
   required TextEditingController controller,
   required Function(String) onChanged,
   required BuildContext context,
+  String? hint,
 }) =>
     Padding(
       padding: const EdgeInsets.all(10.0),
@@ -77,7 +78,7 @@ Widget searchField({
           prefixIcon: const Icon(
             Ionicons.search_outline,
           ),
-          hintText: S.of(context).search,
+          hintText: hint ?? S.of(context).search,
           contentPadding: const EdgeInsets.symmetric(horizontal: 20),
         ),
       ),

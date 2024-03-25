@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:muslim_app/core/errors/failure.dart';
-import 'package:muslim_app/features/listen/data/data_source/reciter_local_data_source.dart';
-import 'package:muslim_app/features/listen/data/data_source/reciter_remote_data_source.dart';
+import 'package:muslim_app/features/listen/data/data_source/local_data_source/reciter_local_data_source.dart';
+import 'package:muslim_app/features/listen/data/data_source/remote_data_source/reciter_remote_data_source.dart';
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 import 'package:muslim_app/features/listen/domain/repo/reciter_repo.dart';
 
@@ -20,8 +20,7 @@ class ReciterRepoImpl extends ReciterRepo {
         return right(localReciters);
       }
       List<ReciterEntity> remoteReciters =
-          await reciterRemoteDataSource.getReciterData();
-
+          await reciterRemoteDataSource.getReciters();
       return right(remoteReciters);
     } catch (e) {
       if (e is DioException) {

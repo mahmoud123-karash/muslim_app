@@ -1,38 +1,48 @@
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 
-import 'translated_name.dart';
+import 'moshaf.dart';
 
 class ReciterModel extends ReciterEntity {
-  int? reciterId;
-  String? reciterName;
-  String? styleRead;
-  TranslatedName? translatedName;
+  int? id;
+  String? name;
+  String? letter;
+  DateTime? date;
+  List<Moshaf>? moshaf;
 
   ReciterModel({
-    this.reciterId,
-    this.reciterName,
-    this.styleRead,
-    this.translatedName,
+    this.id,
+    this.name,
+    this.letter,
+    this.date,
+    this.moshaf,
   }) : super(
-          id: reciterId ?? 0,
-          name: translatedName?.name ?? '',
-          style: styleRead ?? '',
+          reciterId: id ?? 0,
+          reciterName: name ?? '',
+          rewaya: (moshaf ?? [])
+                  .where((element) => element.moshafType == 11)
+                  .toList()
+                  .isNotEmpty
+              ? (moshaf ?? []).firstWhere((element) => element.moshafType == 11)
+              : null,
         );
 
   factory ReciterModel.fromJson(Map<String, dynamic> json) => ReciterModel(
-        reciterId: json['id'],
-        reciterName: json['reciter_name'] as String?,
-        styleRead: json['style'],
-        translatedName: json['translated_name'] == null
+        id: json['id'] as int?,
+        name: json['name'] as String?,
+        letter: json['letter'] as String?,
+        date: json['date'] == null
             ? null
-            : TranslatedName.fromJson(
-                json['translated_name'] as Map<String, dynamic>),
+            : DateTime.parse(json['date'] as String),
+        moshaf: (json['moshaf'] as List<dynamic>?)
+            ?.map((e) => Moshaf.fromJson(e as Map<String, dynamic>))
+            .toList(),
       );
 
   Map<String, dynamic> toJson() => {
-        'id': reciterId,
-        'reciter_name': reciterName,
-        'style': styleRead,
-        'translated_name': translatedName?.toJson(),
+        'id': id,
+        'name': name,
+        'letter': letter,
+        'date': date?.toIso8601String(),
+        'moshaf': moshaf?.map((e) => e.toJson()).toList(),
       };
 }

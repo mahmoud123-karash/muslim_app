@@ -6,11 +6,11 @@ class DioHelper {
   final Dio dio;
   DioHelper(this.dio);
 
-  String baseUri = 'https://api.quran.com/api/v4/';
+  String baseUri = 'https://www.mp3quran.net/api/v3/reciters?language=ar';
   String salatBaseUri = 'https://api.aladhan.com/v1/calendar/';
 
-  Future<Map<String, dynamic>> getData({required String endPoint}) async {
-    var reciters = await dio.get('$baseUri$endPoint');
+  Future<Map<String, dynamic>> getReciters() async {
+    var reciters = await dio.get(baseUri);
     return reciters.data;
   }
 

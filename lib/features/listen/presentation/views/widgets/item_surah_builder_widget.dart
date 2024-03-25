@@ -8,14 +8,12 @@ import 'package:muslim_app/features/listen/presentation/manager/player_cubit/pla
 class ItemSurahBuilderWidget extends StatelessWidget {
   const ItemSurahBuilderWidget({
     super.key,
-    required this.index,
-    required this.image,
     required this.name,
     required this.id,
+    required this.surahNum,
+    required this.url,
   });
-  final int index;
-  final String image;
-  final String name;
+  final String name, surahNum, url;
   final int id;
 
   @override
@@ -23,12 +21,10 @@ class ItemSurahBuilderWidget extends StatelessWidget {
     return BlocBuilder<PlayerCubit, PlayerStates>(
       builder: (context, state) {
         bool isplay = CacheHelper.getData(key: 'ispaly') ?? false;
-        String cacheUrl = CacheHelper.getData(key: 'url') ?? '';
         return ItemSurahWidget(
-          index: index,
-          image: image,
+          url: url,
+          surahNum: int.parse(surahNum),
           name: name,
-          cacheUrl: cacheUrl,
           isPlay: isplay,
           id: id,
         );

@@ -1,14 +1,19 @@
 import 'package:hive/hive.dart';
+import 'package:muslim_app/features/listen/data/models/reciter_model/moshaf.dart';
 part 'reciter_entity.g.dart';
 
 @HiveType(typeId: 1)
 class ReciterEntity {
   @HiveField(0)
-  final int id;
+  final int reciterId;
   @HiveField(1)
-  final String name;
+  final String reciterName;
   @HiveField(2)
-  final String style;
+  Moshaf? rewaya;
 
-  ReciterEntity({required this.id, required this.name, required this.style});
+  ReciterEntity({
+    required this.reciterId,
+    required this.reciterName,
+    this.rewaya,
+  });
 }

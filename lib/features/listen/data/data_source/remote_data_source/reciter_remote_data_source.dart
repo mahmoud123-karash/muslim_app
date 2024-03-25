@@ -1,12 +1,11 @@
 import 'package:hive/hive.dart';
 import 'package:muslim_app/core/api/dio_helper.dart';
-import 'package:muslim_app/core/api/end_points.dart';
 import 'package:muslim_app/core/contants/constants.dart';
 import 'package:muslim_app/features/listen/data/models/reciter_model/reciter_model.dart';
 import 'package:muslim_app/features/listen/domain/entites/reciter_entity.dart';
 
 abstract class ReciterRemoteDataSource {
-  Future<List<ReciterEntity>> getReciterData();
+  Future<List<ReciterEntity>> getReciters();
 }
 
 class ReciterRemoteDataSourceImpl extends ReciterRemoteDataSource {
@@ -14,12 +13,11 @@ class ReciterRemoteDataSourceImpl extends ReciterRemoteDataSource {
 
   ReciterRemoteDataSourceImpl(this.dioHelper);
   @override
-  Future<List<ReciterEntity>> getReciterData() async {
-    var response = await dioHelper.getData(endPoint: EndPoints.reciterEndPoint);
+  Future<List<ReciterEntity>> getReciters() async {
+    var response = await dioHelper.getReciters();
     List<ReciterEntity> reciters = parseData(response);
-    saveRecitersLocal(sortElementsById(reciters));
-
-    return sortElementsById(reciters);
+    saveRecitersLocal(reciters);
+    return reciters;
   }
 
   void saveRecitersLocal(List<ReciterEntity> reciters) {
@@ -29,15 +27,12 @@ class ReciterRemoteDataSourceImpl extends ReciterRemoteDataSource {
 
   List<ReciterEntity> parseData(Map<String, dynamic> response) {
     List<ReciterEntity> reciters = [];
-    for (var e in response['recitations']) {
-      reciters.add(ReciterModel.fromJson(e));
+    for (var e in response['reciters']) {
+      ReciterEntity model = ReciterModel.fromJson(e);
+      if (model.rewaya != null) {
+        reciters.add(model);
+      }
     }
     return reciters;
-  }
-
-  List<ReciterEntity> sortElementsById(List<ReciterEntity> list) {
-    List<ReciterEntity> sortedList = List.from(list);
-    sortedList.sort((a, b) => a.id.compareTo(b.id));
-    return sortedList;
   }
 }
